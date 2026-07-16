@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>حارتنا — بيت شامي في باب توما، دمشق القديمة</title>
+<meta name="description" content="مطعم حارتنا في باب توما — بيت دمشقي قديم بحوش وبحرة، مازة شامية وأراكيل وسهرة لبعد منتصف الليل.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Almarai:wght@400;700;800&family=Fraunces:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--bas:#191512;--bas2:#221b15;--lime:#EFE6D5;--limed:#e0d3ba;--brass:#C19255;--brassd:#8a6528;--ink:#241d15;--mut:#a89d8b;--mutd:#6f6553;--line:#3a322a}
+body{background:var(--bas);color:var(--lime);font:16px/1.85 'Almarai',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 5vw}
+.disp{font-family:'Aref Ruqaa',serif}
+.lat{font-family:'Fraunces',serif}
+.k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:800;display:block;margin-bottom:6px}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+html.en .ar{display:none!important}
+html:not(.en) .tr{display:none!important}
+.tr{direction:ltr;unicode-bidi:isolate}
+/* ablaq stone course — the site's signature band */
+.ablaq{height:18px;background:repeating-linear-gradient(90deg,var(--lime) 0 44px,var(--bas2) 44px 88px)}
+/* hero — courtyard framed by ablaq bands */
+header{position:relative;min-height:92svh;display:flex;align-items:flex-end}
+header::before{content:'';position:absolute;top:0;left:0;right:0;height:16px;background:repeating-linear-gradient(90deg,var(--lime) 0 44px,rgba(25,21,18,.92) 44px 88px);z-index:3}
+header .bg{position:absolute;inset:0;background:url('img/01.jpg') center 58%/cover no-repeat}
+header .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,21,18,.28),rgba(25,21,18,.52) 58%,var(--bas))}
+.hero-in{position:relative;padding:0 5vw 62px;width:100%;max-width:1120px;margin:0 auto;z-index:2}
+.since{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--brass);color:var(--lime);border-radius:3px;padding:8px 16px;font-size:12.5px;letter-spacing:.08em;font-weight:800;margin-bottom:20px;background:rgba(25,21,18,.62)}
+.since i{width:16px;height:9px;background:repeating-linear-gradient(90deg,var(--lime) 0 4px,var(--brass) 4px 8px);display:inline-block}
+h1{font-family:'Aref Ruqaa',serif;font-size:clamp(50px,10vw,104px);line-height:1.08;font-weight:700;text-shadow:0 2px 30px rgba(0,0,0,.45)}
+.hero-sub{margin-top:12px;font-size:clamp(15px,2vw,19.5px);color:#e2d8c4;max-width:58ch}
+.hero-meta{margin-top:22px;display:flex;gap:20px;flex-wrap:wrap;font-size:13.5px;color:var(--mut)}
+.hero-meta b{color:var(--lime)}
+/* story */
+.story{display:grid;grid-template-columns:1.1fr .9fr;gap:6vw;align-items:center;padding:92px 0 78px}
+.story img{border-radius:8px;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line);box-shadow:-14px 14px 0 -6px var(--bas2)}
+.story h2{font-size:clamp(28px,4.4vw,46px);line-height:1.35;margin:10px 0 18px}
+.story p{color:#d6ccb8;margin-bottom:14px}
+/* light limestone course */
+.lt{background:var(--lime);color:var(--ink)}
+.lt .k{color:var(--brassd)}
+.lt p{color:#4d4231}
+/* highlights */
+.high{padding:78px 0 26px}
+.high h2{font-size:clamp(26px,3.8vw,40px);margin:8px 0 30px;color:var(--ink)}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hcard{background:#f8f1e2;border:1px solid #d9cbae;border-radius:8px;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease}
+.hcard:hover{transform:translateY(-6px);box-shadow:0 18px 34px -18px rgba(36,29,21,.45)}
+.hcard img{height:210px;width:100%;object-fit:cover;border-bottom:5px solid var(--bas)}
+.hcard .hb{padding:16px 18px 20px}
+.hcard h3{font-family:'Aref Ruqaa',serif;font-size:21px;margin-bottom:6px;color:var(--brassd)}
+.hcard p{font-size:13.8px;color:#5d5140}
+/* sofra — basalt panel set into the limestone course */
+.menu{margin:56px 0 84px;background:var(--bas);color:var(--lime);border-radius:10px;padding:clamp(26px,5vw,56px);position:relative;box-shadow:0 26px 48px -26px rgba(36,29,21,.55)}
+.menu::before{content:'';position:absolute;top:0;left:24px;right:24px;height:8px;background:repeating-linear-gradient(90deg,var(--lime) 0 22px,transparent 22px 44px);opacity:.85}
+.menu h2{font-family:'Aref Ruqaa',serif;font-size:clamp(32px,5vw,50px);text-align:center;margin-bottom:6px}
+.menu .note{text-align:center;color:var(--mut);font-size:13.5px;margin-bottom:32px}
+.mlist{max-width:640px;margin:0 auto}
+.mi{display:flex;justify-content:space-between;gap:14px;align-items:baseline;margin-bottom:13px;font-size:15.5px;border-bottom:1px dashed #453b2e;padding-bottom:10px}
+.mi span{color:#e6dcc8}
+.mi em{font-style:normal;color:var(--brass);font-size:12.5px;white-space:nowrap}
+.mfoot{text-align:center;margin-top:24px;color:var(--mut);font-size:13.5px}
+/* gallery */
+.gal{padding:88px 0 50px}
+.gal h2{font-size:clamp(26px,3.8vw,40px);margin:8px 0 26px}
+.ggrid{display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:250px;gap:14px}
+.ggrid img{width:100%;height:100%;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+/* reviews */
+.revs{padding:30px 0 88px}
+.revs h2{font-size:clamp(26px,3.8vw,40px);margin-bottom:28px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rcard{background:var(--bas2);border:1px solid var(--line);border-top:4px solid var(--brass);border-radius:8px;padding:22px}
+.stars-row{color:var(--brass);letter-spacing:2px;font-size:14px}
+.rcard p{font-size:14.5px;color:#d6ccb8;margin:12px 0 14px;font-style:italic}
+.rcard .who{font-size:13px;color:var(--mut)}
+.gbadge{margin-top:26px;text-align:center;color:var(--mut);font-size:14px}
+.gbadge b{color:var(--lime)}
+/* visit — limestone course */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:84px 0 120px;align-items:start}
+.visit h2{font-size:clamp(26px,3.8vw,40px);margin:6px 0 20px;color:var(--ink)}
+.hours{width:100%;border-collapse:collapse;font-size:14.5px}
+.hours td{padding:10px 0;border-bottom:1px dashed #c9ba99;color:#4d4231}
+.hours td:last-child{text-align:left;color:var(--ink);font-weight:700}
+.vinfo p{margin-bottom:14px;color:#4d4231}
+.vinfo .adr{font-size:20px;font-family:'Aref Ruqaa',serif;color:var(--ink)}
+.vinfo .tel a{font-weight:800;color:var(--brassd);text-decoration:none;font-size:17px}
+.btn{display:inline-block;background:var(--bas);color:var(--lime);font-weight:800;border-radius:6px;padding:14px 26px;text-decoration:none;margin:6px 0 0 10px;font-size:15px;border:1.5px solid var(--bas)}
+.btn.o{background:transparent;color:var(--ink);border:1.5px solid #b7a686}
+footer{padding:40px 5vw 130px;text-align:center;color:var(--mutd);font-size:12.5px;background:var(--bas)}
+/* ablaq dock — unique sticky bar: striped stone dock + brass call disc */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:flex;align-items:center;background:#14100d;border:1.5px solid var(--brass);border-radius:12px;box-shadow:0 18px 46px -14px rgba(0,0,0,.75);padding:0 6px;animation:dockup .7s cubic-bezier(.2,.9,.3,1.14) both .25s}
+.bar::before{content:'';position:absolute;top:-1.5px;left:16px;right:16px;height:7px;background:repeating-linear-gradient(90deg,var(--lime) 0 18px,transparent 18px 36px);border-radius:0 0 3px 3px;opacity:.9}
+@keyframes dockup{from{transform:translateX(-50%) translateY(96px)}to{transform:translateX(-50%) translateY(0)}}
+.bar a{text-decoration:none}
+.bar a.call{width:60px;height:60px;border-radius:50%;flex:0 0 auto;background:radial-gradient(circle at 32% 28%,#e5c084,#a87c3e 72%);color:#241d15;display:flex;align-items:center;justify-content:center;margin:0 8px 0 6px;transform:translateY(-16px);border:2px solid #14100d;box-shadow:0 12px 22px -8px rgba(0,0,0,.7);animation:disc 3.2s ease-in-out infinite}
+@keyframes disc{0%,100%{box-shadow:0 12px 22px -8px rgba(0,0,0,.7),0 0 0 0 rgba(193,146,85,.4)}50%{box-shadow:0 12px 22px -8px rgba(0,0,0,.7),0 0 0 12px rgba(193,146,85,0)}}
+.bar a.call svg{width:22px;height:22px}
+.bar a.bx{display:flex;align-items:center;gap:8px;padding:17px 16px;font-weight:800;font-size:14.5px;color:var(--lime)}
+.bar a.bx+a.bx{border-right:1px solid var(--line)}
+.bar a.bx svg{width:17px;height:17px;display:block}
+/* toggle chip — stone block */
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:1.5px solid var(--brass);border-bottom:4px solid var(--brass);font-weight:800;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:5px;line-height:1;background:#14100d;color:var(--lime);font-family:'Almarai',sans-serif}
+@media(max-width:860px){
+ .story{grid-template-columns:1fr;gap:28px;padding-top:60px}
+ .story img{box-shadow:none}
+ .hgrid,.rgrid{grid-template-columns:1fr}
+ .ggrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+ .visit{grid-template-columns:1fr;gap:40px}
+ .wrap{padding-left:5vw!important;padding-right:5vw!important}
+ .bar a.bx{padding:15px 12px;font-size:13.5px}
+ .bar a.call{width:54px;height:54px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
+
+<header>
+ <div class="bg"></div>
+ <div class="hero-in">
+  <span class="since"><i></i> <span class="ar" data-edit="t3" data-edit-label="Text — بيت شامي بقلب باب توما">بيت شامي بقلب باب توما</span><span class="tr" data-edit="t4" data-edit-label="Text — A Damascene house in the heart of Bab …">A Damascene house in the heart of Bab Touma</span></span>
+  <h1 class="disp"><span class="ar" data-edit="t5" data-edit-label="Text — حارتنا">حارتنا</span><span class="tr lat" data-edit="t6" data-edit-label="Text — Haretna">Haretna</span></h1>
+  <p class="hero-sub"><span class="ar" data-edit="t7" data-edit-label="Text — حوش قديم بقناطر أبلق، بحرة بتخرخر بنصّ…">حوش قديم بقناطر أبلق، بحرة بتخرخر بنصّ الدار، وسهرة شامية ما بتعرف تخلص — أهلاً وسهلاً ببيتكم.</span><span class="tr lat"><em data-edit="t8" data-edit-label="Text — An old courtyard under ablaq arches, a…">An old courtyard under ablaq arches, a fountain murmuring at its heart, and a Damascene evening that never quite ends — welcome home.</em></span></p>
+  <div class="hero-meta">
+   <span>★ <b data-edit="rating">4.2</b> <span class="ar" data-edit="t9" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t10" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">231</span> <span class="ar" data-edit="t11" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t12" data-edit-label="Text — reviews">reviews</span></span>
+   <span data-edit="addr">باب توما — دمشق القديمة</span>
+   <span><span class="ar" data-edit="t13" data-edit-label="Text — مطعم · مقهى · أراكيل">مطعم · مقهى · أراكيل</span><span class="tr" data-edit="t14" data-edit-label="Text — restaurant · café · shisha">restaurant · café · shisha</span></span>
+  </div>
+ </div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t15" data-edit-label="Text — حكايتنا">حكايتنا</span><span class="tr" data-edit="t16" data-edit-label="Text — Our story">Our story</span></span>
+  <h2 class="disp"><span class="ar">حارة صغيرة،<br>وبيت كبير القلب.</span><span class="tr lat">A little alley,<br>a big-hearted house.</span></h2>
+  <p><span class="ar" data-edit="story1">بقلب باب توما، بين الحارات الضيقة اللي بتحفظ خطوات أهلها، بيفتح «حارتنا» بوابه الحجرية على حوش دمشقي قديم: مداميك أبلق سود وبيض، قناطر عالية، وبحرة عتيقة صوت ميّتها بيمشي مع السهرة من أولها لآخرها.</span><span class="tr" data-edit="story1en"><em data-edit="t17" data-edit-label="Text — In the heart of Bab Touma, down the na…">In the heart of Bab Touma, down the narrow lanes that know their people's footsteps, Haretna opens its stone gate onto an old Damascene courtyard: black-and-white ablaq courses, tall arches, and an ancient fountain whose murmur keeps the evening company from start to finish.</em></span></p>
+  <p><span class="ar" data-edit="story2">من سنين و«حارتنا» محطة لأهل الشام وضيوفها — غدا عالحوش تحت الشمس، وعالليل مازة وأراكيل وموسيقى بتظبط المزاج، والأبواب بتضل مفتوحة لبعد نصّ الليل. القعدة هون ما إلها وقت: بتبلّش بكاسة شاي وبتطول متل ما بدها.</span><span class="tr" data-edit="story2en"><em data-edit="t18" data-edit-label="Text — For years Haretna has been a fixture f…">For years Haretna has been a fixture for Damascenes and their guests — lunch in the sunlit courtyard, then mezze, shisha and music that sets the mood by night, with doors open well past midnight. A sitting here keeps no clock: it starts with a glass of tea and lasts as long as it pleases.</em></span></p>
+ </div>
+ <img class="rev" src="img/04.jpg" alt="بوابة حارتنا الحجرية">
+</section>
+
+<div class="ablaq" aria-hidden="true"></div>
+<div class="lt">
+ <section class="high wrap">
+  <span class="k"><span class="ar" data-edit="t19" data-edit-label="Text — من السفرة والسهرة">من السفرة والسهرة</span><span class="tr" data-edit="t20" data-edit-label="Text — From table & evening">From table & evening</span></span>
+  <h2 class="disp rev"><span class="ar" data-edit="t21" data-edit-label="Text — ثلاثة بيعرّفوا علينا">ثلاثة بيعرّفوا علينا</span><span class="tr lat" data-edit="t22" data-edit-label="Text — Three that tell you who we are">Three that tell you who we are</span></h2>
+  <div class="hgrid">
+   <div class="hcard rev"><img src="img/03.jpg" alt="سفرة المازة في حارتنا"><div class="hb"><h3><span class="ar" data-edit="t23" data-edit-label="Text — سفرة المازة">سفرة المازة</span><span class="tr lat" data-edit="t24" data-edit-label="Text — The mezze table">The mezze table</span></h3><p><span class="ar" data-edit="t25" data-edit-label="Text — حمص وكبة نية ومقالي سخنة عالطريقة الشا…">حمص وكبة نية ومقالي سخنة عالطريقة الشامية — المازة عنا مش مقدّمة للأكل، هي القعدة كلها.</span><span class="tr" data-edit="t26" data-edit-label="Text — Hummus, kibbeh nayyeh and hot fried me…">Hummus, kibbeh nayyeh and hot fried mezze the Damascene way — here mezze isn't a starter, it's the whole sitting.</span></p></div></div>
+   <div class="hcard rev"><img src="img/05.jpg" alt="تبولة حارتنا"><div class="hb"><h3><span class="ar" data-edit="t27" data-edit-label="Text — خضرة الشام">خضرة الشام</span><span class="tr lat" data-edit="t28" data-edit-label="Text — Damascus greens">Damascus greens</span></h3><p><span class="ar" data-edit="t29" data-edit-label="Text — تبولة مفرومة عالسكين — بقدونس طازة ولي…">تبولة مفرومة عالسكين — بقدونس طازة وليمون وزيت. طبق بسيط، بس أهل الشام ما بيسامحوا فيه.</span><span class="tr" data-edit="t30" data-edit-label="Text — Tabbouleh chopped by knife — fresh par…">Tabbouleh chopped by knife — fresh parsley, lemon and oil. A simple plate Damascenes never compromise on.</span></p></div></div>
+   <div class="hcard rev"><img src="img/06.jpg" alt="سهرة الليل في حارتنا"><div class="hb"><h3><span class="ar" data-edit="t31" data-edit-label="Text — سهرة الحارة">سهرة الحارة</span><span class="tr lat" data-edit="t32" data-edit-label="Text — The alley by night">The alley by night</span></h3><p><span class="ar" data-edit="t33" data-edit-label="Text — أراكيل معبّاية عالمزاج، مشروبات باردة …">أراكيل معبّاية عالمزاج، مشروبات باردة وموسيقى — بعد المغرب البيت بيتحوّل لسهرة شامية حقيقية.</span><span class="tr" data-edit="t34" data-edit-label="Text — Shisha packed to taste, cold drinks an…">Shisha packed to taste, cold drinks and music — after dark the house turns into a proper Damascene night out.</span></p></div></div>
+  </div>
+ </section>
+
+ <div class="wrap">
+ <section class="menu rev">
+  <h2><span class="ar" data-edit="t35" data-edit-label="Text — سفرة حارتنا">سفرة حارتنا</span><span class="tr lat" data-edit="t36" data-edit-label="Text — The Haretna table">The Haretna table</span></h2>
+  <p class="note"><span class="ar" data-edit="t37" data-edit-label="Text — الأسعار على اللائحة داخل المطعم — هي أ…">الأسعار على اللائحة داخل المطعم — هي أطيب ما بيطلبه روّادنا</span><span class="tr"><em data-edit="t38" data-edit-label="Text — Prices are on the list at the restaura…">Prices are on the list at the restaurant — these are the plates our regulars love most</em></span></p>
+  <div class="mlist">
+   <div class="mi"><span><span class="ar" data-edit="t39" data-edit-label="Text — حمص بزيت الزيتون">حمص بزيت الزيتون</span><span class="tr" data-edit="t40" data-edit-label="Text — Hummus with olive oil">Hummus with olive oil</span></span><em><span class="ar" data-edit="t41" data-edit-label="Text — مازة باردة">مازة باردة</span><span class="tr" data-edit="t42" data-edit-label="Text — cold mezze">cold mezze</span></em></div>
+   <div class="mi"><span><span class="ar" data-edit="t43" data-edit-label="Text — كبة نية">كبة نية</span><span class="tr" data-edit="t44" data-edit-label="Text — Kibbeh nayyeh">Kibbeh nayyeh</span></span><em><span class="ar" data-edit="t45" data-edit-label="Text — طبق الشام">طبق الشام</span><span class="tr" data-edit="t46" data-edit-label="Text — a Damascus classic">a Damascus classic</span></em></div>
+   <div class="mi"><span><span class="ar" data-edit="t47" data-edit-label="Text — تبولة">تبولة</span><span class="tr" data-edit="t48" data-edit-label="Text — Tabbouleh">Tabbouleh</span></span><em><span class="ar" data-edit="t49" data-edit-label="Text — مفرومة عالسكين">مفرومة عالسكين</span><span class="tr" data-edit="t50" data-edit-label="Text — knife-chopped">knife-chopped</span></em></div>
+   <div class="mi"><span><span class="ar" data-edit="t51" data-edit-label="Text — مقالي وبطاطا سخنة">مقالي وبطاطا سخنة</span><span class="tr" data-edit="t52" data-edit-label="Text — Hot fried mezze & potatoes">Hot fried mezze & potatoes</span></span><em><span class="ar" data-edit="t53" data-edit-label="Text — عالسخن">عالسخن</span><span class="tr" data-edit="t54" data-edit-label="Text — served hot">served hot</span></em></div>
+   <div class="mi"><span><span class="ar" data-edit="t55" data-edit-label="Text — مشروبات باردة">مشروبات باردة</span><span class="tr" data-edit="t56" data-edit-label="Text — Cold drinks">Cold drinks</span></span><em><span class="ar" data-edit="t57" data-edit-label="Text — عالبحرة">عالبحرة</span><span class="tr" data-edit="t58" data-edit-label="Text — by the fountain">by the fountain</span></em></div>
+   <div class="mi"><span><span class="ar" data-edit="t59" data-edit-label="Text — أركيلة معسّل">أركيلة معسّل</span><span class="tr" data-edit="t60" data-edit-label="Text — Shisha">Shisha</span></span><em><span class="ar" data-edit="t61" data-edit-label="Text — معبّاية عالمزاج">معبّاية عالمزاج</span><span class="tr" data-edit="t62" data-edit-label="Text — packed to taste">packed to taste</span></em></div>
+  </div>
+  <p class="mfoot"><span class="ar" data-edit="t63" data-edit-label="Text — والسفرة بتكمل حسب الموسم — اسألوا شو ط…">والسفرة بتكمل حسب الموسم — اسألوا شو طابخين اليوم.</span><span class="tr"><em data-edit="t64" data-edit-label="Text — The table changes with the season — as…">The table changes with the season — ask what's cooking today.</em></span></p>
+ </section>
+ </div>
+</div>
+<div class="ablaq" aria-hidden="true"></div>
+
+<section class="gal wrap">
+ <span class="k"><span class="ar" data-edit="t65" data-edit-label="Text — عدسة عالبيت">عدسة عالبيت</span><span class="tr" data-edit="t66" data-edit-label="Text — Through the house">Through the house</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t67" data-edit-label="Text — من الحوش">من الحوش</span><span class="tr lat" data-edit="t68" data-edit-label="Text — From the courtyard">From the courtyard</span></h2>
+ <div class="ggrid rev">
+  <img src="img/02.jpg" alt="صحن من مطبخ حارتنا">
+  <img src="img/06.jpg" alt="سهرة الليل بالمطعم">
+  <img src="img/03.jpg" alt="مازة شامية عالطاولة">
+  <img src="img/05.jpg" alt="تبولة طازة">
+ </div>
+</section>
+
+<section class="revs wrap">
+ <span class="k"><span class="ar" data-edit="t69" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t70" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t71" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t72" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
+ <div class="rgrid">
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t73" data-edit-label="Text — 'One of the best places to enjoy great…">"One of the best places to enjoy great food, refreshing drinks, and premium shisha. The atmosphere is vibrant and stylish, with excellent music that makes every visit enjoyable."</p><div class="who" data-edit="t74" data-edit-label="Text — Marcus Barsa · Google">Marcus Barsa · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t75" data-edit-label="Text — 'A true classic in Old Damascus. Very …">"A true classic in Old Damascus. Very good food and good service. Cold beer is served."</p><div class="who" data-edit="t76" data-edit-label="Text — Alfons De la O · Google">Alfons De la O · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t77" data-edit-label="Text — 'Amazing restaurant. It's located in B…">"Amazing restaurant. It's located in Bab Touma in old Damascus. It's a historical place and at the same time it's modern — set, services, food and everything else."</p><div class="who" data-edit="t78" data-edit-label="Text — mohammad youssef · Google">mohammad youssef · Google</div></div>
+ </div>
+ <p class="gbadge">★ <b data-edit="t79" data-edit-label="Text — 4.2 / 5">4.2 / 5</b> — <span data-edit="revcount2">231</span> <span class="ar" data-edit="t80" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t81" data-edit-label="Text — Google reviews">Google reviews</span></p>
+</section>
+
+<div class="ablaq" aria-hidden="true"></div>
+<div class="lt">
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t82" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t83" data-edit-label="Text — Hours">Hours</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t84" data-edit-label="Text — متى تلاقونا">متى تلاقونا</span><span class="tr lat" data-edit="t85" data-edit-label="Text — When to find us">When to find us</span></h2>
+  <table class="hours">
+   <tr><td><span class="ar" data-edit="t86" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t87" data-edit-label="Text — Daily">Daily</span></td><td><span class="ar" data-edit="h-all">9:00 – 2:00 بعد منتصف الليل</span><span class="tr" data-edit="h-all-en">9:00 – 2:00 after midnight</span></td></tr>
+  </table>
+  <p style="margin-top:16px;font-size:13.5px"><span class="ar" data-edit="h-note">سهرتنا بتطول لبعد نصّ الليل — الدوام من لائحة غوغل.</span><span class="tr" data-edit="t88" data-edit-label="Text — Evenings run well past midnight — hour…">Evenings run well past midnight — hours as listed on Google.</span></p>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="ar" data-edit="t89" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t90" data-edit-label="Text — Find us">Find us</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t91" data-edit-label="Text — بقلب باب توما">بقلب باب توما</span><span class="tr lat" data-edit="t92" data-edit-label="Text — Heart of Bab Touma">Heart of Bab Touma</span></h2>
+  <p class="adr" data-edit="addr2">باب توما — دمشق القديمة</p>
+  <p class="tel"><span class="ar" data-edit="t93" data-edit-label="Text — للحجز والاستفسار:">للحجز والاستفسار:</span><span class="tr" data-edit="t94" data-edit-label="Text — For bookings & questions:">For bookings & questions:</span> <a href="tel:+963115441184" data-edit="phone"><span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t95" data-edit-label="Text — +963 11 544 1184">+963 11 544 1184</span></a></p>
+  <a class="btn" href="tel:+963115441184"><span class="ar" data-edit="t96" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t97" data-edit-label="Text — Call us">Call us</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=5998639108989034254" target="_blank" rel="noopener"><span class="ar" data-edit="t98" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t99" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+  <a class="btn o" href="https://www.facebook.com/haretnaco" target="_blank" rel="noopener"><span class="ar" data-edit="t100" data-edit-label="Text — فيسبوك">فيسبوك</span><span class="tr" data-edit="t101" data-edit-label="Text — Facebook">Facebook</span></a>
+ </div>
+</section>
+</div>
+
+<footer><span data-edit="footer">حارتنا · باب توما — دمشق القديمة · ‎<span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t102" data-edit-label="Text — +963 11 544 1184">+963 11 544 1184</span></span></footer>
+
+<div class="bar">
+ <a class="call" href="tel:+963115441184" aria-label="اتصلوا بحارتنا"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+ <a class="bx" href="https://www.google.com/maps?cid=5998639108989034254" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><b><span class="ar" data-edit="t103" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t104" data-edit-label="Text — Map">Map</span></b></a>
+ <a class="bx" href="https://www.facebook.com/haretnaco" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

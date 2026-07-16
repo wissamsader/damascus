@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>بارون هاكوب — سجق وباسطرما · شارع باب توما، دمشق</title>
+<meta name="description" content="بارون هاكوب على شارع باب توما — دكان أرمني متخصص بالسجق والباسطرما: عالميزان أو بسندويشة سخنة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Cairo:wght@400;600;700;900&family=Archivo+Black&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--cream:#F3E9D7;--cream2:#fbf4e4;--char:#26221E;--char2:#312b26;--ox:#7A1F1F;--oxd:#5e1414;--ink:#2b2620;--mut:#847a6b;--mutd:#b9a98e;--line:#ddcfb4}
+body{background:var(--cream);color:var(--ink);font:16px/1.85 'Cairo',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 5vw}
+.disp{font-family:'Rakkas',serif}
+.lat{font-family:'Archivo Black',sans-serif}
+.k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ox);font-weight:900;display:block;margin-bottom:6px}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+html.en .ar{display:none!important}
+html:not(.en) .tr{display:none!important}
+.tr{direction:ltr;unicode-bidi:isolate}
+/* hero — split: charcoal lockup panel + neon storefront */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:90svh}
+.hpanel{background:var(--char);color:var(--cream);position:relative;display:flex;align-items:center;padding:96px 5vw 72px;overflow:hidden}
+.hpanel::before{content:'';position:absolute;top:0;bottom:0;left:0;width:10px;background:repeating-linear-gradient(180deg,var(--ox) 0 26px,var(--cream) 26px 30px)}
+.hpanel .in{position:relative;max-width:520px;margin:0 auto}
+.tag{display:inline-flex;align-items:center;gap:9px;background:var(--ox);color:var(--cream);clip-path:polygon(14px 0,100% 0,100% 100%,14px 100%,0 50%);padding:8px 16px 8px 22px;font-size:12.5px;font-weight:900;letter-spacing:.06em;margin-bottom:22px}
+h1{font-family:'Rakkas',serif;font-size:clamp(56px,8.6vw,100px);line-height:1;font-weight:400}
+.latlock{font-family:'Archivo Black',sans-serif;font-size:clamp(17px,2vw,24px);letter-spacing:.08em;color:var(--mutd);margin-top:4px}
+.signband{margin-top:18px;background:var(--ox);color:var(--cream);font-family:'Archivo Black',sans-serif;font-size:clamp(10.5px,1.15vw,13px);letter-spacing:.22em;padding:9px 14px;display:inline-block}
+.hero-sub{margin-top:18px;font-size:clamp(15px,1.9vw,18.5px);color:#d8ccb8;max-width:50ch}
+.hero-meta{margin-top:24px;display:flex;gap:18px;flex-wrap:wrap;font-size:13.5px;color:var(--mutd)}
+.hero-meta b{color:var(--cream)}
+.hphoto{background:url('img/01.jpg') center/cover no-repeat;min-height:100%}
+/* marquee — deli ticker */
+.tick{background:var(--ox);color:var(--cream);overflow:hidden;padding:12px 0;border-top:3px solid var(--char);border-bottom:3px solid var(--char)}
+.tick .row{display:flex;width:max-content;gap:0;animation:mq 22s linear infinite}
+.tick span.it{font-family:'Cairo',sans-serif;font-weight:900;font-size:14px;letter-spacing:.12em;white-space:nowrap;padding:0 18px;border-left:2px solid rgba(243,233,215,.35)}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(50%)}}
+/* story */
+.story{display:grid;grid-template-columns:1.1fr .9fr;gap:6vw;align-items:center;padding:92px 0 80px}
+.story .ph{background:var(--cream2);padding:12px 12px 40px;border:1px solid var(--line);box-shadow:0 20px 40px -20px rgba(43,38,32,.45);transform:rotate(1.5deg);position:relative}
+.story .ph::after{content:'BARON HAGOP · BAB TOUMA · DAMASCUS';font-family:'Archivo Black',sans-serif;font-size:9.5px;letter-spacing:.18em;color:var(--mut);position:absolute;bottom:13px;left:0;right:0;text-align:center}
+.story img{aspect-ratio:4/5;object-fit:cover}
+.story h2{font-size:clamp(30px,4.6vw,50px);line-height:1.25;margin:10px 0 18px;color:var(--ox)}
+.story p{color:#57503f;margin-bottom:14px}
+/* highlights — butcher tags */
+.chc{background:var(--char);color:var(--cream)}
+.chc .k{color:var(--mutd)}
+.high{padding:84px 0 92px}
+.high h2{font-size:clamp(26px,3.8vw,42px);margin:8px 0 34px}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hcard{background:var(--cream2);color:var(--ink);position:relative;padding:10px 10px 0;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);transition:transform .35s ease}
+.hcard:hover{transform:translateY(-6px) rotate(-.5deg)}
+.hcard::before{content:'';position:absolute;top:16px;right:16px;width:11px;height:11px;border-radius:50%;background:var(--char);box-shadow:inset 0 0 0 2.5px var(--cream2);z-index:2}
+.hcard img{height:208px;width:100%;object-fit:cover}
+.hcard .hb{padding:14px 10px 18px}
+.hcard h3{font-family:'Rakkas',serif;font-size:23px;margin-bottom:5px;color:var(--ox)}
+.hcard p{font-size:13.8px;color:#57503f}
+/* menu — the board on the wall */
+.menu{padding:92px 0 50px}
+.menu h2{font-family:'Rakkas',serif;font-size:clamp(34px,5vw,54px);text-align:center;color:var(--ox);margin-bottom:8px}
+.menu .note{text-align:center;color:var(--mut);font-size:13.5px;max-width:62ch;margin:0 auto 40px}
+.mwrap{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:center}
+.mframe{background:var(--char);padding:10px;box-shadow:0 26px 50px -22px rgba(43,38,32,.55);transform:rotate(-1.2deg)}
+.mframe img{display:block}
+.mframe figcaption{text-align:center;font-size:12.5px;color:var(--mutd);padding-top:10px}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+.chip{background:var(--char);color:var(--cream);font-weight:900;font-size:14.5px;padding:12px 20px;clip-path:polygon(10% 0,90% 0,100% 100%,0 100%)}
+.chip.oxc{background:var(--ox)}
+.mside p{color:#57503f;margin-bottom:16px}
+.mside .wnote{margin-top:22px;border:1.5px dashed var(--ox);padding:14px 18px;font-size:13.5px;color:var(--ox);font-weight:700;background:rgba(122,31,31,.05)}
+/* gallery */
+.gal{padding:50px 0 90px}
+.gal h2{font-size:clamp(26px,3.8vw,42px);margin:8px 0 26px;color:var(--ox)}
+.ggrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ggrid img{width:100%;height:220px;object-fit:cover;border:5px solid #fff;box-shadow:0 14px 28px -16px rgba(43,38,32,.4)}
+/* reviews */
+.revs{padding:84px 0 92px}
+.revs h2{font-size:clamp(26px,3.8vw,42px);margin-bottom:28px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rcard{background:var(--char2);border-right:4px solid var(--ox);padding:22px}
+.stars-row{color:#e0b04f;letter-spacing:2px;font-size:14px}
+.rcard p{font-size:14.5px;color:#d8ccb8;margin:12px 0 14px;font-style:italic}
+.rcard .who{font-size:13px;color:var(--mutd)}
+.gbadge{margin-top:26px;text-align:center;color:var(--mutd);font-size:14px}
+.gbadge b{color:var(--cream)}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:90px 0 130px;align-items:start}
+.visit h2{font-size:clamp(26px,3.8vw,42px);margin:6px 0 20px;color:var(--ox)}
+.hours{width:100%;border-collapse:collapse;font-size:14.5px}
+.hours td{padding:10px 0;border-bottom:1px dashed var(--line);color:#57503f}
+.hours td:last-child{text-align:left;color:var(--ink);font-weight:700}
+.vinfo p{margin-bottom:14px;color:#57503f}
+.vinfo .adr{font-size:21px;font-family:'Rakkas',serif;color:var(--ink)}
+.vinfo .tel a{font-weight:900;color:var(--ox);text-decoration:none;font-size:17px}
+.btn{display:inline-block;background:var(--ox);color:var(--cream);font-weight:900;padding:14px 26px;text-decoration:none;margin:6px 0 0 10px;font-size:15px;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+.btn.o{background:var(--char);clip-path:polygon(0 0,calc(100% - 8px) 0,100% 100%,8px 100%)}
+footer{padding:40px 5vw 135px;text-align:center;color:var(--mutd);font-size:12.5px;background:var(--char)}
+/* weigh-scale dock — unique bar: round tray call button + weight chips */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:flex;align-items:center;background:var(--char);border-radius:10px;box-shadow:0 18px 46px -14px rgba(0,0,0,.65);padding:0 10px;animation:weigh .8s cubic-bezier(.34,1.4,.4,1) both .25s}
+.bar::before{content:'';position:absolute;top:-1px;left:20px;right:20px;height:6px;background:repeating-linear-gradient(90deg,var(--cream) 0 2px,transparent 2px 11px);opacity:.75;border-radius:0 0 3px 3px}
+.bar::after{content:'';position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:9px solid var(--ox)}
+@keyframes weigh{from{transform:translateX(-50%) translateY(100px) scale(.9)}60%{transform:translateX(-50%) translateY(-6px) scale(1.02)}to{transform:translateX(-50%) translateY(0) scale(1)}}
+.bar a{text-decoration:none}
+.bar a.tray{width:62px;height:62px;border-radius:50%;flex:0 0 auto;background:radial-gradient(circle at 34% 28%,#fdf7e9,var(--cream) 68%);color:var(--ox);display:flex;align-items:center;justify-content:center;margin:0 8px 0 10px;transform:translateY(-18px);border:3px solid var(--char);box-shadow:inset 0 0 0 2px rgba(122,31,31,.35),0 12px 22px -8px rgba(0,0,0,.6)}
+.bar a.tray svg{width:23px;height:23px}
+.bar a.wt{display:flex;align-items:center;gap:7px;margin:12px 3px;padding:11px 17px;background:var(--ox);color:var(--cream);font-weight:900;font-size:13.5px;clip-path:polygon(10% 0,90% 0,100% 100%,0 100%)}
+.bar a.wt.dk{background:var(--char2);box-shadow:inset 0 0 0 1.5px rgba(243,233,215,.3)}
+.bar a.wt svg{width:15px;height:15px;display:block}
+/* toggle chip — price tag */
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:none;background:var(--ox);color:var(--cream);font-weight:900;font-size:11.5px;letter-spacing:.14em;padding:10px 15px 10px 20px;line-height:1;clip-path:polygon(12px 0,100% 0,100% 100%,12px 100%,0 50%);font-family:'Cairo',sans-serif;box-shadow:0 8px 18px -8px rgba(0,0,0,.5)}
+@media(max-width:860px){
+ .hero{grid-template-columns:1fr}
+ .hphoto{min-height:50svh;order:2}
+ .hpanel{padding:88px 6vw 56px}
+ .story{grid-template-columns:1fr;gap:34px;padding-top:62px}
+ .story .ph{transform:none}
+ .hgrid,.rgrid{grid-template-columns:1fr}
+ .mwrap{grid-template-columns:1fr;gap:40px}
+ .mframe{transform:none}
+ .ggrid{grid-template-columns:repeat(2,1fr)}
+ .ggrid img{height:160px}
+ .visit{grid-template-columns:1fr;gap:40px}
+ .wrap{padding-left:5vw!important;padding-right:5vw!important}
+ .bar a.wt{padding:10px 13px;font-size:12.5px}
+ .bar a.tray{width:54px;height:54px;transform:translateY(-15px)}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
+
+<header class="hero">
+ <div class="hpanel">
+  <div class="in">
+   <span class="tag"><span class="ar" data-edit="t3" data-edit-label="Text — دكان أرمني · باب توما">دكان أرمني · باب توما</span><span class="tr" data-edit="t4" data-edit-label="Text — Armenian deli · Bab Touma">Armenian deli · Bab Touma</span></span>
+   <h1 class="disp"><span class="ar" data-edit="t5" data-edit-label="Text — بارون هاكوب">بارون هاكوب</span><span class="tr" data-edit="t6" data-edit-label="Text — Baron Hagop">Baron Hagop</span></h1>
+   <div class="latlock"><span class="ar" data-edit="t7" data-edit-label="Text — BARON HAGOP">BARON HAGOP</span><span class="tr" data-edit="t8" data-edit-label="Text — بارون هاكوب">بارون هاكوب</span></div>
+   <div class="signband" data-edit="t9" data-edit-label="Text — SAUSAGE &amp; PASTRAMI SPECIALISTS">SAUSAGE &amp; PASTRAMI SPECIALISTS</div>
+   <p class="hero-sub"><span class="ar" data-edit="t10" data-edit-label="Text — دكان صغير على شارع باب توما، وصنعة كبي…">دكان صغير على شارع باب توما، وصنعة كبيرة: سجق وباسطرما بالوصفة الأرمنية — عالميزان، أو بسندويشة سخنة عالماشي.</span><span class="tr"><em data-edit="t11" data-edit-label="Text — A tiny shop on Bab Touma Street with a…">A tiny shop on Bab Touma Street with a big craft: sujuk and basterma the Armenian way — by the weight, or in a hot sandwich to go.</em></span></p>
+   <div class="hero-meta">
+    <span>★ <b data-edit="rating">4.8</b> <span class="ar" data-edit="t12" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t13" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">33</span> <span class="ar" data-edit="t14" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t15" data-edit-label="Text — reviews">reviews</span></span>
+    <span data-edit="addr">شارع باب توما — دمشق</span>
+   </div>
+  </div>
+ </div>
+ <div class="hphoto" role="img" aria-label="واجهة بارون هاكوب بالليل"></div>
+</header>
+
+<div class="tick" aria-hidden="true">
+ <div class="row">
+  <span class="it"><span class="ar" data-edit="t16" data-edit-label="Text — سجق أرمني">سجق أرمني</span><span class="tr" data-edit="t17" data-edit-label="Text — ARMENIAN SUJUK">ARMENIAN SUJUK</span></span>
+  <span class="it"><span class="ar" data-edit="t18" data-edit-label="Text — باسطرما">باسطرما</span><span class="tr" data-edit="t19" data-edit-label="Text — BASTERMA">BASTERMA</span></span>
+  <span class="it"><span class="ar" data-edit="t20" data-edit-label="Text — لحوم مقدّدة">لحوم مقدّدة</span><span class="tr" data-edit="t21" data-edit-label="Text — CURED MEATS">CURED MEATS</span></span>
+  <span class="it"><span class="ar" data-edit="t22" data-edit-label="Text — سندويشات سخنة">سندويشات سخنة</span><span class="tr" data-edit="t23" data-edit-label="Text — HOT SANDWICHES">HOT SANDWICHES</span></span>
+  <span class="it"><span class="ar" data-edit="t24" data-edit-label="Text — عالميزان">عالميزان</span><span class="tr" data-edit="t25" data-edit-label="Text — BY THE WEIGHT">BY THE WEIGHT</span></span>
+  <span class="it"><span class="ar" data-edit="t26" data-edit-label="Text — سجق أرمني">سجق أرمني</span><span class="tr" data-edit="t27" data-edit-label="Text — ARMENIAN SUJUK">ARMENIAN SUJUK</span></span>
+  <span class="it"><span class="ar" data-edit="t28" data-edit-label="Text — باسطرما">باسطرما</span><span class="tr" data-edit="t29" data-edit-label="Text — BASTERMA">BASTERMA</span></span>
+  <span class="it"><span class="ar" data-edit="t30" data-edit-label="Text — لحوم مقدّدة">لحوم مقدّدة</span><span class="tr" data-edit="t31" data-edit-label="Text — CURED MEATS">CURED MEATS</span></span>
+  <span class="it"><span class="ar" data-edit="t32" data-edit-label="Text — سندويشات سخنة">سندويشات سخنة</span><span class="tr" data-edit="t33" data-edit-label="Text — HOT SANDWICHES">HOT SANDWICHES</span></span>
+  <span class="it"><span class="ar" data-edit="t34" data-edit-label="Text — عالميزان">عالميزان</span><span class="tr" data-edit="t35" data-edit-label="Text — BY THE WEIGHT">BY THE WEIGHT</span></span>
+ </div>
+</div>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t36" data-edit-label="Text — حكاية الدكان">حكاية الدكان</span><span class="tr" data-edit="t37" data-edit-label="Text — The shop's story">The shop's story</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t38" data-edit-label="Text — صنعة أرمنية بقلب الشام">صنعة أرمنية بقلب الشام</span><span class="tr lat" data-edit="t39" data-edit-label="Text — An Armenian craft in the heart of Dama…">An Armenian craft in the heart of Damascus</span></h2>
+  <p><span class="ar" data-edit="story1">من ورا فيترينة صغيرة على شارع باب توما، بيشتغل بارون هاكوب بصنعة إجت مع الأرمن عالشام وصارت من نكهتها: سجق معجون بالتوم والبهارات، وباسطرما مغلّفة بالحلبة والفلفل، معلّقة صف ورا صف بالبرّاد.</span><span class="tr" data-edit="story1en"><em data-edit="t40" data-edit-label="Text — Behind a small shopfront window on Bab…">Behind a small shopfront window on Bab Touma Street, Baron Hagop works a craft that came to Damascus with the Armenians and became part of its flavour: sujuk kneaded with garlic and spice, and basterma coated in fenugreek and pepper, hanging row after row in the cold case.</em></span></p>
+  <p><span class="ar" data-edit="story2">المحل صغير والقلب كبير: كل شي بيتحضّر على مهل وبعناية، والزبون بيوخد مع سندويشته حديثاً ودوداً — عن الشام، وعن أرمينيا، وعن الأكل اللي بيلمّ الاتنين. ومو صدفة إنو ناس كتير بيقولوا إنو سندويشة السجق هون أطيب وحدة بالشام.</span><span class="tr" data-edit="story2en"><em data-edit="t41" data-edit-label="Text — The shop is small and the heart is big…">The shop is small and the heart is big: everything is prepared slowly and with care, and every sandwich comes with friendly conversation — about Damascus, about Armenia, and about the food that binds the two. It's no accident that so many say the sujuk sandwich here is the best in Damascus.</em></span></p>
+ </div>
+ <div class="ph rev"><img src="img/03.jpg" alt="لافتة بارون هاكوب وفيترينة الدكان"></div>
+</section>
+
+<div class="chc">
+ <section class="high wrap">
+  <span class="k"><span class="ar" data-edit="t42" data-edit-label="Text — من الفيترينة">من الفيترينة</span><span class="tr" data-edit="t43" data-edit-label="Text — From the counter">From the counter</span></span>
+  <h2 class="disp rev"><span class="ar" data-edit="t44" data-edit-label="Text — تلاتة عالميزان">تلاتة عالميزان</span><span class="tr lat" data-edit="t45" data-edit-label="Text — Three, on the scale">Three, on the scale</span></h2>
+  <div class="hgrid">
+   <div class="hcard rev"><img src="img/05.jpg" alt="سندويشة السجق"><div class="hb"><h3><span class="ar" data-edit="t46" data-edit-label="Text — سندويشة السجق">سندويشة السجق</span><span class="tr lat" data-edit="t47" data-edit-label="Text — The sujuk sandwich">The sujuk sandwich</span></h3><p><span class="ar" data-edit="t48" data-edit-label="Text — سجق مقلي عالسخن بخبز طازة — السندويشة …">سجق مقلي عالسخن بخبز طازة — السندويشة اللي الناس بتقطع شارع باب توما كرمالها.</span><span class="tr" data-edit="t49" data-edit-label="Text — Sujuk fried hot in fresh bread — the s…">Sujuk fried hot in fresh bread — the sandwich people cross Bab Touma Street for.</span></p></div></div>
+   <div class="hcard rev"><img src="img/04.jpg" alt="صحن تشكيلة لحوم مقددة"><div class="hb"><h3><span class="ar" data-edit="t50" data-edit-label="Text — صحن التشكيلة">صحن التشكيلة</span><span class="tr lat" data-edit="t51" data-edit-label="Text — The mixed board">The mixed board</span></h3><p><span class="ar" data-edit="t52" data-edit-label="Text — سجق وباسطرما ولحوم مقدّدة مقطّعة رقيق …">سجق وباسطرما ولحوم مقدّدة مقطّعة رقيق — صحن واحد بيشرح الصنعة كلها.</span><span class="tr" data-edit="t53" data-edit-label="Text — Sujuk, basterma and cured meats sliced…">Sujuk, basterma and cured meats sliced thin — one board that explains the whole craft.</span></p></div></div>
+   <div class="hcard rev"><img src="img/06.jpg" alt="برّاد الدكان والسجق المعلق"><div class="hb"><h3><span class="ar" data-edit="t54" data-edit-label="Text — البرّاد">البرّاد</span><span class="tr lat" data-edit="t55" data-edit-label="Text — The cold case">The cold case</span></h3><p><span class="ar" data-edit="t56" data-edit-label="Text — صفوف السجق المعلّقة ورا الزجاج — شغل ا…">صفوف السجق المعلّقة ورا الزجاج — شغل الدكان معروض قدّامكم متل ما هو.</span><span class="tr" data-edit="t57" data-edit-label="Text — Rows of sausages hanging behind the gl…">Rows of sausages hanging behind the glass — the shop's work on display, exactly as it is.</span></p></div></div>
+  </div>
+ </section>
+</div>
+
+<section class="menu wrap">
+ <h2><span class="ar" data-edit="t58" data-edit-label="Text — اللوح عالحيط">اللوح عالحيط</span><span class="tr lat" data-edit="t59" data-edit-label="Text — The board on the wall">The board on the wall</span></h2>
+ <p class="note"><span class="ar" data-edit="t60" data-edit-label="Text — أسعارنا مكتوبة عاللوح جوّا المحل — وبت…">أسعارنا مكتوبة عاللوح جوّا المحل — وبتتحدّث أول بأول</span><span class="tr"><em data-edit="t61" data-edit-label="Text — Our prices are written on the board in…">Our prices are written on the board inside the shop — kept up to date, always</em></span></p>
+ <div class="mwrap">
+  <figure class="mframe rev">
+   <img src="img/02.jpg" alt="لوح الأسعار على حيط الدكان">
+   <figcaption><span class="ar" data-edit="t62" data-edit-label="Text — اللوح — جوّا الدكان">اللوح — جوّا الدكان</span><span class="tr" data-edit="t63" data-edit-label="Text — The board — inside the shop">The board — inside the shop</span></figcaption>
+  </figure>
+  <div class="mside rev">
+   <p><span class="ar" data-edit="t64" data-edit-label="Text — ما عنا منيو مطبوع ولا لستة طويلة — عنا…">ما عنا منيو مطبوع ولا لستة طويلة — عنا لوح على الحيط، وميزان عالطاولة، وشغل بيحكي عن حالو. شو ما كان طلبكم، بينوزن ويتغلّف قدّامكم.</span><span class="tr"><em data-edit="t65" data-edit-label="Text — No printed menu and no long list here …">No printed menu and no long list here — just a board on the wall, a scale on the counter, and work that speaks for itself. Whatever you order is weighed and wrapped in front of you.</em></span></p>
+   <div class="chips">
+    <span class="chip oxc"><span class="ar" data-edit="t66" data-edit-label="Text — سجق">سجق</span><span class="tr" data-edit="t67" data-edit-label="Text — Sujuk">Sujuk</span></span>
+    <span class="chip oxc"><span class="ar" data-edit="t68" data-edit-label="Text — باسطرما">باسطرما</span><span class="tr" data-edit="t69" data-edit-label="Text — Basterma">Basterma</span></span>
+    <span class="chip"><span class="ar" data-edit="t70" data-edit-label="Text — سندويشات سخنة">سندويشات سخنة</span><span class="tr" data-edit="t71" data-edit-label="Text — Hot sandwiches">Hot sandwiches</span></span>
+    <span class="chip"><span class="ar" data-edit="t72" data-edit-label="Text — تشكيلات عالوزن">تشكيلات عالوزن</span><span class="tr" data-edit="t73" data-edit-label="Text — Selections by weight">Selections by weight</span></span>
+   </div>
+   <p class="wnote"><span class="ar" data-edit="t74" data-edit-label="Text — الأسعار حسب اللوح المعلّق داخل المحل ي…">الأسعار حسب اللوح المعلّق داخل المحل يوم الزيارة.</span><span class="tr"><em data-edit="t75" data-edit-label="Text — Prices per the board hanging in the sh…">Prices per the board hanging in the shop on the day of your visit.</em></span></p>
+  </div>
+ </div>
+</section>
+
+<section class="gal wrap">
+ <span class="k"><span class="ar" data-edit="t76" data-edit-label="Text — عدسة عالدكان">عدسة عالدكان</span><span class="tr" data-edit="t77" data-edit-label="Text — Around the shop">Around the shop</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t78" data-edit-label="Text — من ورا الفيترينة">من ورا الفيترينة</span><span class="tr lat" data-edit="t79" data-edit-label="Text — Behind the counter glass">Behind the counter glass</span></h2>
+ <div class="ggrid rev">
+  <img src="img/06.jpg" alt="السجق المعلق بالبراد">
+  <img src="img/04.jpg" alt="تشكيلة لحوم مقددة">
+  <img src="img/05.jpg" alt="سندويشة سجق على خشبة">
+  <img src="img/03.jpg" alt="واجهة الدكان">
+ </div>
+</section>
+
+<div class="chc">
+<section class="revs wrap">
+ <span class="k"><span class="ar" data-edit="t80" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t81" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t82" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t83" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
+ <div class="rgrid">
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t84" data-edit-label="Text — 'Delicious Armenian food prepared with…">"Delicious Armenian food prepared with patience and care. Very simple. Very clean. Kind staff and friendly conversation about Armenian and Syrian history."</p><div class="who" data-edit="t85" data-edit-label="Text — Sam Kimball · Google">Sam Kimball · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t86" data-edit-label="Text — 'The best sujuk sandwich in Damascus a…">"The best sujuk sandwich in Damascus and loved the warmth and hospitality of the owner — you must try it!"</p><div class="who" data-edit="t87" data-edit-label="Text — Jawaher .H · Google">Jawaher .H · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t88" data-edit-label="Text — 'Great authentic taste, must try, and …">"Great authentic taste, must try, and staff are very welcoming."</p><div class="who" data-edit="t89" data-edit-label="Text — Mustafa Albaroudi · Google">Mustafa Albaroudi · Google</div></div>
+ </div>
+ <p class="gbadge">★ <b data-edit="t90" data-edit-label="Text — 4.8 / 5">4.8 / 5</b> — <span data-edit="revcount2">33</span> <span class="ar" data-edit="t91" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t92" data-edit-label="Text — Google reviews">Google reviews</span></p>
+</section>
+</div>
+
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t93" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t94" data-edit-label="Text — Hours">Hours</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t95" data-edit-label="Text — متى تلاقونا">متى تلاقونا</span><span class="tr lat" data-edit="t96" data-edit-label="Text — When to find us">When to find us</span></h2>
+  <table class="hours">
+   <tr><td><span class="ar" data-edit="t97" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t98" data-edit-label="Text — Daily">Daily</span></td><td><span class="ar" data-edit="h-all">10:00 – 24:00</span><span class="tr" data-edit="h-all-en">10:00 – 24:00</span></td></tr>
+  </table>
+  <p style="margin-top:16px;font-size:13.5px;color:var(--mut)"><span class="ar" data-edit="h-note">الدوام من لائحة غوغل — والسندويشة بتطلع معكم عالماشي.</span><span class="tr" data-edit="t99" data-edit-label="Text — Hours as listed on Google — and the sa…">Hours as listed on Google — and the sandwich travels with you.</span></p>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="ar" data-edit="t100" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t101" data-edit-label="Text — Find us">Find us</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t102" data-edit-label="Text — على شارع باب توما">على شارع باب توما</span><span class="tr lat" data-edit="t103" data-edit-label="Text — On Bab Touma Street">On Bab Touma Street</span></h2>
+  <p class="adr" data-edit="addr2">شارع باب توما — دمشق</p>
+  <p class="tel"><span class="ar" data-edit="t104" data-edit-label="Text — اسألوا عن طلبكم قبل ما توصلوا:">اسألوا عن طلبكم قبل ما توصلوا:</span><span class="tr" data-edit="t105" data-edit-label="Text — Ask about your order before you arrive…">Ask about your order before you arrive:</span> <a href="tel:+963115446953" data-edit="phone"><span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t106" data-edit-label="Text — +963 11 544 6953">+963 11 544 6953</span></a></p>
+  <a class="btn" href="tel:+963115446953"><span class="ar" data-edit="t107" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t108" data-edit-label="Text — Call us">Call us</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=17807513910150026378" target="_blank" rel="noopener"><span class="ar" data-edit="t109" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t110" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+ </div>
+</section>
+
+<footer><span data-edit="footer">بارون هاكوب · شارع باب توما، دمشق · ‎<span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t111" data-edit-label="Text — +963 11 544 6953">+963 11 544 6953</span></span></footer>
+
+<div class="bar">
+ <a class="tray" href="tel:+963115446953" aria-label="اتصلوا ببارون هاكوب"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+ <a class="wt" href="https://www.google.com/maps?cid=17807513910150026378" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><b><span class="ar" data-edit="t112" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t113" data-edit-label="Text — Map">Map</span></b></a>
+ <a class="wt dk" href="#" onclick="document.querySelector('.menu').scrollIntoView({behavior:'smooth'});return false;"><b><span class="ar" data-edit="t114" data-edit-label="Text — اللوح">اللوح</span><span class="tr" data-edit="t115" data-edit-label="Text — The board">The board</span></b></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

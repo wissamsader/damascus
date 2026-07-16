@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>نيوترون — مطعم في باب توما، دمشق القديمة</title>
+<meta name="description" content="مطعم نيوترون في باب توما — لافتة نيون حمراء، صالة أبلق هادئة، وأطباق شامية تُقَدَّم بمحبة في قلب دمشق القديمة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--chr:#16161a;--chr2:#1e1e25;--neon:#ff2e3e;--wh:#f5f5f7;--mut:#9b9ba6;--line:#2c2c36}
+body{background:var(--chr);color:var(--wh);font:16px/1.85 'Cairo',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 5vw}
+.disp{font-family:'Cairo',sans-serif;font-weight:900}
+.lat{font-family:'Space Grotesk',sans-serif}
+.k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--neon);font-weight:700;font-family:'Space Grotesk','Cairo',sans-serif}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+html.en .ar{display:none!important}
+html:not(.en) .tr{display:none!important}
+.tr{direction:ltr;unicode-bidi:isolate}
+/* hero — the real neon sign, orbit rings */
+header{position:relative;min-height:94svh;display:flex;align-items:flex-end;overflow:clip}
+header .bg{position:absolute;inset:0;background:url('img/01.jpg') center 35%/cover no-repeat}
+header .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,22,26,.35),rgba(22,22,26,.55) 55%,var(--chr))}
+.orbits{position:absolute;inset:-12% -20%;pointer-events:none}
+.orbits i{position:absolute;left:50%;top:44%;width:130vmin;height:44vmin;margin:-22vmin 0 0 -65vmin;border:1px solid rgba(255,46,62,.4);border-radius:50%;box-shadow:0 0 26px -8px rgba(255,46,62,.5);animation:spin 26s linear infinite}
+.orbits i:nth-child(2){transform:rotate(58deg);animation-duration:38s;border-color:rgba(245,245,247,.16);box-shadow:none}
+.orbits i:nth-child(3){transform:rotate(-52deg);animation-duration:48s;border-color:rgba(255,46,62,.18);box-shadow:none}
+@keyframes spin{from{rotate:0deg}to{rotate:360deg}}
+.hero-in{position:relative;padding:0 5vw 66px;width:100%;max-width:1100px;margin:0 auto}
+.since{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--neon);color:var(--wh);border-radius:4px;padding:7px 16px;font-size:12.5px;letter-spacing:.1em;font-weight:700;margin-bottom:20px;background:rgba(22,22,26,.65)}
+.since i{width:8px;height:8px;border-radius:50%;background:var(--neon);box-shadow:0 0 10px var(--neon);display:inline-block;animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.7)}}
+h1{font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(50px,10vw,104px);line-height:1.15;text-shadow:0 0 18px rgba(255,46,62,.65),0 0 60px rgba(255,46,62,.35)}
+.hero-lat{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:.42em;color:var(--neon);font-size:clamp(13px,2vw,18px);margin-top:6px;text-transform:uppercase}
+.hero-sub{margin-top:14px;font-size:clamp(15px,2vw,19px);color:#c9c9d2;max-width:56ch}
+.hero-meta{margin-top:22px;display:flex;gap:22px;flex-wrap:wrap;font-size:13.5px;color:var(--mut)}
+.hero-meta b{color:var(--wh)}
+/* story */
+.story{display:grid;grid-template-columns:1.1fr .9fr;gap:6vw;align-items:center;padding:96px 0 70px}
+.story img{border-radius:6px;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line);box-shadow:0 0 0 1px rgba(255,46,62,.15),0 24px 60px -30px rgba(0,0,0,.8)}
+.story h2{font-size:clamp(28px,4.4vw,44px);line-height:1.35;margin:12px 0 18px}
+.story p{color:#c9c9d2;margin-bottom:14px}
+/* highlights */
+.high{padding:30px 0 10px}
+.high h2{font-size:clamp(26px,3.8vw,38px);margin:10px 0 30px}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hcard{background:var(--chr2);border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:transform .35s ease,border-color .35s ease}
+.hcard:hover{transform:translateY(-6px);border-color:var(--neon)}
+.hcard img{height:215px;width:100%;object-fit:cover}
+.hcard .hb{padding:16px 18px 20px}
+.hcard h3{font-weight:900;font-size:19px;margin-bottom:6px;color:var(--neon)}
+.hcard p{font-size:13.8px;color:var(--mut)}
+/* gallery */
+.gal{padding:70px 0 60px}
+.gal h2{font-size:clamp(26px,3.8vw,38px);margin:10px 0 26px}
+.ggrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:12px}
+.ggrid img{width:100%;height:100%;object-fit:cover;border-radius:6px;border:1px solid var(--line)}
+/* reviews */
+.revs{padding:40px 0 70px}
+.revs h2{font-size:clamp(26px,3.8vw,38px);margin-bottom:30px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rcard{background:var(--chr2);border:1px solid var(--line);border-radius:6px;padding:22px;position:relative}
+.rcard::before{content:'';position:absolute;top:0;right:0;width:34px;height:3px;background:var(--neon);border-radius:0 6px 0 0}
+.stars-row{color:var(--neon);letter-spacing:2px;font-size:14px}
+.rcard p{font-size:14.5px;color:#c9c9d2;margin:12px 0 14px;font-style:italic;font-family:'Space Grotesk','Cairo',sans-serif}
+.rcard .who{font-size:13px;color:var(--mut)}
+.gbadge{margin-top:26px;text-align:center;color:var(--mut);font-size:14px}
+.gbadge b{color:var(--wh)}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:20px 0 120px;align-items:start}
+.visit h2{font-size:clamp(26px,3.8vw,38px);margin:8px 0 20px}
+.vinfo p{margin-bottom:14px;color:#c9c9d2}
+.vinfo .adr{font-size:20px;font-weight:900;color:var(--wh)}
+.vinfo .tel{font-family:'Space Grotesk',sans-serif;font-size:17px;color:var(--wh)}
+.btn{display:inline-block;background:var(--neon);color:#16161a;font-weight:900;border-radius:6px;padding:14px 26px;text-decoration:none;margin:6px 0 0 10px;font-size:15px;box-shadow:0 0 22px -6px rgba(255,46,62,.7)}
+.btn.o{background:transparent;color:var(--wh);border:1px solid var(--line);box-shadow:none}
+footer{padding:40px 5vw 130px;text-align:center;color:#6a6a75;font-size:12.5px;border-top:1px solid var(--line)}
+@media(max-width:860px){
+ .story{grid-template-columns:1fr;gap:26px;padding-top:60px}
+ .hgrid,.rgrid{grid-template-columns:1fr}
+ .ggrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+ .visit{grid-template-columns:1fr}
+ .wrap{padding-left:5vw!important;padding-right:5vw!important}
+}
+/* orbit rail — unique bar: pill rail + pulsing electron between buttons */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:flex;align-items:center;background:#101014;border:1.5px solid var(--neon);border-radius:999px;outline:1px solid rgba(255,46,62,.3);outline-offset:5px;box-shadow:0 18px 44px -14px rgba(0,0,0,.8),0 0 30px -10px rgba(255,46,62,.6);animation:railup .7s cubic-bezier(.2,.9,.3,1.15) both .3s}
+@keyframes railup{from{transform:translateX(-50%) translateY(100px)}to{transform:translateX(-50%) translateY(0)}}
+.bar a{display:flex;align-items:center;gap:8px;padding:15px 22px;font-weight:900;font-size:14.5px;color:var(--wh);text-decoration:none;border-radius:999px}
+.bar a.call{background:var(--neon);color:#16161a;margin:4px;padding:12px 22px}
+.bar .e{width:9px;height:9px;border-radius:50%;background:var(--neon);box-shadow:0 0 12px var(--neon),0 0 26px rgba(255,46,62,.6);margin:0 4px;animation:pulse 1.6s ease-in-out infinite}
+/* AR/EN chip — neon tab */
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:1.5px solid var(--neon);font-weight:900;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:4px;line-height:1;background:#101014;color:var(--neon);font-family:'Space Grotesk','Cairo',sans-serif;box-shadow:0 0 16px -6px rgba(255,46,62,.8)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
+
+<header>
+ <div class="bg"></div>
+ <div class="orbits" aria-hidden="true"><i></i><i></i><i></i></div>
+ <div class="hero-in">
+  <span class="since"><i></i> <span class="ar" data-edit="t3" data-edit-label="Text — باب توما — دمشق القديمة">باب توما — دمشق القديمة</span><span class="tr" data-edit="t4" data-edit-label="Text — Bab Touma — Old Damascus">Bab Touma — Old Damascus</span></span>
+  <h1 class="disp"><span class="ar" data-edit="t5" data-edit-label="Text — نيوترون">نيوترون</span><span class="tr" data-edit="t6" data-edit-label="Text — NEUTRON">NEUTRON</span></h1>
+  <div class="hero-lat"><span class="ar" data-edit="t7" data-edit-label="Text — NEUTRON · RESTAURANT">NEUTRON · RESTAURANT</span><span class="tr" data-edit="t8" data-edit-label="Text — مطعم نيوترون">مطعم نيوترون</span></div>
+  <p class="hero-sub"><span class="ar" data-edit="t9" data-edit-label="Text — لافتة نيون حمراء تضيء زاروبة في باب تو…">لافتة نيون حمراء تضيء زاروبة في باب توما، وحولها وجوه كبار الطرب مرسومة على الجدار — مطعم صغير يعرفه أهل الحيّ بالاسم.</span><span class="tr lat" data-edit="t10" data-edit-label="Text — A red neon sign glowing in a Bab Touma…">A red neon sign glowing in a Bab Touma lane, ringed by portraits of the great tarab singers — a small restaurant the neighbourhood knows by name.</span></p>
+  <div class="hero-meta">
+   <span>★ <b data-edit="rating">4.5</b> <span class="ar" data-edit="t11" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t12" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">32</span> <span class="ar" data-edit="t13" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t14" data-edit-label="Text — reviews">reviews</span></span>
+   <span data-edit="addr">باب توما — دمشق القديمة</span>
+   <span class="ar" data-edit="t15" data-edit-label="Text — مطبخ شامي">مطبخ شامي</span><span class="tr" data-edit="t16" data-edit-label="Text — Damascene kitchen">Damascene kitchen</span>
+  </div>
+ </div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t17" data-edit-label="Text — حكايتنا">حكايتنا</span><span class="tr" data-edit="t18" data-edit-label="Text — Our story">Our story</span></span>
+  <h2 class="disp"><span class="ar">نيون أحمر<br>على حجر شامي.</span><span class="tr lat">Red neon<br>on Damascene stone.</span></h2>
+  <p><span class="ar" data-edit="story1">في باب توما، حيث تتلاصق البيوت القديمة وتضيق الزواريب، تلمع كلمة «نيوترون» بالنيون الأحمر فوق الباب، وتحيط بها بورتريهات مرسومة لأهل الطرب. الاسم غريب على حارة عتيقة، وهذا بالضبط سرّ حلاوته: مطعم شامي القلب، شبابي الروح.</span><span class="tr" data-edit="story1en"><em data-edit="t19" data-edit-label="Text — In Bab Touma, where the old houses lea…">In Bab Touma, where the old houses lean close and the lanes narrow, the word NEUTRON glows in red neon above the door, ringed by painted portraits of the tarab greats. An odd name for an ancient quarter — and that is exactly its charm: a restaurant Damascene at heart, young in spirit.</em></span></p>
+  <p><span class="ar" data-edit="story2">من الداخل، صالة هادئة بحجر الأبلق المقلّم وكراسٍ زرقاء، وسفرة تبدأ بالفتوش والحمص والسلطات الطازجة. زبائن المحل يعودون لأجل الأكل، ويبقون لأجل الجلسة — كما تقول تقييماتهم على غوغل.</span><span class="tr" data-edit="story2en"><em data-edit="t20" data-edit-label="Text — Inside, a quiet hall of striped ablaq …">Inside, a quiet hall of striped ablaq stone and blue chairs, and a table that opens with fattoush, hummus and fresh salads. Guests come back for the food and stay for the sitting — just as their Google reviews say.</em></span></p>
+ </div>
+ <img class="rev" src="img/05.jpg" alt="صالة نيوترون — حجر أبلق وكراسٍ زرقاء">
+</section>
+
+<section class="high wrap">
+ <span class="k"><span class="ar" data-edit="t21" data-edit-label="Text — من المطبخ">من المطبخ</span><span class="tr" data-edit="t22" data-edit-label="Text — From the kitchen">From the kitchen</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t23" data-edit-label="Text — ثلاثة من السفرة">ثلاثة من السفرة</span><span class="tr lat" data-edit="t24" data-edit-label="Text — Three from the table">Three from the table</span></h2>
+ <div class="hgrid">
+  <div class="hcard rev"><img src="img/03.jpg" alt="فتوش في سلة مقرمشة"><div class="hb"><h3><span class="ar" data-edit="t25" data-edit-label="Text — فتوش بالسلة المقرمشة">فتوش بالسلة المقرمشة</span><span class="tr lat" data-edit="t26" data-edit-label="Text — Fattoush in a crispy basket">Fattoush in a crispy basket</span></h3><p><span class="ar" data-edit="t27" data-edit-label="Text — الفتوش يوصل إلى الطاولة داخل سلة خبز م…">الفتوش يوصل إلى الطاولة داخل سلة خبز مقرمشة — تؤكل السلطة وتؤكل سلّتها.</span><span class="tr" data-edit="t28" data-edit-label="Text — Fattoush served inside a crisp bread b…">Fattoush served inside a crisp bread basket — eat the salad, then eat the basket.</span></p></div></div>
+  <div class="hcard rev"><img src="img/04.jpg" alt="صحن حمص"><div class="hb"><h3><span class="ar" data-edit="t29" data-edit-label="Text — حمص على الأصول">حمص على الأصول</span><span class="tr lat" data-edit="t30" data-edit-label="Text — Hummus, done properly">Hummus, done properly</span></h3><p><span class="ar" data-edit="t31" data-edit-label="Text — صحن الحمص الشامي بزيته وحمّصاته — بداي…">صحن الحمص الشامي بزيته وحمّصاته — بداية السفرة التي لا يُختلف عليها.</span><span class="tr" data-edit="t32" data-edit-label="Text — The Damascene hummus plate with its ol…">The Damascene hummus plate with its olive oil and whole chickpeas — the opener no one argues about.</span></p></div></div>
+  <div class="hcard rev"><img src="img/02.jpg" alt="سلطة طازجة"><div class="hb"><h3><span class="ar" data-edit="t33" data-edit-label="Text — سلطات طازجة كل يوم">سلطات طازجة كل يوم</span><span class="tr lat" data-edit="t34" data-edit-label="Text — Salads cut fresh daily">Salads cut fresh daily</span></h3><p><span class="ar" data-edit="t35" data-edit-label="Text — خضار مقطّعة على الطلب وألوان تفتح النف…">خضار مقطّعة على الطلب وألوان تفتح النفس قبل الوجبة.</span><span class="tr" data-edit="t36" data-edit-label="Text — Vegetables cut to order — colour that …">Vegetables cut to order — colour that opens the appetite before the meal.</span></p></div></div>
+ </div>
+</section>
+
+<section class="gal wrap">
+ <span class="k"><span class="ar" data-edit="t37" data-edit-label="Text — من المحل">من المحل</span><span class="tr" data-edit="t38" data-edit-label="Text — From the house">From the house</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t39" data-edit-label="Text — تحت ضوء النيون">تحت ضوء النيون</span><span class="tr lat" data-edit="t40" data-edit-label="Text — Under the neon light">Under the neon light</span></h2>
+ <div class="ggrid rev">
+  <img src="img/05.jpg" alt="الصالة من الداخل">
+  <img src="img/03.jpg" alt="فتوش السلة">
+  <img src="img/02.jpg" alt="سلطة نيوترون">
+  <img src="img/04.jpg" alt="صحن الحمص">
+ </div>
+</section>
+
+<section class="revs wrap">
+ <span class="k"><span class="ar" data-edit="t41" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t42" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t43" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t44" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
+ <div class="rgrid">
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t45" data-edit-label="Text — 'Very good restaurant with amazing ser…">"Very good restaurant with amazing service and delicious food, highly recommend!"</p><div class="who" data-edit="t46" data-edit-label="Text — Sarah H · Google">Sarah H · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t47" data-edit-label="Text — 'A special place, a quiet ambience, go…">"A special place, a quiet ambience, good food and a nice staff."</p><div class="who" data-edit="t48" data-edit-label="Text — Sam Jablawy · Google">Sam Jablawy · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t49" data-edit-label="Text — 'Good services and the food is amazing…">"Good services and the food is amazing."</p><div class="who" data-edit="t50" data-edit-label="Text — Taim D · Google">Taim D · Google</div></div>
+ </div>
+ <p class="gbadge">★ <b data-edit="t51" data-edit-label="Text — 4.5 / 5">4.5 / 5</b> — <span data-edit="revcount2">32</span> <span class="ar" data-edit="t52" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t53" data-edit-label="Text — Google reviews">Google reviews</span></p>
+</section>
+
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t54" data-edit-label="Text — قبل ما تجوا">قبل ما تجوا</span><span class="tr" data-edit="t55" data-edit-label="Text — Before you come">Before you come</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t56" data-edit-label="Text — اتصلوا قبل الزيارة">اتصلوا قبل الزيارة</span><span class="tr lat" data-edit="t57" data-edit-label="Text — Call before you visit">Call before you visit</span></h2>
+  <p style="color:#c9c9d2;margin-bottom:14px"><span class="ar" data-edit="t58" data-edit-label="Text — للاطمئنان على الدوام وحجز طاولتكم — تل…">للاطمئنان على الدوام وحجز طاولتكم — تلفون المحل يجاوب.</span><span class="tr"><em data-edit="t59" data-edit-label="Text — To check opening times and keep a tabl…">To check opening times and keep a table — the house line answers.</em></span></p>
+  <p class="tel" data-edit="phone"><span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t60" data-edit-label="Text — +963 11 544 5451">+963 11 544 5451</span></p>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="ar" data-edit="t61" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t62" data-edit-label="Text — Find us">Find us</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t63" data-edit-label="Text — قلب باب توما">قلب باب توما</span><span class="tr lat" data-edit="t64" data-edit-label="Text — Heart of Bab Touma">Heart of Bab Touma</span></h2>
+  <p class="adr" data-edit="addr2">باب توما — دمشق القديمة</p>
+  <p><span class="ar" data-edit="t65" data-edit-label="Text — ادخلوا من ساحة باب توما وخلّوا النيون …">ادخلوا من ساحة باب توما وخلّوا النيون الأحمر يدلّكم على الباب.</span><span class="tr"><em data-edit="t66" data-edit-label="Text — Come in from Bab Touma square and let …">Come in from Bab Touma square and let the red neon guide you to the door.</em></span></p>
+  <a class="btn" href="tel:+963115445451"><span class="ar" data-edit="t67" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t68" data-edit-label="Text — Call us">Call us</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=2314965255936159926" target="_blank" rel="noopener"><span class="ar" data-edit="t69" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t70" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+ </div>
+</section>
+
+<footer><span data-edit="footer">نيوترون · باب توما — دمشق القديمة · <span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t71" data-edit-label="Text — +963 11 544 5451">+963 11 544 5451</span></span></footer>
+
+<div class="bar">
+ <a class="call" href="tel:+963115445451">✆ <b><span class="ar" data-edit="t72" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t73" data-edit-label="Text — Call us">Call us</span></b></a>
+ <span class="e" aria-hidden="true"></span>
+ <a href="https://www.google.com/maps?cid=2314965255936159926" target="_blank" rel="noopener">◈ <b><span class="ar" data-edit="t74" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t75" data-edit-label="Text — Map">Map</span></b></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

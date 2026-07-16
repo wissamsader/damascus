@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>قهوة القشلة — حي الأمين، دمشق القديمة</title>
+<meta name="description" content="قهوة القشلة في حي الأمين — بيت دمشقي قديم مرمّم، قهوة وأركيلة وسندويشات حول البحرة، من الظهر حتى ما بعد منتصف الليل.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;700&family=Almarai:wght@400;700;800&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--sto:#ede4d2;--sto2:#e2d5bc;--bas:#26241f;--brs:#a98b4f;--blu:#2e5f8a;--mut:#7d6f57;--line:#d3c4a6}
+body{background:var(--sto);color:var(--bas);font:16px/1.85 'Almarai',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 5vw}
+.disp{font-family:'Reem Kufi',sans-serif;font-weight:700}
+.lat{font-family:'Archivo',sans-serif}
+.k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--blu);font-weight:800;font-family:'Archivo','Almarai',sans-serif}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+html.en .ar{display:none!important}
+html:not(.en) .tr{display:none!important}
+.tr{direction:ltr;unicode-bidi:isolate}
+/* 8-point star atoms */
+.s8{display:inline-block;width:11px;height:11px;background:var(--blu);position:relative;vertical-align:middle}
+.s8::before{content:'';position:absolute;inset:0;background:inherit;transform:rotate(45deg)}
+.s8.b{background:var(--brs)}
+.srow{display:flex;gap:22px;justify-content:center;padding:8px 0;margin:0 0 10px}
+/* hero — pointed arch over the courtyard + huge القشلة */
+header{display:grid;grid-template-columns:1fr 1.05fr;min-height:92svh;align-items:stretch;background:var(--sto) repeating-linear-gradient(90deg,rgba(38,36,31,.03) 0 2px,transparent 2px 90px)}
+.hero-type{display:flex;flex-direction:column;justify-content:center;padding:110px 5vw 60px}
+h1{font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:clamp(58px,10.5vw,120px);line-height:1.14;color:var(--bas)}
+.hero-lat{font-family:'Archivo',sans-serif;font-weight:700;letter-spacing:.34em;color:var(--brs);font-size:clamp(12px,1.6vw,16px);margin-top:8px;text-transform:uppercase}
+.hero-sub{margin-top:16px;font-size:clamp(15px,1.9vw,18.5px);color:#5b5040;max-width:46ch}
+.hero-meta{margin-top:20px;display:flex;gap:20px;flex-wrap:wrap;font-size:13.5px;color:var(--mut)}
+.hero-meta b{color:var(--bas)}
+.hero-arch{position:relative;display:flex;align-items:flex-end;padding:26px 4vw 0 5vw}
+.hero-arch img{width:100%;height:min(84svh,760px);object-fit:cover;clip-path:polygon(50% 0,72% 3%,90% 13%,100% 30%,100% 100%,0 100%,0 30%,10% 13%,28% 3%)}
+.hero-arch::after{content:'';position:absolute;inset:26px 4vw 0 5vw;clip-path:polygon(50% 0,72% 3%,90% 13%,100% 30%,100% 100%,0 100%,0 30%,10% 13%,28% 3%);box-shadow:inset 0 0 0 5px var(--brs);pointer-events:none}
+.since{display:inline-flex;align-items:center;gap:10px;border:1.5px solid var(--brs);color:#7a6231;border-radius:4px;padding:7px 15px;font-size:12.5px;letter-spacing:.06em;font-weight:800;margin-bottom:18px;background:#f5eddc;width:fit-content}
+/* story */
+.story{display:grid;grid-template-columns:1.1fr .9fr;gap:6vw;align-items:center;padding:96px 0 70px}
+.story img{border-radius:4px;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line);box-shadow:14px 14px 0 var(--sto2)}
+.story h2{font-size:clamp(28px,4.4vw,44px);line-height:1.4;margin:12px 0 18px}
+.story p{color:#5b5040;margin-bottom:14px}
+/* highlights */
+.high{padding:30px 0 10px}
+.high h2{font-size:clamp(26px,3.8vw,38px);margin:10px 0 30px}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hcard{background:#f7f0e1;border:1px solid var(--line);border-radius:4px;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease}
+.hcard:hover{transform:translateY(-6px);box-shadow:0 20px 40px -22px rgba(38,36,31,.4)}
+.hcard img{height:215px;width:100%;object-fit:cover}
+.hcard .hb{padding:16px 18px 20px;position:relative}
+.hcard .hb::before{content:'';position:absolute;top:-6px;right:18px;width:11px;height:11px;background:var(--blu);transform:rotate(0deg)}
+.hcard .hb::after{content:'';position:absolute;top:-6px;right:18px;width:11px;height:11px;background:var(--blu);transform:rotate(45deg)}
+.hcard h3{font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:19px;margin:4px 0 6px;color:var(--blu)}
+.hcard p{font-size:13.8px;color:var(--mut)}
+/* menu — priced, from their photographed card */
+.menu{margin:90px 0 70px;background:var(--bas);color:var(--sto);border-radius:6px;padding:clamp(24px,5vw,56px);position:relative}
+.menu::before{content:'';position:absolute;inset:12px;border:1px solid rgba(169,139,79,.5);border-radius:3px;pointer-events:none}
+.menu h2{font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:clamp(30px,4.6vw,46px);text-align:center;margin-bottom:6px}
+.menu .note{text-align:center;color:#b3a789;font-size:13.5px;margin-bottom:30px}
+.mlist{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;max-width:860px;margin:0 auto}
+.mi{display:flex;justify-content:space-between;gap:14px;align-items:baseline;margin-bottom:13px;font-size:15px;border-bottom:1px dashed #4a463c;padding-bottom:9px}
+.mi span{color:#e8ddc4}
+.mi b{font-weight:800;color:var(--brs);white-space:nowrap;font-family:'Archivo','Almarai',sans-serif}
+.mfoot{text-align:center;margin-top:24px;color:#b3a789;font-size:13.5px}
+/* gallery */
+.gal{padding:20px 0 60px}
+.gal h2{font-size:clamp(26px,3.8vw,38px);margin:10px 0 26px}
+.ggrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:185px;gap:12px}
+.ggrid img{width:100%;height:100%;object-fit:cover;border-radius:4px;border:1px solid var(--line)}
+/* reviews */
+.revs{padding:40px 0 70px}
+.revs h2{font-size:clamp(26px,3.8vw,38px);margin-bottom:30px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rcard{background:#f7f0e1;border:1px solid var(--line);border-radius:4px;padding:22px}
+.stars-row{color:var(--brs);letter-spacing:2px;font-size:14px}
+.rcard p{font-size:14.5px;color:#5b5040;margin:12px 0 14px;font-style:italic;font-family:'Archivo','Almarai',sans-serif}
+.rcard .who{font-size:13px;color:var(--mut)}
+.gbadge{margin-top:26px;text-align:center;color:var(--mut);font-size:14px}
+.gbadge b{color:var(--bas)}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:20px 0 130px;align-items:start}
+.visit h2{font-size:clamp(26px,3.8vw,38px);margin:8px 0 20px}
+.hours{width:100%;border-collapse:collapse;font-size:14.5px}
+.hours td{padding:9px 0;border-bottom:1px dashed var(--line);color:#5b5040}
+.hours td:last-child{text-align:left;color:var(--bas);font-weight:800}
+.vinfo p{margin-bottom:14px;color:#5b5040}
+.vinfo .adr{font-size:20px;font-family:'Reem Kufi',sans-serif;font-weight:700;color:var(--bas)}
+.vinfo .tel{font-size:16.5px;font-weight:800;color:var(--bas)}
+.btn{display:inline-block;background:var(--blu);color:#f5eddc;font-weight:800;border-radius:4px;padding:14px 26px;text-decoration:none;margin:6px 0 0 10px;font-size:15px}
+.btn.o{background:transparent;color:var(--bas);border:1.5px solid var(--brs)}
+.btn.ig svg{width:16px;height:16px;vertical-align:-3px;margin-left:6px}
+footer{padding:40px 5vw 150px;text-align:center;color:var(--mut);font-size:12.5px;border-top:1px solid var(--line)}
+@media(max-width:860px){
+ header{grid-template-columns:1fr}
+ .hero-arch{order:-1;padding:86px 5vw 0}
+ .hero-arch::after{inset:86px 5vw 0}
+ .hero-arch img{height:52svh}
+ .hero-type{padding:34px 5vw 54px}
+ .story{grid-template-columns:1fr;gap:26px;padding-top:60px}
+ .hgrid,.rgrid{grid-template-columns:1fr}
+ .mlist{grid-template-columns:1fr}
+ .ggrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+ .visit{grid-template-columns:1fr}
+ .wrap{padding-left:5vw!important;padding-right:5vw!important}
+}
+/* Qishani star-tile row — unique bar: 8-point-star buttons */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom));z-index:50;display:flex;gap:20px;align-items:center}
+.bar a{position:relative;z-index:0;width:62px;height:62px;display:grid;place-content:center;gap:2px;justify-items:center;background:var(--bas);color:var(--sto);text-decoration:none;filter:drop-shadow(0 14px 18px rgba(38,36,31,.45));animation:starin .7s cubic-bezier(.2,.9,.3,1.2) both}
+.bar a::before{content:'';position:absolute;inset:0;background:inherit;transform:rotate(45deg);z-index:-1}
+.bar a:nth-child(1){animation-delay:.25s}
+.bar a:nth-child(2){animation-delay:.37s}
+.bar a:nth-child(3){animation-delay:.49s}
+.bar a:nth-child(4){animation-delay:.61s}
+@keyframes starin{from{opacity:0;transform:translateY(90px) rotate(45deg)}to{opacity:1;transform:translateY(0) rotate(0)}}
+.bar a.wa{background:var(--brs);color:#221c10;width:70px;height:70px}
+.bar a.igb{background:var(--blu)}
+.bar a svg{width:19px;height:19px;display:block}
+.bar a small{font-size:9px;font-weight:800;letter-spacing:.04em;line-height:1;font-family:'Almarai',sans-serif}
+/* AR/EN chip — tile square */
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:1.5px solid var(--blu);font-weight:800;font-size:11.5px;letter-spacing:.14em;padding:10px 13px;border-radius:2px;line-height:1;background:#f5eddc;color:var(--blu);font-family:'Archivo','Almarai',sans-serif}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
+
+<header>
+ <div class="hero-type">
+  <span class="since"><span class="ar" data-edit="t3" data-edit-label="Text — بيت دمشقي مرمّم · حي الأمين">بيت دمشقي مرمّم · حي الأمين</span><span class="tr" data-edit="t4" data-edit-label="Text — A restored Damascene house · Al-Amin">A restored Damascene house · Al-Amin</span></span>
+  <h1><span class="ar" data-edit="t5" data-edit-label="Text — قهوة القشلة">قهوة القشلة</span><span class="tr" data-edit="t6" data-edit-label="Text — AL QISHLA">AL QISHLA</span></h1>
+  <div class="hero-lat"><span class="ar" data-edit="t7" data-edit-label="Text — AL QISHLA CAFÉ">AL QISHLA CAFÉ</span><span class="tr" data-edit="t8" data-edit-label="Text — قهوة القشلة">قهوة القشلة</span></div>
+  <p class="hero-sub"><span class="ar" data-edit="t9" data-edit-label="Text — بيت شامي قديم فتح صدره للناس: بحرة ويا…">بيت شامي قديم فتح صدره للناس: بحرة وياسمين وقناطر، وقهوة تركية بتوصل على صينية نحاس.</span><span class="tr lat" data-edit="t10" data-edit-label="Text — An old Damascene house opened to every…">An old Damascene house opened to everyone — a courtyard fountain, jasmine and arches, and Turkish coffee arriving on a brass tray.</span></p>
+  <div class="hero-meta">
+   <span>★ <b data-edit="rating">4.4</b> <span class="ar" data-edit="t11" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t12" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">178</span> <span class="ar" data-edit="t13" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t14" data-edit-label="Text — reviews">reviews</span></span>
+   <span data-edit="addr">حي الأمين — دمشق القديمة</span>
+  </div>
+ </div>
+ <div class="hero-arch"><img src="img/01.jpg" alt="باحة قهوة القشلة"></div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t15" data-edit-label="Text — حكايتنا">حكايتنا</span><span class="tr" data-edit="t16" data-edit-label="Text — Our story">Our story</span></span>
+  <h2 class="disp"><span class="ar">بيت قديم،<br>قلب شاب.</span><span class="tr lat">An old house,<br>a young heart.</span></h2>
+  <p><span class="ar" data-edit="story1">في حي الأمين، خلف باب خشبي عادي، بيت دمشقي مرمّم بمحبة: باحة سماوية حول البحرة، شمسيات وخضرة، وغرف بقناطرها وحجرها مثل ما كانت من مئات السنين. رتّبنا البيت ولا غيّرنا روحه — هيك صارت القشلة مقصد شباب الشام.</span><span class="tr" data-edit="story1en"><em data-edit="t17" data-edit-label="Text — In the Al-Amin quarter, behind an ordi…">In the Al-Amin quarter, behind an ordinary wooden door, stands a lovingly restored Damascene house: an open courtyard around the fountain, umbrellas and greenery, rooms keeping their arches and stone as they have for centuries. We arranged the house without changing its soul — and that is how Al Qishla became young Damascus' favourite.</em></span></p>
+  <p><span class="ar" data-edit="story2">القعدة بسيطة عن قصد: قهوة وأركيلة وسندويشات، وصوت المي بالبحرة. أكثر من ١٤٥ ألف متابع على إنستغرام بيشاركوا صور البيت كل يوم — بس الصورة الحقيقية بتبلّش من أول ما تدخلوا من الباب.</span><span class="tr" data-edit="story2en"><em data-edit="t18" data-edit-label="Text — The sitting is simple on purpose: coff…">The sitting is simple on purpose: coffee, shisha, sandwiches, and the sound of water in the fountain. More than 145,000 followers share the house on Instagram every day — but the real picture starts the moment you step through the door.</em></span></p>
+ </div>
+ <img class="rev" src="img/08.jpg" alt="غرفة داخلية في القشلة">
+</section>
+
+<section class="high wrap">
+ <span class="k"><span class="ar" data-edit="t19" data-edit-label="Text — حول البحرة">حول البحرة</span><span class="tr" data-edit="t20" data-edit-label="Text — Around the fountain">Around the fountain</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t21" data-edit-label="Text — ثلاثة من البيت">ثلاثة من البيت</span><span class="tr lat" data-edit="t22" data-edit-label="Text — Three from the house">Three from the house</span></h2>
+ <div class="hgrid">
+  <div class="hcard rev"><img src="img/03.jpg" alt="قهوة جانب البحرة"><div class="hb"><h3><span class="ar" data-edit="t23" data-edit-label="Text — قهوة عالبحرة">قهوة عالبحرة</span><span class="tr lat" data-edit="t24" data-edit-label="Text — Coffee by the fountain">Coffee by the fountain</span></h3><p><span class="ar" data-edit="t25" data-edit-label="Text — فنجان تركية جنب مي البحرة والورد — الق…">فنجان تركية جنب مي البحرة والورد — القعدة اللي بتتصوّر ألف مرة باليوم.</span><span class="tr" data-edit="t26" data-edit-label="Text — Turkish coffee beside the fountain and…">Turkish coffee beside the fountain and the flowers — the seat photographed a thousand times a day.</span></p></div></div>
+  <div class="hcard rev"><img src="img/05.jpg" alt="ركن تحضير القهوة"><div class="hb"><h3><span class="ar" data-edit="t27" data-edit-label="Text — ركن القهوة">ركن القهوة</span><span class="tr lat" data-edit="t28" data-edit-label="Text — The coffee corner">The coffee corner</span></h3><p><span class="ar" data-edit="t29" data-edit-label="Text — تحت الظلّة المقلّمة بينحضّر كل شي على …">تحت الظلّة المقلّمة بينحضّر كل شي على مهل — تركية وسادة ولاتيه وسحلب.</span><span class="tr" data-edit="t30" data-edit-label="Text — Under the striped awning everything is…">Under the striped awning everything is brewed without hurry — Turkish, espresso, latte and sahlab.</span></p></div></div>
+  <div class="hcard rev"><img src="img/04.jpg" alt="التراس والسهرة"><div class="hb"><h3><span class="ar" data-edit="t31" data-edit-label="Text — سهرة لبعد نص الليل">سهرة لبعد نص الليل</span><span class="tr lat" data-edit="t32" data-edit-label="Text — Evenings past midnight">Evenings past midnight</span></h3><p><span class="ar" data-edit="t33" data-edit-label="Text — البيت بيسهر لبعد منتصف الليل — سلاش با…">البيت بيسهر لبعد منتصف الليل — سلاش بارد بالصيف وسحلب سخن بالشتي.</span><span class="tr" data-edit="t34" data-edit-label="Text — The house stays up past midnight — col…">The house stays up past midnight — cold slush in summer, hot sahlab in winter.</span></p></div></div>
+ </div>
+</section>
+
+<div class="wrap">
+<section class="menu rev">
+ <h2><span class="ar" data-edit="t35" data-edit-label="Text — قائمة القشلة">قائمة القشلة</span><span class="tr lat" data-edit="t36" data-edit-label="Text — The Qishla list">The Qishla list</span></h2>
+ <p class="note"><span class="ar" data-edit="t37" data-edit-label="Text — الأسعار بالليرة السورية — من قائمة الم…">الأسعار بالليرة السورية — من قائمة المقهى المصوّرة</span><span class="tr"><em data-edit="t38" data-edit-label="Text — Prices in Syrian pounds — from the caf…">Prices in Syrian pounds — from the café's photographed menu</em></span></p>
+ <div class="mlist">
+  <div class="mi"><span><span class="ar" data-edit="t39" data-edit-label="Text — قهوة تركية">قهوة تركية</span><span class="tr" data-edit="t40" data-edit-label="Text — Turkish coffee">Turkish coffee</span></span><b data-edit="pr1">300</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t41" data-edit-label="Text — اسبريسو">اسبريسو</span><span class="tr" data-edit="t42" data-edit-label="Text — Espresso">Espresso</span></span><b data-edit="pr2">300</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t43" data-edit-label="Text — كافيه لاتيه">كافيه لاتيه</span><span class="tr" data-edit="t44" data-edit-label="Text — Café latte">Café latte</span></span><b data-edit="pr3">300</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t45" data-edit-label="Text — نسكافيه بأنواعها">نسكافيه بأنواعها</span><span class="tr" data-edit="t46" data-edit-label="Text — Nescafé, all kinds">Nescafé, all kinds</span></span><b data-edit="pr4">370</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t47" data-edit-label="Text — ميلك شيك بأنواعه">ميلك شيك بأنواعه</span><span class="tr" data-edit="t48" data-edit-label="Text — Milkshake, all kinds">Milkshake, all kinds</span></span><b data-edit="pr5">370</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t49" data-edit-label="Text — سلاش (ليمون/منغا/فيمتو)">سلاش (ليمون/منغا/فيمتو)</span><span class="tr" data-edit="t50" data-edit-label="Text — Slush (lemon / mango / Vimto)">Slush (lemon / mango / Vimto)</span></span><b data-edit="pr6">300</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t51" data-edit-label="Text — شاي">شاي</span><span class="tr" data-edit="t52" data-edit-label="Text — Tea">Tea</span></span><b data-edit="pr7">240</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t53" data-edit-label="Text — زهورات">زهورات</span><span class="tr" data-edit="t54" data-edit-label="Text — Zhourat herbal tea">Zhourat herbal tea</span></span><b data-edit="pr8">240</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t55" data-edit-label="Text — سحلب">سحلب</span><span class="tr" data-edit="t56" data-edit-label="Text — Sahlab">Sahlab</span></span><b data-edit="pr9">270</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t57" data-edit-label="Text — هوت شوكلت">هوت شوكلت</span><span class="tr" data-edit="t58" data-edit-label="Text — Hot chocolate">Hot chocolate</span></span><b data-edit="pr10">320</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t59" data-edit-label="Text — سندويشة سجق">سندويشة سجق</span><span class="tr" data-edit="t60" data-edit-label="Text — Sujuk sandwich">Sujuk sandwich</span></span><b data-edit="pr11">320</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t61" data-edit-label="Text — سندويشة لبنة">سندويشة لبنة</span><span class="tr" data-edit="t62" data-edit-label="Text — Labneh sandwich">Labneh sandwich</span></span><b data-edit="pr12">300</b></div>
+  <div class="mi"><span><span class="ar" data-edit="t63" data-edit-label="Text — سندويشة زعتر وزيت">سندويشة زعتر وزيت</span><span class="tr" data-edit="t64" data-edit-label="Text — Za'atar & oil sandwich">Za'atar & oil sandwich</span></span><b data-edit="pr13">300</b></div>
+ </div>
+ <p class="mfoot"><span class="ar" data-edit="t65" data-edit-label="Text — والأركيلة على قائمتها الخاصة — اسألوا …">والأركيلة على قائمتها الخاصة — اسألوا الصبايا والشباب بالبيت.</span><span class="tr"><em data-edit="t66" data-edit-label="Text — Shisha has its own list — ask the crew…">Shisha has its own list — ask the crew in the house.</em></span></p>
+</section>
+</div>
+
+<section class="gal wrap">
+ <div class="srow" aria-hidden="true"><span class="s8"></span><span class="s8 b"></span><span class="s8"></span></div>
+ <span class="k"><span class="ar" data-edit="t67" data-edit-label="Text — من البيت">من البيت</span><span class="tr" data-edit="t68" data-edit-label="Text — From the house">From the house</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t69" data-edit-label="Text — حجر وياسمين">حجر وياسمين</span><span class="tr lat" data-edit="t70" data-edit-label="Text — Stone and jasmine">Stone and jasmine</span></h2>
+ <div class="ggrid rev">
+  <img src="img/06.jpg" alt="جلسات القشلة">
+  <img src="img/07.jpg" alt="قهوة جانب البحرة">
+  <img src="img/02.jpg" alt="قائمة القشلة">
+  <img src="img/03.jpg" alt="تفاصيل الباحة">
+ </div>
+</section>
+
+<section class="revs wrap">
+ <span class="k"><span class="ar" data-edit="t71" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t72" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t73" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t74" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
+ <div class="rgrid">
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t75" data-edit-label="Text — 'If you're visiting Damascus, Al Qishl…">"If you're visiting Damascus, Al Qishla Café is a place you simply shouldn't miss. Set inside a beautifully restored traditional Damascene house, it perfectly captures the charm, history, and elegance of old Damascus."</p><div class="who" data-edit="t76" data-edit-label="Text — Yazan · Google">Yazan · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t77" data-edit-label="Text — 'One of the most charming places in th…">"One of the most charming places in the old city of Damascus — very authentic, renovated and decorated to present the humble, hipster-like young Damascene culture in a sophisticated historical traditional house."</p><div class="who" data-edit="t78" data-edit-label="Text — Movi · Google">Movi · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t79" data-edit-label="Text — 'One of those special places that you …">"One of those special places that you leave, but it never leaves you. A simple cafe that serves drinks, hookah and sandwiches. It screams Damascus so quietly. Love it."</p><div class="who" data-edit="t80" data-edit-label="Text — Rand Al Aaraj · Google">Rand Al Aaraj · Google</div></div>
+ </div>
+ <p class="gbadge">★ <b data-edit="t81" data-edit-label="Text — 4.4 / 5">4.4 / 5</b> — <span data-edit="revcount2">178</span> <span class="ar" data-edit="t82" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t83" data-edit-label="Text — Google reviews">Google reviews</span></p>
+</section>
+
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t84" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t85" data-edit-label="Text — Hours">Hours</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t86" data-edit-label="Text — متى تلاقونا">متى تلاقونا</span><span class="tr lat" data-edit="t87" data-edit-label="Text — When to find us">When to find us</span></h2>
+  <table class="hours">
+   <tr><td><span class="ar" data-edit="t88" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t89" data-edit-label="Text — Daily">Daily</span></td><td data-edit="h-all">12:00 — 1:30 <span class="ar" data-edit="t90" data-edit-label="Text — بعد منتصف الليل">بعد منتصف الليل</span><span class="tr" data-edit="t91" data-edit-label="Text — after midnight">after midnight</span></td></tr>
+  </table>
+  <p style="margin-top:16px;color:#7d6f57;font-size:13.5px"><span class="ar" data-edit="h-note">من الظهر حتى ما بعد منتصف الليل، كل أيام الأسبوع.</span><span class="tr" data-edit="t92" data-edit-label="Text — From noon till past midnight, every da…">From noon till past midnight, every day of the week.</span></p>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="ar" data-edit="t93" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t94" data-edit-label="Text — Find us">Find us</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t95" data-edit-label="Text — حي الأمين">حي الأمين</span><span class="tr lat" data-edit="t96" data-edit-label="Text — Al-Amin quarter">Al-Amin quarter</span></h2>
+  <p class="adr" data-edit="addr2">حي الأمين — دمشق القديمة</p>
+  <p class="tel" data-edit="phone"><span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t97" data-edit-label="Text — +963 933 810 240">+963 933 810 240</span></p>
+  <a class="btn" href="https://wa.me/963933810240?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%21%20%D8%AD%D8%A7%D8%A8%D9%8A%D9%86%20%D9%86%D8%AD%D8%AC%D8%B2%20%D8%B7%D8%A7%D9%88%D9%84%D8%A9%20%D8%B9%D9%86%D8%AF%D9%83%D9%85%20%D8%A8%D9%82%D9%87%D9%88%D8%A9%20%D8%A7%D9%84%D9%82%D8%B4%D9%84%D8%A9" target="_blank" rel="noopener"><span class="ar" data-edit="t98" data-edit-label="Text — احجزوا عالواتساب">احجزوا عالواتساب</span><span class="tr" data-edit="t99" data-edit-label="Text — Book on WhatsApp">Book on WhatsApp</span></a>
+  <a class="btn o" href="tel:+963933810240"><span class="ar" data-edit="t100" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t101" data-edit-label="Text — Call us">Call us</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=562163306595884342" target="_blank" rel="noopener"><span class="ar" data-edit="t102" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t103" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+  <a class="btn o ig" href="https://www.instagram.com/cafe_al_qishla" target="_blank" rel="noopener"><span class="ar" data-edit="t104" data-edit-label="Text — إنستغرام">إنستغرام</span><span class="tr" data-edit="t105" data-edit-label="Text — Instagram">Instagram</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+ </div>
+</section>
+
+<footer><span data-edit="footer">قهوة القشلة · حي الأمين — دمشق القديمة · <span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t106" data-edit-label="Text — +963 933 810 240">+963 933 810 240</span></span></footer>
+
+<div class="bar">
+ <a class="wa" href="https://wa.me/963933810240?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%21%20%D8%AD%D8%A7%D8%A8%D9%8A%D9%86%20%D9%86%D8%AD%D8%AC%D8%B2%20%D8%B7%D8%A7%D9%88%D9%84%D8%A9%20%D8%B9%D9%86%D8%AF%D9%83%D9%85%20%D8%A8%D9%82%D9%87%D9%88%D8%A9%20%D8%A7%D9%84%D9%82%D8%B4%D9%84%D8%A9" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07a8.2 8.2 0 0 1-2.4-1.49 9 9 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 1 1 8.38 4.63zm0-21.79C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.05 24l6.3-1.65a11.9 11.9 0 0 0 5.7 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.48-8.41A11.82 11.82 0 0 0 12.05 0z"/></svg><small><span class="ar" data-edit="t107" data-edit-label="Text — واتساب">واتساب</span><span class="tr" data-edit="t108" data-edit-label="Text — WhatsApp">WhatsApp</span></small></a>
+ <a href="tel:+963933810240" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><small><span class="ar" data-edit="t109" data-edit-label="Text — اتصال">اتصال</span><span class="tr" data-edit="t110" data-edit-label="Text — Call">Call</span></small></a>
+ <a class="igb" href="https://www.instagram.com/cafe_al_qishla" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg><small><span class="ar" data-edit="t111" data-edit-label="Text — إنستا">إنستا</span><span class="tr" data-edit="t112" data-edit-label="Text — Insta">Insta</span></small></a>
+ <a href="https://www.google.com/maps?cid=562163306595884342" target="_blank" rel="noopener" aria-label="Map"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><small><span class="ar" data-edit="t113" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t114" data-edit-label="Text — Map">Map</span></small></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

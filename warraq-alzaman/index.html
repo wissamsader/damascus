@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>وراق الزمن — باب توما، دمشق القديمة</title>
+<meta name="description" content="مطعم وراق الزمن في باب توما — بيت دمشقي قديم صار مطعماً: كبب على أصولها، فتّة بالمقلاية، وسهرة بين القناطر.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Almarai:wght@400;700&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--ink:#26221c;--ink2:#2f2a22;--paper:#eee3cb;--paper2:#e3d5b6;--tob:#a06a2f;--teal:#3f847d;--teal2:#2f6f6a;--pmut:#77664a;--mut:#a29275;--line:#453d30}
+body{background:var(--ink);color:var(--paper);font:16px/1.85 'Almarai',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 5vw}
+.disp{font-family:'Scheherazade New',serif;font-weight:700}
+.lat{font-family:'Spectral',serif;font-weight:500}
+.k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--teal);font-weight:700}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+html.en .ar{display:none!important}
+html:not(.en) .tr{display:none!important}
+.tr{direction:ltr;unicode-bidi:isolate}
+/* paper sheets */
+.sheet{background:var(--paper);color:#33291a;background-image:radial-gradient(circle 220px at 85% 8%,rgba(160,106,47,.14),transparent 70%),radial-gradient(circle 160px at 8% 92%,rgba(63,132,125,.10),transparent 70%),repeating-linear-gradient(0deg,rgba(69,61,48,.03) 0 1px,transparent 1px 6px);box-shadow:0 22px 44px -20px rgba(0,0,0,.75)}
+.torn{clip-path:polygon(0 10px,3% 2px,8% 9px,14% 0,21% 8px,29% 3px,37% 10px,45% 1px,53% 8px,61% 2px,69% 9px,77% 3px,85% 10px,92% 1px,97% 7px,100% 3px,100% calc(100% - 8px),96% 100%,88% calc(100% - 7px),79% 100%,70% calc(100% - 9px),60% calc(100% - 2px),50% calc(100% - 10px),40% calc(100% - 3px),30% calc(100% - 9px),20% calc(100% - 2px),11% calc(100% - 8px),4% calc(100% - 3px),0 calc(100% - 9px))}
+.tape{position:absolute;width:92px;height:24px;background:rgba(214,196,152,.6);box-shadow:0 2px 6px rgba(0,0,0,.2);transform:rotate(-4deg)}
+/* hero — the styled fatteh shoot under a stacked folio */
+header{position:relative;min-height:94svh;display:flex;align-items:flex-end}
+header .bg{position:absolute;inset:0;background:url('img/01.jpg') center 42%/cover no-repeat}
+header .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,34,28,.35),rgba(38,34,28,.6) 55%,var(--ink))}
+.folio{position:relative;margin:0 auto;width:100%;max-width:1100px;padding:0 5vw 60px}
+.fcard{position:relative;display:inline-block;background:var(--paper);color:#33291a;padding:30px clamp(24px,4vw,52px) 26px;transform:rotate(-1.2deg);max-width:640px}
+.fcard::before{content:'';position:absolute;inset:0;background:inherit;transform:rotate(2.2deg);z-index:-1;opacity:.55}
+.fcard .tape{top:-13px;inset-inline-start:26px}
+.since{display:inline-block;border:1.5px solid var(--tob);color:var(--tob);padding:5px 14px;font-size:12px;letter-spacing:.1em;font-weight:700;margin-bottom:12px;transform:rotate(.6deg)}
+h1{font-family:'Scheherazade New',serif;font-weight:700;font-size:clamp(50px,8.6vw,92px);line-height:1.05;color:#2c2113}
+h1 .lat{font-size:clamp(34px,5.6vw,58px);font-family:'Spectral',serif;font-weight:500}
+.hero-sub{margin-top:8px;font-size:clamp(14.5px,1.8vw,17.5px);color:#5c4c31;max-width:52ch}
+.hero-meta{margin-top:16px;display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--pmut)}
+.hero-meta b{color:#2c2113}
+/* story */
+.story{display:grid;grid-template-columns:1.1fr .9fr;gap:6vw;align-items:center;padding:96px 0 70px}
+.story .ph{position:relative;transform:rotate(1deg)}
+.story .ph img{aspect-ratio:4/5;object-fit:cover;width:100%;border:10px solid var(--paper);box-shadow:0 18px 40px -18px rgba(0,0,0,.8)}
+.story .ph .tape{top:-11px;left:50%;margin-left:-46px;transform:rotate(2deg)}
+.story h2{font-size:clamp(30px,4.6vw,48px);line-height:1.2;margin:12px 0 18px}
+.story p{color:#d5c9ae;margin-bottom:14px}
+/* highlights — pinned recipe cards */
+.high{padding:30px 0 10px}
+.high h2{font-size:clamp(28px,4.2vw,44px);margin:10px 0 30px}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hcard{position:relative;background:var(--paper);color:#33291a;padding:12px 12px 18px;transition:transform .35s ease}
+.hcard:nth-child(1){transform:rotate(-.8deg)}
+.hcard:nth-child(2){transform:rotate(.7deg)}
+.hcard:nth-child(3){transform:rotate(-.5deg)}
+.hcard:hover{transform:rotate(0) translateY(-5px)}
+.hcard .tape{top:-11px;left:50%;margin-left:-46px}
+.hcard img{height:200px;width:100%;object-fit:cover}
+.hcard h3{font-family:'Scheherazade New',serif;font-weight:700;font-size:24px;margin:12px 6px 2px;color:#2c2113;line-height:1.2}
+.hcard p{font-size:13.5px;color:#5c4c31;margin:0 6px}
+/* kitchen folio — no prices, dishes from their own plates */
+.menu{margin:90px 0 70px;position:relative;background:var(--paper);color:#33291a;padding:clamp(28px,5vw,60px)}
+.menu .tape{top:-12px;inset-inline-end:60px;transform:rotate(3deg)}
+.menu::after{content:'';position:absolute;inset:12px;border:1.5px dashed rgba(160,106,47,.5);pointer-events:none}
+.menu h2{font-family:'Scheherazade New',serif;font-weight:700;font-size:clamp(36px,5.4vw,56px);text-align:center;margin-bottom:2px;color:#2c2113}
+.menu .note{text-align:center;color:var(--pmut);font-size:13.5px;margin-bottom:32px}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:880px;margin:0 auto;position:relative;z-index:1}
+.mi{border:1px solid rgba(69,61,48,.25);padding:16px 18px;background:rgba(255,252,243,.55)}
+.mi h4{font-family:'Scheherazade New',serif;font-weight:700;font-size:22px;color:var(--teal2);margin-bottom:2px;line-height:1.2}
+.mi p{font-size:13.5px;color:#5c4c31}
+.mfoot{text-align:center;margin-top:26px;color:var(--pmut);font-size:13.5px;position:relative;z-index:1}
+/* gallery */
+.gal{padding:20px 0 60px}
+.gal h2{font-size:clamp(28px,4.2vw,44px);margin:10px 0 26px}
+.ggrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:180px;gap:14px}
+.ggrid img{width:100%;height:100%;object-fit:cover;border:6px solid var(--paper);box-shadow:0 12px 26px -14px rgba(0,0,0,.7)}
+.ggrid img:nth-child(1){grid-column:span 2;grid-row:span 2}
+.ggrid img:nth-child(odd){transform:rotate(.6deg)}
+.ggrid img:nth-child(even){transform:rotate(-.6deg)}
+/* reviews — margin notes */
+.revs{padding:40px 0 70px}
+.revs h2{font-size:clamp(28px,4.2vw,44px);margin-bottom:30px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rcard{background:var(--ink2);border:1px solid var(--line);border-inline-start:3px solid var(--teal);padding:22px}
+.stars-row{color:var(--tob);letter-spacing:2px;font-size:14px}
+.rcard p{font-size:14.5px;color:#d5c9ae;margin:12px 0 14px;font-style:italic;font-family:'Spectral',serif}
+.rcard .who{font-size:13px;color:var(--mut)}
+.gbadge{margin-top:26px;text-align:center;color:var(--mut);font-size:14px}
+.gbadge b{color:var(--paper)}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:20px 0 130px;align-items:start}
+.visit h2{font-size:clamp(28px,4.2vw,44px);margin:8px 0 20px}
+.hours{width:100%;border-collapse:collapse;font-size:14.5px}
+.hours td{padding:9px 0;border-bottom:1px dashed var(--line);color:#d5c9ae}
+.hours td:last-child{text-align:left;color:var(--paper)}
+.vinfo p{margin-bottom:14px;color:#d5c9ae}
+.vinfo .adr{font-size:22px;font-family:'Scheherazade New',serif;font-weight:700;color:var(--paper)}
+.btn{display:inline-block;background:var(--teal);color:#10201e;font-weight:700;padding:14px 26px;text-decoration:none;margin:6px 0 0 10px;font-size:15px}
+.btn.o{background:transparent;color:var(--paper);border:1px solid var(--line)}
+footer{padding:40px 5vw 150px;text-align:center;color:#7d7057;font-size:12.5px;border-top:1px solid var(--line)}
+@media(max-width:860px){
+ .story{grid-template-columns:1fr;gap:34px;padding-top:60px}
+ .hgrid,.rgrid,.mgrid{grid-template-columns:1fr}
+ .ggrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:145px}
+ .visit{grid-template-columns:1fr}
+ .wrap{padding-left:5vw!important;padding-right:5vw!important}
+}
+/* bookmark-ribbon bar — ribbons hang from a book-spine rail */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(34px + env(safe-area-inset-bottom));z-index:50;display:flex;gap:10px;align-items:flex-start;background:#1d1a14;border:1px solid var(--tob);border-radius:6px 6px 3px 3px;padding:10px 14px 0;box-shadow:0 18px 44px -14px rgba(0,0,0,.8);animation:shelf .7s cubic-bezier(.2,.9,.3,1.15) both .3s}
+@keyframes shelf{from{transform:translateX(-50%) translateY(130px)}to{transform:translateX(-50%) translateY(0)}}
+.bar::before{content:'';position:absolute;top:4px;left:8px;right:8px;height:2px;background:repeating-linear-gradient(90deg,var(--tob) 0 12px,transparent 12px 18px);opacity:.55}
+.bar a{display:flex;align-items:flex-start;justify-content:center;gap:7px;padding:14px 15px 26px;font-weight:700;font-size:13.5px;text-decoration:none;margin-bottom:-24px;clip-path:polygon(0 0,100% 0,100% 100%,50% calc(100% - 13px),0 100%);box-shadow:inset 0 -30px 24px -26px rgba(0,0,0,.5)}
+.bar a.call{background:var(--teal);color:#0e1f1d}
+.bar a.mn{background:var(--tob);color:#241605}
+.bar a.mp{background:var(--paper2);color:#3a2c14}
+/* toggle chip — dog-eared page corner */
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:none;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:10px 15px;line-height:1;background:var(--paper);color:#3a2c14;font-family:'Almarai',sans-serif;clip-path:polygon(0 0,100% 0,100% 100%,12px 100%,0 calc(100% - 12px));box-shadow:0 6px 16px rgba(0,0,0,.4)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
+
+<header>
+ <div class="bg"></div>
+ <div class="folio">
+  <div class="fcard torn">
+   <span class="tape" aria-hidden="true"></span>
+   <span class="since"><span class="ar" data-edit="t3" data-edit-label="Text — باب توما — دمشق القديمة">باب توما — دمشق القديمة</span><span class="tr" data-edit="t4" data-edit-label="Text — Bab Touma — Old Damascus">Bab Touma — Old Damascus</span></span>
+   <h1 class="disp"><span class="ar" data-edit="t5" data-edit-label="Text — وراق الزمن">وراق الزمن</span><span class="tr lat" data-edit="t6" data-edit-label="Text — Warraq Al-Zaman">Warraq Al-Zaman</span></h1>
+   <p class="hero-sub"><span class="ar" data-edit="t7" data-edit-label="Text — 'ورّاق الزمن' — كاتب أوراق الأيام. بيت…">"ورّاق الزمن" — كاتب أوراق الأيام. بيت شامي عتيق ببـاب توما صار مطعماً، وكل طبق بيطلع من مطبخه صفحة من دفتر الشام.</span><span class="tr lat"><em data-edit="t8" data-edit-label="Text — The 'scribe of time' — keeper of the d…">The "scribe of time" — keeper of the days' pages. An old Damascene house in Bab Touma turned restaurant, where every plate leaves the kitchen like a page from the city's notebook.</em></span></p>
+   <div class="hero-meta">
+    <span>★ <b data-edit="rating">4.3</b> <span class="ar" data-edit="t9" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t10" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">31</span> <span class="ar" data-edit="t11" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t12" data-edit-label="Text — reviews">reviews</span></span>
+    <span data-edit="addr">باب توما — دمشق القديمة</span>
+   </div>
+  </div>
+ </div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t13" data-edit-label="Text — حكايتنا">حكايتنا</span><span class="tr" data-edit="t14" data-edit-label="Text — Our story">Our story</span></span>
+  <h2 class="disp"><span class="ar">بيت عتيق،<br>ودفتر ما بيخلص.</span><span class="tr lat">An old house —<br>a notebook that never ends.</span></h2>
+  <p><span class="ar" data-edit="story1">بحواري باب توما، بين البيوت اللي حيطانها بتحكي، في بيت دمشقي قديم فتح بابه للسفرة: قناطر حجر، بحرة بنص الدار، وطاولات مرتّبة تحت القوس العتيق. الاسم مش صدفة — الورّاق هو اللي كان ينسخ الكتب ويحفظ الحكايات، ونحنا منحفظ حكاية الشام بصحونها.</span><span class="tr" data-edit="story1en"><em data-edit="t15" data-edit-label="Text — In the lanes of Bab Touma, among house…">In the lanes of Bab Touma, among houses whose walls do the talking, an old Damascene home opened its door to the table: stone arches, a fountain in the courtyard, tables set beneath the ancient vault. The name is no accident — the warraq was the scribe who copied books and kept the stories, and we keep the story of Damascus in its plates.</em></span></p>
+  <p><span class="ar" data-edit="story2">المطبخ بياخد وقته: كبب مدقوقة على أصولها، فتّة بتوصل بمقلايتها وهي بتغلي، ومشاوي مع صحون المقبلات حواليها. وضيوفنا بيكتبوا بالدفتر نفس السطر — أكل طيب، تقديم حلو، وناس بتخدم من قلبها.</span><span class="tr" data-edit="story2en"><em data-edit="t16" data-edit-label="Text — The kitchen takes its time: kibbeh pou…">The kitchen takes its time: kibbeh pounded the proper way, fatteh arriving in its skillet still bubbling, grills ringed with plates of mezze. And our guests keep writing the same line in the notebook — good food, lovely presentation, people who serve from the heart.</em></span></p>
+ </div>
+ <div class="ph rev"><span class="tape" aria-hidden="true"></span><img src="img/06.jpg" alt="طاولات تحت القوس العتيق"></div>
+</section>
+
+<section class="high wrap">
+ <span class="k"><span class="ar" data-edit="t17" data-edit-label="Text — من الدفتر">من الدفتر</span><span class="tr" data-edit="t18" data-edit-label="Text — From the notebook">From the notebook</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t19" data-edit-label="Text — ثلاث صفحات من المطبخ">ثلاث صفحات من المطبخ</span><span class="tr lat" data-edit="t20" data-edit-label="Text — Three pages from the kitchen">Three pages from the kitchen</span></h2>
+ <div class="hgrid">
+  <div class="hcard rev"><span class="tape" aria-hidden="true"></span><img src="img/02.jpg" alt="كبب ثلاثية"><h3><span class="ar" data-edit="t21" data-edit-label="Text — الكبة على أنواعها">الكبة على أنواعها</span><span class="tr lat" data-edit="t22" data-edit-label="Text — Kibbeh, chapter by chapter">Kibbeh, chapter by chapter</span></h3><p><span class="ar" data-edit="t23" data-edit-label="Text — مدقوقة ومحشية ومرتّبة عالصحن متل سطور …">مدقوقة ومحشية ومرتّبة عالصحن متل سطور — كل نوع صفحة لحاله.</span><span class="tr" data-edit="t24" data-edit-label="Text — Pounded, stuffed, arranged on the plat…">Pounded, stuffed, arranged on the plate like lines of script — each kind a page of its own.</span></p></div>
+  <div class="hcard rev"><span class="tape" aria-hidden="true"></span><img src="img/01.jpg" alt="فتة بالمقلاية"><h3><span class="ar" data-edit="t25" data-edit-label="Text — فتّة بالمقلاية">فتّة بالمقلاية</span><span class="tr lat" data-edit="t26" data-edit-label="Text — Fatteh in the skillet">Fatteh in the skillet</span></h3><p><span class="ar" data-edit="t27" data-edit-label="Text — بتوصل عالطاولة وهي بعدها بتغلي — سموا …">بتوصل عالطاولة وهي بعدها بتغلي — سموا عليها قبل ما تبرد.</span><span class="tr" data-edit="t28" data-edit-label="Text — It lands on the table still bubbling —…">It lands on the table still bubbling — say bismillah before it cools.</span></p></div>
+  <div class="hcard rev"><span class="tape" aria-hidden="true"></span><img src="img/03.jpg" alt="مشاوي مع مقبلات"><h3><span class="ar" data-edit="t29" data-edit-label="Text — مشاوي وصحون حوالين">مشاوي وصحون حوالين</span><span class="tr lat" data-edit="t30" data-edit-label="Text — Grills with company">Grills with company</span></h3><p><span class="ar" data-edit="t31" data-edit-label="Text — أسياخ عالفحم، بطاطا، وصحون تغميس بتكمّ…">أسياخ عالفحم، بطاطا، وصحون تغميس بتكمّل الحلقة حواليها.</span><span class="tr" data-edit="t32" data-edit-label="Text — Skewers off the coals, fries, and dipp…">Skewers off the coals, fries, and dipping plates closing the circle around them.</span></p></div>
+ </div>
+</section>
+
+<div class="wrap">
+<section class="menu rev torn" id="menu-sec">
+ <span class="tape" aria-hidden="true"></span>
+ <h2><span class="ar" data-edit="t33" data-edit-label="Text — دفتر المطبخ">دفتر المطبخ</span><span class="tr lat" data-edit="t34" data-edit-label="Text — The kitchen folio">The kitchen folio</span></h2>
+ <p class="note"><span class="ar" data-edit="t35" data-edit-label="Text — من صحون البيت المصوّرة — واسألوا عن لا…">من صحون البيت المصوّرة — واسألوا عن لائحة اليوم كاملة عند الحجز</span><span class="tr"><em data-edit="t36" data-edit-label="Text — From the house's own photographed plat…">From the house's own photographed plates — ask for the full day's list when you book</em></span></p>
+ <div class="mgrid">
+  <div class="mi"><h4><span class="ar" data-edit="t37" data-edit-label="Text — كبب شامية">كبب شامية</span><span class="tr lat" data-edit="t38" data-edit-label="Text — Damascene kibbeh">Damascene kibbeh</span></h4><p><span class="ar" data-edit="t39" data-edit-label="Text — مقلية ومشوية وعالصينية — الصنعة اللي ب…">مقلية ومشوية وعالصينية — الصنعة اللي بتنعرف من أول قضمة.</span><span class="tr" data-edit="t40" data-edit-label="Text — Fried, grilled, and on the tray — a cr…">Fried, grilled, and on the tray — a craft you recognise from the first bite.</span></p></div>
+  <div class="mi"><h4><span class="ar" data-edit="t41" data-edit-label="Text — فتّة عالأصول">فتّة عالأصول</span><span class="tr lat" data-edit="t42" data-edit-label="Text — Fatteh, the proper way">Fatteh, the proper way</span></h4><p><span class="ar" data-edit="t43" data-edit-label="Text — لبن وخبز محمّص وسمنة بتوصل بمقلايتها ا…">لبن وخبز محمّص وسمنة بتوصل بمقلايتها السخنة.</span><span class="tr" data-edit="t44" data-edit-label="Text — Yoghurt, toasted bread and ghee, serve…">Yoghurt, toasted bread and ghee, served in its hot skillet.</span></p></div>
+  <div class="mi"><h4><span class="ar" data-edit="t45" data-edit-label="Text — مشاوي ومقبلات">مشاوي ومقبلات</span><span class="tr lat" data-edit="t46" data-edit-label="Text — Grills &amp; mezze">Grills &amp; mezze</span></h4><p><span class="ar" data-edit="t47" data-edit-label="Text — أسياخ عالفحم وصحون تغميس ومقبلات بتفتح…">أسياخ عالفحم وصحون تغميس ومقبلات بتفتح السفرة.</span><span class="tr" data-edit="t48" data-edit-label="Text — Charcoal skewers with dips and starter…">Charcoal skewers with dips and starters to open the spread.</span></p></div>
+ </div>
+ <p class="mfoot"><span class="ar" data-edit="t49" data-edit-label="Text — الدار بتتسع للعزايم — احجزوا طاولتكم ب…">الدار بتتسع للعزايم — احجزوا طاولتكم بتلفون واحد.</span><span class="tr"><em data-edit="t50" data-edit-label="Text — The house holds a feast with ease — on…">The house holds a feast with ease — one phone call books your table.</em></span></p>
+</section>
+</div>
+
+<section class="gal wrap">
+ <span class="k"><span class="ar" data-edit="t51" data-edit-label="Text — من الدار">من الدار</span><span class="tr" data-edit="t52" data-edit-label="Text — From the house">From the house</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t53" data-edit-label="Text — صور مدبّسة عالحيط">صور مدبّسة عالحيط</span><span class="tr lat" data-edit="t54" data-edit-label="Text — Pictures pinned to the wall">Pictures pinned to the wall</span></h2>
+ <div class="ggrid rev">
+  <img src="img/01.jpg" alt="فتة بالمقلاية">
+  <img src="img/05.jpg" alt="أقراص كبة">
+  <img src="img/04.jpg" alt="بحرة الدار">
+  <img src="img/02.jpg" alt="كبب مشكلة">
+  <img src="img/03.jpg" alt="أسياخ مشاوي">
+ </div>
+</section>
+
+<section class="revs wrap">
+ <span class="k"><span class="ar" data-edit="t55" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t56" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t57" data-edit-label="Text — حواشي على هامش الدفتر">حواشي على هامش الدفتر</span><span class="tr lat" data-edit="t58" data-edit-label="Text — Notes in the margin">Notes in the margin</span></h2>
+ <div class="rgrid">
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t59" data-edit-label="Text — 'Good food, lovely atmosphere and grea…">"Good food, lovely atmosphere and great service from a very friendly staff."</p><div class="who" data-edit="t60" data-edit-label="Text — Joe Badr · Google">Joe Badr · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t61" data-edit-label="Text — 'Old house in ancient Damascus made in…">"Old house in ancient Damascus made into a good restaurant. Great service and the food was excellent."</p><div class="who" data-edit="t62" data-edit-label="Text — Marian Shaneh Saz · Google">Marian Shaneh Saz · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t63" data-edit-label="Text — 'Beautiful experience, nice presentati…">"Beautiful experience, nice presentation and great workers."</p><div class="who" data-edit="t64" data-edit-label="Text — Jinan Raouf · Google">Jinan Raouf · Google</div></div>
+ </div>
+ <p class="gbadge">★ <b data-edit="t65" data-edit-label="Text — 4.3 / 5">4.3 / 5</b> — <span data-edit="revcount2">31</span> <span class="ar" data-edit="t66" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t67" data-edit-label="Text — Google reviews">Google reviews</span></p>
+</section>
+
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t68" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t69" data-edit-label="Text — Hours">Hours</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t70" data-edit-label="Text — متى تلاقونا">متى تلاقونا</span><span class="tr lat" data-edit="t71" data-edit-label="Text — When to find us">When to find us</span></h2>
+  <table class="hours">
+   <tr><td><span class="ar" data-edit="t72" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t73" data-edit-label="Text — Daily">Daily</span></td><td data-edit="h-all">9:00 — 1:00 <span class="ar" data-edit="t74" data-edit-label="Text — بعد منتصف الليل">بعد منتصف الليل</span><span class="tr" data-edit="t75" data-edit-label="Text — after midnight">after midnight</span></td></tr>
+  </table>
+  <p style="margin-top:16px;color:#a29275;font-size:13.5px"><span class="ar" data-edit="h-note">من فطور الصبح لسهرة ما بعد النص — سبعة أيام بالأسبوع.</span><span class="tr" data-edit="t76" data-edit-label="Text — From breakfast to well past midnight —…">From breakfast to well past midnight — seven days a week.</span></p>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="ar" data-edit="t77" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t78" data-edit-label="Text — Find us">Find us</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t79" data-edit-label="Text — بحواري باب توما">بحواري باب توما</span><span class="tr lat" data-edit="t80" data-edit-label="Text — In the Bab Touma lanes">In the Bab Touma lanes</span></h2>
+  <p class="adr" data-edit="addr2">باب توما، دمشق القديمة</p>
+  <p><span class="ar" data-edit="t81" data-edit-label="Text — للحجز وعزايم العيلة، اتصلوا على">للحجز وعزايم العيلة، اتصلوا على</span><span class="tr" data-edit="t82" data-edit-label="Text — For bookings and family gatherings, ca…">For bookings and family gatherings, call</span> <a href="tel:+963115432526" style="color:var(--teal);font-weight:700;text-decoration:none;direction:ltr;unicode-bidi:isolate;white-space:nowrap" data-edit="phone"><span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t83" data-edit-label="Text — 011 543 2526">011 543 2526</span></a></p>
+  <a class="btn" href="tel:+963115432526"><span class="ar" data-edit="t84" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t85" data-edit-label="Text — Call us">Call us</span></a>
+  <a class="btn o" href="https://www.google.com/maps/search/%D9%85%D8%B7%D8%B9%D9%85+%D9%88%D8%B1%D8%A7%D9%82+%D8%A7%D9%84%D8%B2%D9%85%D9%86+%D8%AF%D9%85%D8%B4%D9%82" target="_blank" rel="noopener"><span class="ar" data-edit="t86" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t87" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+ </div>
+</section>
+
+<footer><span data-edit="footer">وراق الزمن · باب توما، دمشق القديمة</span> · <span dir="ltr" style="white-space:nowrap" data-edit="footer-phone">+963 11 543 2526</span></footer>
+
+<div class="bar">
+ <a class="call" href="tel:+963115432526">✆ <b><span class="ar" data-edit="t88" data-edit-label="Text — اتصلوا">اتصلوا</span><span class="tr" data-edit="t89" data-edit-label="Text — Call">Call</span></b></a>
+ <a class="mn" href="#menu-sec" onclick="document.querySelector('.menu').scrollIntoView({behavior:'smooth'});return false;">❧ <b><span class="ar" data-edit="t90" data-edit-label="Text — الدفتر">الدفتر</span><span class="tr" data-edit="t91" data-edit-label="Text — Folio">Folio</span></b></a>
+ <a class="mp" href="https://www.google.com/maps/search/%D9%85%D8%B7%D8%B9%D9%85+%D9%88%D8%B1%D8%A7%D9%82+%D8%A7%D9%84%D8%B2%D9%85%D9%86+%D8%AF%D9%85%D8%B4%D9%82" target="_blank" rel="noopener">◈ <b><span class="ar" data-edit="t92" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t93" data-edit-label="Text — Map">Map</span></b></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

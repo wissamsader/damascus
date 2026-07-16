@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>قهوة عالمفرق — جادة زغيب، القيمرية، دمشق</title>
+<meta name="description" content="قهوة عالمفرق في جادة زغيب بالقيمرية — قهوة على مفرق الزواريب، أبيات شعر مكتوبة على الفناجين، وصوت فيروز كل صباح.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Tajawal:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400;1,6..72,600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{overflow-x:clip}
+:root{--crm:#f6eee3;--crm2:#efe3d1;--esp:#4a2f23;--esp2:#37211a;--ros:#c4707e;--mut:#8f7361;--line:#ddcdb8}
+body{background:var(--crm);color:var(--esp);font:16px/1.85 'Tajawal',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 5vw}
+.disp{font-family:'Gulzar',serif;font-weight:400}
+.lat{font-family:'Newsreader',serif;font-style:italic}
+.k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ros);font-weight:700}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rev.on{opacity:1;transform:none}
+html.en .ar{display:none!important}
+html:not(.en) .tr{display:none!important}
+.tr{direction:ltr;unicode-bidi:isolate}
+/* hero — the alley facade, verse veil */
+header{position:relative;min-height:94svh;display:flex;align-items:flex-end}
+header .bg{position:absolute;inset:0;background:url('img/01.jpg') center 30%/cover no-repeat}
+header .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(74,47,35,.18),rgba(74,47,35,.42) 55%,var(--crm))}
+.hero-in{position:relative;padding:0 5vw 60px;width:100%;max-width:1100px;margin:0 auto;color:#fdf7ec}
+.since{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(253,247,236,.75);color:#fdf7ec;border-radius:30px;padding:7px 16px;font-size:12.5px;letter-spacing:.08em;font-weight:700;margin-bottom:16px;background:rgba(74,47,35,.45)}
+.since i{width:7px;height:7px;border-radius:50%;background:var(--ros);display:inline-block}
+h1{font-family:'Gulzar',serif;font-weight:400;font-size:clamp(48px,9vw,96px);line-height:1.55;text-shadow:0 2px 24px rgba(55,33,26,.55)}
+.hero-sub{margin-top:2px;font-size:clamp(15px,2vw,19px);color:#f3e6d2;max-width:56ch}
+.hero-meta{margin-top:20px;display:flex;gap:22px;flex-wrap:wrap;font-size:13.5px;color:#e0cdb4}
+.hero-meta b{color:#fdf7ec}
+/* story */
+.story{display:grid;grid-template-columns:1.1fr .9fr;gap:6vw;align-items:center;padding:90px 0 70px}
+.story img{border-radius:120px 120px 10px 10px;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--line);box-shadow:0 24px 50px -28px rgba(74,47,35,.55)}
+.story h2{font-size:clamp(32px,5vw,52px);line-height:1.7;margin:4px 0 14px}
+.story p{color:#6d5443;margin-bottom:14px}
+/* highlights */
+.high{padding:30px 0 10px}
+.high h2{font-size:clamp(28px,4.2vw,44px);line-height:1.7;margin:0 0 24px}
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hcard{background:#fdf8ef;border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease}
+.hcard:hover{transform:translateY(-6px);box-shadow:0 20px 40px -22px rgba(74,47,35,.35)}
+.hcard img{height:215px;width:100%;object-fit:cover}
+.hcard .hb{padding:16px 18px 20px}
+.hcard h3{font-family:'Gulzar',serif;font-weight:400;font-size:23px;line-height:1.6;margin-bottom:2px;color:var(--ros)}
+.hcard p{font-size:13.8px;color:var(--mut)}
+/* verse panel — their signature, no menu */
+.verse{margin:90px 0 70px;background:var(--esp);color:var(--crm);border-radius:14px;padding:clamp(28px,6vw,64px);text-align:center;position:relative;overflow:hidden}
+.verse::before{content:'❝';position:absolute;top:-28px;right:24px;font-size:170px;color:rgba(196,112,126,.22);font-family:'Newsreader',serif}
+.verse h2{font-family:'Gulzar',serif;font-weight:400;font-size:clamp(30px,4.6vw,48px);line-height:1.8;margin-bottom:10px}
+.verse p{max-width:62ch;margin:0 auto 12px;color:#e6d5bf;font-size:15.5px}
+.verse .rose{color:var(--ros);font-weight:700}
+/* gallery */
+.gal{padding:20px 0 60px}
+.gal h2{font-size:clamp(28px,4.2vw,44px);line-height:1.7;margin:0 0 22px}
+.ggrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:185px;gap:12px}
+.ggrid img{width:100%;height:100%;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+/* reviews */
+.revs{padding:40px 0 70px}
+.revs h2{font-size:clamp(28px,4.2vw,44px);line-height:1.7;margin-bottom:24px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rcard{background:#fdf8ef;border:1px solid var(--line);border-radius:10px;padding:22px;position:relative}
+.rcard::before{content:'';position:absolute;top:0;right:22px;width:26px;height:4px;background:var(--ros);border-radius:0 0 4px 4px}
+.stars-row{color:var(--ros);letter-spacing:2px;font-size:14px}
+.rcard p{font-size:14.5px;color:#6d5443;margin:12px 0 14px;font-style:italic;font-family:'Newsreader','Tajawal',serif}
+.rcard .who{font-size:13px;color:var(--mut)}
+.gbadge{margin-top:26px;text-align:center;color:var(--mut);font-size:14px}
+.gbadge b{color:var(--esp)}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:20px 0 130px;align-items:start}
+.visit h2{font-size:clamp(28px,4.2vw,44px);line-height:1.7;margin:0 0 16px}
+.hours{width:100%;border-collapse:collapse;font-size:14.5px}
+.hours td{padding:9px 0;border-bottom:1px dashed var(--line);color:#6d5443}
+.hours td:last-child{text-align:left;color:var(--esp);font-weight:700}
+.vinfo p{margin-bottom:14px;color:#6d5443}
+.vinfo .adr{font-size:24px;font-family:'Gulzar',serif;line-height:1.8;color:var(--esp)}
+.vinfo .tel{font-size:16.5px;font-weight:700;color:var(--esp)}
+.btn{display:inline-block;background:var(--esp);color:var(--crm);font-weight:700;border-radius:30px;padding:14px 28px;text-decoration:none;margin:6px 0 0 10px;font-size:15px}
+.btn.o{background:transparent;color:var(--esp);border:1.5px solid var(--esp)}
+footer{padding:40px 5vw 150px;text-align:center;color:var(--mut);font-size:12.5px;border-top:1px solid var(--line)}
+@media(max-width:860px){
+ .story{grid-template-columns:1fr;gap:26px;padding-top:56px}
+ .hgrid,.rgrid{grid-template-columns:1fr}
+ .ggrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+ .visit{grid-template-columns:1fr}
+ .wrap{padding-left:5vw!important;padding-right:5vw!important}
+}
+/* dallah-spout strip — unique bar: coffee-pot strip, saucer buttons, falling drop */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:flex;gap:12px;align-items:center;background:var(--esp);border-radius:16px 40px 40px 16px;padding:10px 14px 10px 30px;box-shadow:0 18px 44px -14px rgba(55,33,26,.6);animation:pourup .7s cubic-bezier(.2,.9,.3,1.15) both .3s}
+@keyframes pourup{from{transform:translateX(-50%) translateY(100px)}to{transform:translateX(-50%) translateY(0)}}
+.bar::before{content:'';position:absolute;right:-16px;top:12px;width:22px;height:16px;background:var(--esp);clip-path:polygon(100% 0,100% 45%,0 100%,0 55%)}
+.bar::after{content:'';position:absolute;right:22px;top:-7px;width:10px;height:10px;border-radius:50%;background:var(--ros)}
+.bar .drop{position:absolute;right:-9px;top:26px;width:6px;height:8px;border-radius:50% 50% 60% 60%;background:var(--ros);animation:drip 2.6s ease-in infinite}
+@keyframes drip{0%,55%{opacity:0;transform:translateY(0)}62%{opacity:1}88%{opacity:1;transform:translateY(20px)}100%{opacity:0;transform:translateY(26px)}}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;width:60px;height:60px;border-radius:50%;background:var(--crm);color:var(--esp);text-decoration:none;font-weight:700;font-size:10.5px;border:1.5px solid var(--crm);box-shadow:0 0 0 3px var(--esp),0 0 0 4.5px rgba(246,238,227,.55)}
+.bar a.call{background:var(--ros);border-color:var(--ros);color:#fdf7ec}
+.bar a svg{width:17px;height:17px;display:block}
+.bar a b{font-weight:700;line-height:1.2}
+/* AR/EN chip — small saucer */
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:1.5px solid var(--esp);font-weight:700;font-size:11px;letter-spacing:.12em;width:42px;height:42px;border-radius:50%;line-height:1;background:var(--crm);color:var(--esp);font-family:'Tajawal',sans-serif;box-shadow:0 0 0 3px rgba(74,47,35,.15)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
+
+<header>
+ <div class="bg"></div>
+ <div class="hero-in">
+  <span class="since"><i></i> <span class="ar" data-edit="t3" data-edit-label="Text — جادة زغيب — القيمرية، دمشق القديمة">جادة زغيب — القيمرية، دمشق القديمة</span><span class="tr" data-edit="t4" data-edit-label="Text — Zgheib Lane — Al-Qaymariyya, Old Damas…">Zgheib Lane — Al-Qaymariyya, Old Damascus</span></span>
+  <h1 class="disp"><span class="ar" data-edit="t5" data-edit-label="Text — قهوة عالمفرق">قهوة عالمفرق</span><span class="tr lat" data-edit="t6" data-edit-label="Text — Kahwet Almafraq">Kahwet Almafraq</span></h1>
+  <p class="hero-sub"><span class="ar" data-edit="t7" data-edit-label="Text — على مفرق زاروبتين بالقيمرية، قهوة صغير…">على مفرق زاروبتين بالقيمرية، قهوة صغيرة بشبابيك تركواز — فناجينها مكتوب عليها شعر، وصباحاتها على صوت فيروز.</span><span class="tr lat" data-edit="t8" data-edit-label="Text — Where two lanes fork in Al-Qaymariyya,…">Where two lanes fork in Al-Qaymariyya, a small coffee house with turquoise windows — verses of poetry on its cups, and Fairuz on the morning air.</span></p>
+  <div class="hero-meta">
+   <span>★ <b data-edit="rating">4.5</b> <span class="ar" data-edit="t9" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t10" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">84</span> <span class="ar" data-edit="t11" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t12" data-edit-label="Text — reviews">reviews</span></span>
+   <span data-edit="addr">جادة زغيب — القيمرية</span>
+   <span class="ar" data-edit="t13" data-edit-label="Text — قهوة وشعر">قهوة وشعر</span><span class="tr" data-edit="t14" data-edit-label="Text — coffee & poetry">coffee & poetry</span>
+  </div>
+ </div>
+</header>
+
+<section class="story wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t15" data-edit-label="Text — حكايتنا">حكايتنا</span><span class="tr" data-edit="t16" data-edit-label="Text — Our story">Our story</span></span>
+  <h2 class="disp"><span class="ar">قهوة على المفرق،<br>وبيت شعر على الفنجان.</span><span class="tr lat">Coffee at the fork,<br>a verse on every cup.</span></h2>
+  <p><span class="ar" data-edit="story1">اسمنا من مكاننا: قاعدين عالمفرق، حيث تفترق جادة زغيب عن زواريب القيمرية. لافتة خشب معلّقة بالهوا، شبابيك تركواز، وكراسي على الحجر — مقهى صغير بيعرف زبائنه بأساميهم، وبيسقيهم قهوة محضّرة على مهل بالدلّة.</span><span class="tr" data-edit="story1en"><em data-edit="t17" data-edit-label="Text — Our name comes from where we sit: at t…">Our name comes from where we sit: at the mafraq, the fork where Zgheib Lane parts from the alleys of Al-Qaymariyya. A wooden sign hanging in the air, turquoise windows, chairs on the stone — a small coffee house that knows its regulars by name and pours their coffee slowly from the dallah.</em></span></p>
+  <p><span class="ar" data-edit="story2">وعنّا عادة صارت توقيعنا: على كل فنجان بيت شعر مكتوب بخط اليد — بتشربوا القهوة وبتقرؤوا. الصبح فيروز، والعصر عصير طازج وموكا، والسهرة أحاديث على ضوء الزاروبة. مثل ما كتب زوّارنا: جو ما بينتسى.</span><span class="tr" data-edit="story2en"><em data-edit="t18" data-edit-label="Text — And we have a habit that became our si…">And we have a habit that became our signature: on every cup, a hand-written line of poetry — you sip, and you read. Fairuz in the morning, fresh juice and mocha in the afternoon, and evening talk under the alley light. As our guests wrote: an atmosphere you don't forget.</em></span></p>
+ </div>
+ <img class="rev" src="img/05.jpg" alt="صبّ القهوة من الدلة في فنجان الشعر">
+</section>
+
+<section class="high wrap">
+ <span class="k"><span class="ar" data-edit="t19" data-edit-label="Text — من الدلّة">من الدلّة</span><span class="tr" data-edit="t20" data-edit-label="Text — From the dallah">From the dallah</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t21" data-edit-label="Text — ثلاثة من عنّا">ثلاثة من عنّا</span><span class="tr lat" data-edit="t22" data-edit-label="Text — Three of ours">Three of ours</span></h2>
+ <div class="hgrid">
+  <div class="hcard rev"><img src="img/07.jpg" alt="فنجان مكتوب عليه شعر"><div class="hb"><h3><span class="ar" data-edit="t23" data-edit-label="Text — فنجان الشعر">فنجان الشعر</span><span class="tr lat" data-edit="t24" data-edit-label="Text — The poetry cup">The poetry cup</span></h3><p><span class="ar" data-edit="t25" data-edit-label="Text — توقيعنا — كل فنجان بيطلع من عنّا وعليه…">توقيعنا — كل فنجان بيطلع من عنّا وعليه بيت شعر، ولا فنجان بيشبه التاني.</span><span class="tr" data-edit="t26" data-edit-label="Text — Our signature — every cup leaves the c…">Our signature — every cup leaves the counter carrying a verse, and no two cups match.</span></p></div></div>
+  <div class="hcard rev"><img src="img/02.jpg" alt="قهوة على القماش الأحمر"><div class="hb"><h3><span class="ar" data-edit="t27" data-edit-label="Text — قهوة على الأصول">قهوة على الأصول</span><span class="tr lat" data-edit="t28" data-edit-label="Text — Coffee, the old way">Coffee, the old way</span></h3><p><span class="ar" data-edit="t29" data-edit-label="Text — تركية ومرّة محضّرة على مهل — القهوة عن…">تركية ومرّة محضّرة على مهل — القهوة عنّا طقس، مش طلبية.</span><span class="tr" data-edit="t30" data-edit-label="Text — Turkish and bitter Arabic coffee brewe…">Turkish and bitter Arabic coffee brewed without hurry — here coffee is a ritual, not an order.</span></p></div></div>
+  <div class="hcard rev"><img src="img/03.jpg" alt="عصير برتقال طازج"><div class="hb"><h3><span class="ar" data-edit="t31" data-edit-label="Text — عصير الصباح">عصير الصباح</span><span class="tr lat" data-edit="t32" data-edit-label="Text — Morning juice">Morning juice</span></h3><p><span class="ar" data-edit="t33" data-edit-label="Text — برتقال معصور طازج لمن بيحب يبلّش نهاره…">برتقال معصور طازج لمن بيحب يبلّش نهاره بغير القهوة — والقعدة نفسها عالمفرق.</span><span class="tr" data-edit="t34" data-edit-label="Text — Fresh-squeezed orange for those who st…">Fresh-squeezed orange for those who start the day without coffee — same seat, same fork in the lane.</span></p></div></div>
+ </div>
+</section>
+
+<div class="wrap">
+<section class="verse rev">
+ <span class="k" style="color:var(--ros)"><span class="ar" data-edit="t35" data-edit-label="Text — توقيعنا">توقيعنا</span><span class="tr" data-edit="t36" data-edit-label="Text — Our signature">Our signature</span></span>
+ <h2><span class="ar" data-edit="t37" data-edit-label="Text — اقرأوا فنجانكم">اقرأوا فنجانكم</span><span class="tr lat" data-edit="t38" data-edit-label="Text — Read your cup">Read your cup</span></h2>
+ <p><span class="ar">من زمان والشام بتكتب شعرها عالورق — نحنا منكتبه على الفناجين. بيت لكل فنجان، بخط اليد، بيتبدّل مع المزاج ومع الموسم: <span class="rose" data-edit="t39" data-edit-label="Text — شو طلعلكم اليوم؟">شو طلعلكم اليوم؟</span></span><span class="tr lat"><em>Damascus has always written its poetry on paper — we write ours on the cups. One hand-written verse per cup, changing with the mood and the season: <span class="rose" data-edit="t40" data-edit-label="Text — what will yours say today?">what will yours say today?</span></em></span></p>
+ <p><span class="ar" data-edit="t41" data-edit-label="Text — وبالصبح، القهوة إلها رفيقة دايمة: فيرو…">وبالصبح، القهوة إلها رفيقة دايمة: فيروز — عادة البيت اللي بيحكوا عنها زوّارنا بتقييماتهم.</span><span class="tr lat"><em data-edit="t42" data-edit-label="Text — And in the morning, the coffee keeps i…">And in the morning, the coffee keeps its oldest companion: Fairuz — the house habit our guests mention in their reviews.</em></span></p>
+</section>
+</div>
+
+<section class="gal wrap">
+ <span class="k"><span class="ar" data-edit="t43" data-edit-label="Text — من الزاروبة">من الزاروبة</span><span class="tr" data-edit="t44" data-edit-label="Text — From the lane">From the lane</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t45" data-edit-label="Text — تركواز وقهوة">تركواز وقهوة</span><span class="tr lat" data-edit="t46" data-edit-label="Text — Turquoise and coffee">Turquoise and coffee</span></h2>
+ <div class="ggrid rev">
+  <img src="img/04.jpg" alt="فنجان تحت الراية الحمراء">
+  <img src="img/06.jpg" alt="لاتيه ولوح الشعر الخشبي">
+  <img src="img/07.jpg" alt="فنجان الشعر عن قرب">
+  <img src="img/05.jpg" alt="الدلة والفنجان">
+ </div>
+</section>
+
+<section class="revs wrap">
+ <span class="k"><span class="ar" data-edit="t47" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t48" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t49" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t50" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
+ <div class="rgrid">
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t51" data-edit-label="Text — 'I love the atmosphere with the sound …">"I love the atmosphere with the sound of Fairuz all the time. Friendly staff."</p><div class="who" data-edit="t52" data-edit-label="Text — Mhd Wassim Al Majzoub · Google">Mhd Wassim Al Majzoub · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t53" data-edit-label="Text — 'I recently had the pleasure of dining…">"I recently had the pleasure of dining at قهوة عالمفرق, and I must say it was a delightful experience — a unique and authentic Middle Eastern journey."</p><div class="who" data-edit="t54" data-edit-label="Text — Sohanur Rahman · Google">Sohanur Rahman · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t55" data-edit-label="Text — 'Perfect atmosphere. Good location.'">"Perfect atmosphere. Good location."</p><div class="who" data-edit="t56" data-edit-label="Text — Alan Alothman · Google">Alan Alothman · Google</div></div>
+ </div>
+ <p class="gbadge">★ <b data-edit="t57" data-edit-label="Text — 4.5 / 5">4.5 / 5</b> — <span data-edit="revcount2">84</span> <span class="ar" data-edit="t58" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t59" data-edit-label="Text — Google reviews">Google reviews</span></p>
+</section>
+
+<section class="visit wrap">
+ <div class="rev">
+  <span class="k"><span class="ar" data-edit="t60" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t61" data-edit-label="Text — Hours">Hours</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t62" data-edit-label="Text — متى تلاقونا">متى تلاقونا</span><span class="tr lat" data-edit="t63" data-edit-label="Text — When to find us">When to find us</span></h2>
+  <table class="hours">
+   <tr><td><span class="ar" data-edit="t64" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t65" data-edit-label="Text — Daily">Daily</span></td><td data-edit="h-all">9:00 — 23:30</td></tr>
+  </table>
+  <p style="margin-top:16px;color:#8f7361;font-size:13.5px"><span class="ar" data-edit="h-note">مفتوح كل أيام الأسبوع — من صباحات فيروز حتى آخر السهرة.</span><span class="tr" data-edit="t66" data-edit-label="Text — Open every day — from the Fairuz morni…">Open every day — from the Fairuz mornings to the end of the evening.</span></p>
+ </div>
+ <div class="vinfo rev">
+  <span class="k"><span class="ar" data-edit="t67" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t68" data-edit-label="Text — Find us">Find us</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t69" data-edit-label="Text — عالمفرق بالقيمرية">عالمفرق بالقيمرية</span><span class="tr lat" data-edit="t70" data-edit-label="Text — At the fork, Al-Qaymariyya">At the fork, Al-Qaymariyya</span></h2>
+  <p class="adr" data-edit="addr2">جادة زغيب — القيمرية، دمشق القديمة</p>
+  <p class="tel" data-edit="phone"><span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t71" data-edit-label="Text — +963 11 544 4516">+963 11 544 4516</span></p>
+  <a class="btn" href="tel:+963115444516"><span class="ar" data-edit="t72" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t73" data-edit-label="Text — Call us">Call us</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=7499279956514164817" target="_blank" rel="noopener"><span class="ar" data-edit="t74" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t75" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+  <a class="btn o" href="https://www.facebook.com/kahwealmafrak" target="_blank" rel="noopener"><span class="ar" data-edit="t76" data-edit-label="Text — فيسبوك">فيسبوك</span><span class="tr" data-edit="t77" data-edit-label="Text — Facebook">Facebook</span></a>
+ </div>
+</section>
+
+<footer><span data-edit="footer">قهوة عالمفرق · جادة زغيب — القيمرية · <span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t78" data-edit-label="Text — +963 11 544 4516">+963 11 544 4516</span></span></footer>
+
+<div class="bar">
+ <span class="drop" aria-hidden="true"></span>
+ <a class="call" href="tel:+963115444516" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><b><span class="ar" data-edit="t79" data-edit-label="Text — اتصال">اتصال</span><span class="tr" data-edit="t80" data-edit-label="Text — Call">Call</span></b></a>
+ <a href="https://www.google.com/maps?cid=7499279956514164817" target="_blank" rel="noopener" aria-label="Map"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><b><span class="ar" data-edit="t81" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t82" data-edit-label="Text — Map">Map</span></b></a>
+ <a href="https://www.facebook.com/kahwealmafrak" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><b><span class="ar" data-edit="t83" data-edit-label="Text — فيسبوك">فيسبوك</span><span class="tr" data-edit="t84" data-edit-label="Text — FB">FB</span></b></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rev:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>
