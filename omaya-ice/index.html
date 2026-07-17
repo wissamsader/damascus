@@ -132,7 +132,9 @@ footer{padding:40px 5vw 150px;text-align:center;color:var(--mut);font-size:12.5p
 .lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:3px solid #fff;font-weight:800;font-size:11px;letter-spacing:.1em;width:46px;height:46px;border-radius:50% 50% 46% 46%;line-height:1;background:radial-gradient(circle at 32% 26%,#f08fab,var(--straw) 60%,var(--strawd));color:#fff;font-family:'Tajawal',sans-serif;box-shadow:0 8px 18px -8px rgba(201,78,112,.7)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
-</head>
+<style data-fx-orn>.hphoto::before{animation:fxblob 16s ease-in-out infinite}
+@keyframes fxblob{0%,100%{border-radius:50% 50% 46% 54%/54% 46% 54% 46%}50%{border-radius:44% 56% 52% 48%/48% 58% 42% 52%}}
+@media (prefers-reduced-motion: reduce){.hphoto::before{animation:none}}</style></head>
 <body>
 
 <button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>

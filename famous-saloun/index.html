@@ -170,7 +170,10 @@ footer{padding:40px 5vw 130px;text-align:center;color:#6E6858;font-size:12.5px;b
 @media(max-width:480px){.sgrid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.fmarks{grid-template-columns:1fr}.bar .bcrest{display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
-</head>
+<style data-fx-orn>.crest{overflow:hidden}
+.crest::after{content:'';position:absolute;top:-20%;left:-70%;width:42%;height:140%;background:linear-gradient(105deg,transparent,rgba(255,250,235,.5),transparent);transform:skewX(-18deg);animation:fxglint 13s ease-in-out infinite}
+@keyframes fxglint{0%,86%{left:-70%}97%,100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.crest::after{animation:none}}</style></head>
 <body>
 
 <button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>

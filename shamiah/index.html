@@ -113,7 +113,9 @@ footer{padding:40px 5vw 150px;text-align:center;color:var(--mut);font-size:12.5p
 .lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:2px solid var(--gold);font-weight:800;font-size:11px;letter-spacing:.1em;width:46px;height:46px;border-radius:50%;line-height:1;background:var(--dam2);color:var(--gold2);font-family:'Tajawal',sans-serif}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
-</head>
+<style data-fx-orn>.rosette::before{animation:fxrosette 100s linear infinite}
+@keyframes fxrosette{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.rosette::before{animation:none}}</style></head>
 <body>
 
 <button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
