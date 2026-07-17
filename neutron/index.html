@@ -26,16 +26,21 @@ html:not(.en) .tr{display:none!important}
 .tr{direction:ltr;unicode-bidi:isolate}
 .num{direction:ltr;unicode-bidi:isolate;white-space:nowrap}
 
-/* ===== HERO — full-screen neon poster, capped, stacked type ===== */
-header{position:relative;min-height:clamp(600px,92svh,820px);max-height:860px;display:flex;align-items:flex-end;overflow:hidden;background:var(--chr)}
-header .bg{position:absolute;inset:0;background:url('img/01.jpg') center 30%/cover no-repeat}
-header .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,22,26,.36) 0%,rgba(22,22,26,.4) 40%,rgba(22,22,26,.75) 74%,var(--chr) 100%)}
+/* ===== HERO — dark stage, giant type + CONTAINED neon poster panel (no full-bleed photo) ===== */
+header{position:relative;min-height:clamp(600px,92svh,820px);max-height:860px;display:flex;align-items:center;overflow:hidden;background:
+ radial-gradient(900px 460px at 82% 18%,rgba(255,46,62,.13),transparent 60%),
+ radial-gradient(700px 420px at 8% 88%,rgba(255,46,62,.07),transparent 60%),var(--chr)}
+.hero-grid{position:relative;z-index:2;width:100%;max-width:1180px;margin:0 auto;padding:96px 5vw 70px;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(26px,4vw,60px);align-items:center}
+.hposter{position:relative;justify-self:center;width:clamp(260px,26vw,390px);transform:rotate(-2.2deg)}
+.hposter img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 32%;display:block;border-radius:8px}
+.hposter::before{content:'';position:absolute;inset:-10px;border:1.5px solid rgba(255,46,62,.55);border-radius:12px;box-shadow:0 0 34px -6px rgba(255,46,62,.55),inset 0 0 26px -14px rgba(255,46,62,.5);pointer-events:none}
+.hposter .ptag{position:absolute;bottom:-15px;right:-10px;transform:rotate(2.2deg);background:var(--neon);color:var(--wh);font:700 11.5px/1 'Space Grotesk',sans-serif;letter-spacing:.16em;padding:9px 14px;border-radius:4px;box-shadow:0 0 22px -6px rgba(255,46,62,.8)}
 .orbits{position:absolute;inset:-12% -20%;pointer-events:none}
 .orbits i{position:absolute;left:50%;top:44%;width:130vmin;height:44vmin;margin:-22vmin 0 0 -65vmin;border:1px solid rgba(255,46,62,.38);border-radius:50%;box-shadow:0 0 26px -8px rgba(255,46,62,.5);animation:spin 26s linear infinite}
 .orbits i:nth-child(2){transform:rotate(58deg);animation-duration:38s;border-color:rgba(245,245,247,.14);box-shadow:none}
 .orbits i:nth-child(3){transform:rotate(-52deg);animation-duration:48s;border-color:rgba(255,46,62,.16);box-shadow:none}
 @keyframes spin{from{rotate:0deg}to{rotate:360deg}}
-.hero-in{position:relative;z-index:2;padding:0 5vw 60px;width:100%;max-width:1100px;margin:0 auto}
+.hero-in{position:relative}
 .since{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--neon);color:var(--wh);border-radius:999px;padding:7px 16px;font-size:12.5px;letter-spacing:.08em;font-weight:700;margin-bottom:22px;background:rgba(22,22,26,.65)}
 .since i{width:8px;height:8px;border-radius:50%;background:var(--neon);box-shadow:0 0 10px var(--neon);display:inline-block;animation:pulse 2.2s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.7)}}
@@ -48,21 +53,22 @@ h1{font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(56px,11vw,120p
 .scrolldown i{position:absolute;left:50%;top:6px;width:3px;height:7px;margin-left:-1.5px;border-radius:2px;background:var(--neon);animation:sc 1.8s ease-in-out infinite}
 @keyframes sc{0%{opacity:1;top:6px}70%{opacity:0;top:16px}100%{opacity:0;top:6px}}
 
-/* ===== BANDS — alternating full-bleed poster bands, no cards ===== */
-.band{position:relative;height:clamp(440px,58vw,660px);display:flex;align-items:flex-end;overflow:hidden}
-.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.band .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,22,26,.15) 0%,rgba(22,22,26,.28) 45%,rgba(22,22,26,.92) 100%)}
-.band .bidx{position:absolute;top:24px;direction:ltr;unicode-bidi:isolate;font:700 11.5px/1 'Space Grotesk',sans-serif;letter-spacing:.2em;color:rgba(245,245,247,.7);border:1px solid rgba(245,245,247,.28);border-radius:999px;padding:7px 13px;background:rgba(22,22,26,.45)}
-.band.r .bidx{right:5vw}
-.band.l .bidx{left:5vw}
-.bcap{position:relative;z-index:2;width:100%;max-width:1100px;margin:0 auto;padding:0 5vw 42px}
-.band.r .bcap{text-align:right}
-.band.l .bcap{text-align:left}
-.word{font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(58px,11vw,140px);line-height:.92;color:var(--wh);text-shadow:0 0 26px rgba(255,46,62,.55),0 0 60px rgba(255,46,62,.28)}
+/* ===== BANDS — alternating poster panels: giant word + CONTAINED framed shot ===== */
+.band{position:relative;padding:74px 0 30px}
+.band+.band{border-top:1px solid rgba(255,46,62,.12)}
+.bwrap{position:relative;width:100%;max-width:1100px;margin:0 auto;padding:0 5vw}
+.band.r .bwrap{text-align:right}
+.band.l .bwrap{text-align:left}
+.band .bidx{position:absolute;top:6px;direction:ltr;unicode-bidi:isolate;font:700 11.5px/1 'Space Grotesk',sans-serif;letter-spacing:.2em;color:rgba(245,245,247,.7);border:1px solid rgba(245,245,247,.28);border-radius:999px;padding:7px 13px;background:rgba(22,22,26,.45)}
+.band.r .bidx{left:5vw}
+.band.l .bidx{right:5vw}
+.word{position:relative;z-index:2;font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(58px,10vw,128px);line-height:.94;color:var(--wh);text-shadow:0 0 26px rgba(255,46,62,.55),0 0 60px rgba(255,46,62,.28);margin-bottom:-22px}
 .word.outline{-webkit-text-stroke:2px var(--neon);color:rgba(255,46,62,.1);text-shadow:none}
-.cap{margin-top:14px;font-size:clamp(14.5px,1.7vw,16.5px);color:#dcdce2;max-width:46ch}
-.band.r .cap{margin-right:0;margin-left:auto}
-.band.l .cap{margin-left:0;margin-right:auto}
+.band .ph{position:relative;display:block;max-width:820px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,46,62,.4);box-shadow:0 30px 70px -30px rgba(255,46,62,.45),0 0 40px -18px rgba(255,46,62,.5)}
+.band.r .ph{margin-left:auto;margin-right:0}
+.band.l .ph{margin-right:auto;margin-left:0}
+.band .ph img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.cap{margin-top:16px;font-size:clamp(14.5px,1.7vw,16.5px);color:#dcdce2;max-width:46ch;display:inline-block}
 
 /* ===== MENU — neon-tube list, zero cards ===== */
 .tube-sec{padding:104px 0 92px}
@@ -118,11 +124,14 @@ footer{padding:40px 5vw 130px;text-align:center;color:#6a6a75;font-size:12.5px;b
  .tseam::before,.tseam::after{top:-11px;bottom:auto}
  .tseam::before{inset-inline-start:-11px}
  .tseam::after{inset-inline-start:auto;inset-inline-end:-11px}
+ .hero-grid{grid-template-columns:1fr;gap:38px;padding-top:88px}
+ .hposter{width:min(72vw,330px)}
+ header{max-height:none;min-height:0}
  .wrap{padding-left:5vw!important;padding-right:5vw!important}
 }
 @media(max-width:600px){
- .word{font-size:clamp(46px,15vw,72px)}
- .band{height:clamp(400px,74vw,560px)}
+ .word{font-size:clamp(46px,15vw,72px);margin-bottom:-12px}
+ .band{padding:56px 0 22px}
  .trow{padding:15px 12px 15px 20px}
 }
 
@@ -142,118 +151,119 @@ footer{padding:40px 5vw 130px;text-align:center;color:#6a6a75;font-size:12.5px;b
 <button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
 
 <header>
- <div class="bg"></div>
  <div class="orbits" aria-hidden="true"><i></i><i></i><i></i></div>
- <div class="hero-in">
-  <span class="since"><i></i> <span class="ar" data-edit="t3" data-edit-label="Text — باب توما — دمشق القديمة">باب توما — دمشق القديمة</span><span class="tr" data-edit="t4" data-edit-label="Text — Bab Touma — Old Damascus">Bab Touma — Old Damascus</span></span>
-  <h1 class="disp"><span class="ar" data-edit="t5" data-edit-label="Text — نيوترون">نيوترون</span><span class="tr" data-edit="t6" data-edit-label="Text — NEUTRON">NEUTRON</span></h1>
-  <p class="pline"><span class="ar" data-edit="t7" data-edit-label="Text — نيون أحمر · وجوه الطرب · مطبخ شامي">نيون أحمر · وجوه الطرب · مطبخ شامي</span><span class="tr" data-edit="t8" data-edit-label="Text — RED NEON · TARAB FACES · DAMASCENE KIT…">RED NEON · TARAB FACES · DAMASCENE KITCHEN</span></p>
-  <p class="hero-sub"><span class="ar" data-edit="t9" data-edit-label="Text — لافتة نيون حمراء تضيء زاروبة في باب تو…">لافتة نيون حمراء تضيء زاروبة في باب توما، وحولها بورتريهات لأعلام الطرب مرسومة على الحجر — مطعم صغير عرفته الحارة بالاسم قبل ما تعرفه الخريطة.</span><span class="tr lat" data-edit="t10" data-edit-label="Text — A red neon sign glows in a Bab Touma l…">A red neon sign glows in a Bab Touma lane, ringed by painted portraits of tarab's greats — a small restaurant the neighbourhood knew by name long before the map did.</span></p>
-  <div class="hero-meta">
-   <span><span class="num" dir="ltr">★ <b data-edit="rating">4.5</b></span> <span class="ar" data-edit="t11" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t12" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">32</span> <span class="ar" data-edit="t13" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t14" data-edit-label="Text — reviews">reviews</span></span>
-   <span data-edit="addr">باب توما — دمشق القديمة</span>
+ <div class="hero-grid">
+  <div class="hero-in">
+   <span class="since"><i></i> <span class="ar" data-edit="t3" data-edit-label="Text — باب توما — دمشق القديمة">باب توما — دمشق القديمة</span><span class="tr" data-edit="t4" data-edit-label="Text — Bab Touma — Old Damascus">Bab Touma — Old Damascus</span></span>
+   <h1 class="disp"><span class="ar" data-edit="t5" data-edit-label="Text — نيوترون">نيوترون</span><span class="tr" data-edit="t6" data-edit-label="Text — NEUTRON">NEUTRON</span></h1>
+   <p class="pline"><span class="ar" data-edit="t7" data-edit-label="Text — نيون أحمر · وجوه الطرب · مطبخ شامي">نيون أحمر · وجوه الطرب · مطبخ شامي</span><span class="tr" data-edit="t8" data-edit-label="Text — RED NEON · TARAB FACES · DAMASCENE KIT…">RED NEON · TARAB FACES · DAMASCENE KITCHEN</span></p>
+   <p class="hero-sub"><span class="ar" data-edit="t9" data-edit-label="Text — لافتة نيون حمراء تضيء زاروبة في باب تو…">لافتة نيون حمراء تضيء زاروبة في باب توما، وحولها بورتريهات لأعلام الطرب مرسومة على الحجر — مطعم صغير عرفته الحارة بالاسم قبل ما تعرفه الخريطة.</span><span class="tr lat" data-edit="t10" data-edit-label="Text — A red neon sign glows in a Bab Touma l…">A red neon sign glows in a Bab Touma lane, ringed by painted portraits of tarab's greats — a small restaurant the neighbourhood knew by name long before the map did.</span></p>
+   <div class="hero-meta">
+    <span><span class="num" dir="ltr">★ <b data-edit="rating">4.5</b></span> <span class="ar" data-edit="t11" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t12" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">32</span> <span class="ar" data-edit="t13" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t14" data-edit-label="Text — reviews">reviews</span></span>
+    <span data-edit="addr">باب توما — دمشق القديمة</span>
+   </div>
   </div>
+  <figure class="hposter">
+   <img src="img/01.jpg" alt="لافتة نيوترون النيون وبورتريهات أعلام الطرب على الحجر">
+   <span class="ptag"><span class="ar" data-edit="t15" data-edit-label="Text — اللافتة نفسها">اللافتة نفسها</span><span class="tr" data-edit="t16" data-edit-label="Text — THE SIGN ITSELF">THE SIGN ITSELF</span></span>
+  </figure>
  </div>
  <div class="scrolldown" aria-hidden="true"><i></i></div>
 </header>
 
 <div class="band r">
- <img src="img/06.jpg" alt="فتوش نيوترون في سلة خبز مقرمشة" loading="lazy">
- <div class="scrim"></div>
- <span class="bidx" data-edit="t15" data-edit-label="Text — 01 / 04">01 / 04</span>
- <div class="bcap rev">
-  <div class="word"><span class="ar" data-edit="t16" data-edit-label="Text — فتّوش">فتّوش</span><span class="tr" data-edit="t17" data-edit-label="Text — FATTOUSH">FATTOUSH</span></div>
-  <p class="cap"><span class="ar" data-edit="t18" data-edit-label="Text — فتوش يوصل بسلة خبز مقرمشة — تتاكل السل…">فتوش يوصل بسلة خبز مقرمشة — تتاكل السلطة وتتاكل سلّتها.</span><span class="tr" data-edit="t19" data-edit-label="Text — Arrives in a crispy bread basket — eat…">Arrives in a crispy bread basket — eat the salad, then eat the basket.</span></p>
+ <div class="bwrap rev">
+  <span class="bidx" data-edit="t17" data-edit-label="Text — 01 / 04">01 / 04</span>
+  <div class="word"><span class="ar" data-edit="t18" data-edit-label="Text — فتّوش">فتّوش</span><span class="tr" data-edit="t19" data-edit-label="Text — FATTOUSH">FATTOUSH</span></div>
+  <figure class="ph"><img src="img/07.jpg" alt="فتوش نيوترون في سلة خبز مقرمشة" loading="lazy"></figure>
+  <p class="cap"><span class="ar" data-edit="t20" data-edit-label="Text — فتوش يوصل بسلة خبز مقرمشة — تتاكل السل…">فتوش يوصل بسلة خبز مقرمشة — تتاكل السلطة وتتاكل سلّتها.</span><span class="tr" data-edit="t21" data-edit-label="Text — Arrives in a crispy bread basket — eat…">Arrives in a crispy bread basket — eat the salad, then eat the basket.</span></p>
  </div>
 </div>
 
 <div class="band l">
- <img src="img/04.jpg" alt="صحن حمص نيوترون بزيت الزيتون" loading="lazy">
- <div class="scrim"></div>
- <span class="bidx" data-edit="t20" data-edit-label="Text — 02 / 04">02 / 04</span>
- <div class="bcap rev">
-  <div class="word outline"><span class="ar" data-edit="t21" data-edit-label="Text — حمّص">حمّص</span><span class="tr" data-edit="t22" data-edit-label="Text — HUMMUS">HUMMUS</span></div>
-  <p class="cap"><span class="ar" data-edit="t23" data-edit-label="Text — حمص شامي بزيت الزيتون وحبّة كاملة، ونع…">حمص شامي بزيت الزيتون وحبّة كاملة، ونعنع طازة وليمون.</span><span class="tr" data-edit="t24" data-edit-label="Text — Damascene hummus — whole chickpeas, go…">Damascene hummus — whole chickpeas, good oil, fresh mint and lemon.</span></p>
+ <div class="bwrap rev">
+  <span class="bidx" data-edit="t22" data-edit-label="Text — 02 / 04">02 / 04</span>
+  <div class="word outline"><span class="ar" data-edit="t23" data-edit-label="Text — حمّص">حمّص</span><span class="tr" data-edit="t24" data-edit-label="Text — HUMMUS">HUMMUS</span></div>
+  <figure class="ph"><img src="img/08.jpg" alt="صحن حمص نيوترون بزيت الزيتون" loading="lazy"></figure>
+  <p class="cap"><span class="ar" data-edit="t25" data-edit-label="Text — حمص شامي بزيت الزيتون وحبّة كاملة، ونع…">حمص شامي بزيت الزيتون وحبّة كاملة، ونعنع طازة وليمون.</span><span class="tr" data-edit="t26" data-edit-label="Text — Damascene hummus — whole chickpeas, go…">Damascene hummus — whole chickpeas, good oil, fresh mint and lemon.</span></p>
  </div>
 </div>
 
 <div class="band r">
- <img src="img/02.jpg" alt="سلطة دجاج نيوترون بصلصة كريمية" loading="lazy">
- <div class="scrim"></div>
- <span class="bidx" data-edit="t25" data-edit-label="Text — 03 / 04">03 / 04</span>
- <div class="bcap rev">
-  <div class="word"><span class="ar" data-edit="t26" data-edit-label="Text — سلطة">سلطة</span><span class="tr" data-edit="t27" data-edit-label="Text — SALAD">SALAD</span></div>
-  <p class="cap"><span class="ar" data-edit="t28" data-edit-label="Text — سلطة دجاج مشوي بصلصة كريمية وجبنة مبرو…">سلطة دجاج مشوي بصلصة كريمية وجبنة مبروشة.</span><span class="tr" data-edit="t29" data-edit-label="Text — Grilled chicken salad, creamy dressing…">Grilled chicken salad, creamy dressing, shaved cheese.</span></p>
+ <div class="bwrap rev">
+  <span class="bidx" data-edit="t27" data-edit-label="Text — 03 / 04">03 / 04</span>
+  <div class="word"><span class="ar" data-edit="t28" data-edit-label="Text — سلطة">سلطة</span><span class="tr" data-edit="t29" data-edit-label="Text — SALAD">SALAD</span></div>
+  <figure class="ph"><img src="img/09.jpg" alt="سلطة دجاج نيوترون بصلصة كريمية" loading="lazy"></figure>
+  <p class="cap"><span class="ar" data-edit="t30" data-edit-label="Text — سلطة دجاج مشوي بصلصة كريمية وجبنة مبرو…">سلطة دجاج مشوي بصلصة كريمية وجبنة مبروشة.</span><span class="tr" data-edit="t31" data-edit-label="Text — Grilled chicken salad, creamy dressing…">Grilled chicken salad, creamy dressing, shaved cheese.</span></p>
  </div>
 </div>
 
 <div class="band l">
- <img src="img/05.jpg" alt="صالة نيوترون — حجر أبلق وكراسٍ زرقاء" loading="lazy">
- <div class="scrim"></div>
- <span class="bidx" data-edit="t30" data-edit-label="Text — 04 / 04">04 / 04</span>
- <div class="bcap rev">
-  <div class="word outline"><span class="ar" data-edit="t31" data-edit-label="Text — الجلسة">الجلسة</span><span class="tr" data-edit="t32" data-edit-label="Text — THE ROOM">THE ROOM</span></div>
-  <p class="cap"><span class="ar" data-edit="t33" data-edit-label="Text — صالة أبلق هادئة وكراسٍ زرقاء تحت ضوء خ…">صالة أبلق هادئة وكراسٍ زرقاء تحت ضوء خافت.</span><span class="tr" data-edit="t34" data-edit-label="Text — A quiet ablaq hall and blue chairs und…">A quiet ablaq hall and blue chairs under low light.</span></p>
+ <div class="bwrap rev">
+  <span class="bidx" data-edit="t32" data-edit-label="Text — 04 / 04">04 / 04</span>
+  <div class="word outline"><span class="ar" data-edit="t33" data-edit-label="Text — الجلسة">الجلسة</span><span class="tr" data-edit="t34" data-edit-label="Text — THE ROOM">THE ROOM</span></div>
+  <figure class="ph"><img src="img/05.jpg" alt="صالة نيوترون — حجر أبلق وكراسٍ زرقاء" loading="lazy"></figure>
+  <p class="cap"><span class="ar" data-edit="t35" data-edit-label="Text — صالة أبلق هادئة وكراسٍ زرقاء تحت ضوء خ…">صالة أبلق هادئة وكراسٍ زرقاء تحت ضوء خافت.</span><span class="tr" data-edit="t36" data-edit-label="Text — A quiet ablaq hall and blue chairs und…">A quiet ablaq hall and blue chairs under low light.</span></p>
  </div>
 </div>
 
 <section class="tube-sec wrap">
- <span class="k"><span class="ar" data-edit="t35" data-edit-label="Text — من المطبخ">من المطبخ</span><span class="tr" data-edit="t36" data-edit-label="Text — From the kitchen">From the kitchen</span></span>
- <h2 class="disp rev" style="font-size:clamp(34px,5vw,54px);margin-top:10px"><span class="ar" data-edit="t37" data-edit-label="Text — قائمة الليلة">قائمة الليلة</span><span class="tr" data-edit="t38" data-edit-label="Text — Tonight's Line-up">Tonight's Line-up</span></h2>
- <p class="lead"><span class="ar" data-edit="t39" data-edit-label="Text — مش قائمة طويلة — بس كل شي فيها مجرّب، …">مش قائمة طويلة — بس كل شي فيها مجرّب، ووصفناه لكم متل ما هو قبل ما يوصلكم للطاولة.</span><span class="tr" data-edit="t40" data-edit-label="Text — Not a long list — but everything on it…">Not a long list — but everything on it is tried, and described honestly before it reaches your table.</span></p>
+ <span class="k"><span class="ar" data-edit="t37" data-edit-label="Text — من المطبخ">من المطبخ</span><span class="tr" data-edit="t38" data-edit-label="Text — From the kitchen">From the kitchen</span></span>
+ <h2 class="disp rev" style="font-size:clamp(34px,5vw,54px);margin-top:10px"><span class="ar" data-edit="t39" data-edit-label="Text — قائمة الليلة">قائمة الليلة</span><span class="tr" data-edit="t40" data-edit-label="Text — Tonight's Line-up">Tonight's Line-up</span></h2>
+ <p class="lead"><span class="ar" data-edit="t41" data-edit-label="Text — مش قائمة طويلة — بس كل شي فيها مجرّب، …">مش قائمة طويلة — بس كل شي فيها مجرّب، ووصفناه لكم متل ما هو قبل ما يوصلكم للطاولة.</span><span class="tr" data-edit="t42" data-edit-label="Text — Not a long list — but everything on it…">Not a long list — but everything on it is tried, and described honestly before it reaches your table.</span></p>
  <div class="tlist">
-  <div class="trow rev"><span class="tno" data-edit="t41" data-edit-label="Text — 01">01</span><span class="tbody"><span class="tname"><span class="ar" data-edit="t42" data-edit-label="Text — فتوش بالسلة المقرمشة">فتوش بالسلة المقرمشة</span><span class="tr" data-edit="t43" data-edit-label="Text — Fattoush in a crispy basket">Fattoush in a crispy basket</span></span><span class="tdesc"><span class="ar" data-edit="t44" data-edit-label="Text — خبز مقلي مقرمش يُلَفّ حول السلطة">خبز مقلي مقرمش يُلَفّ حول السلطة</span><span class="tr" data-edit="t45" data-edit-label="Text — Crisp fried bread wrapped around the s…">Crisp fried bread wrapped around the salad</span></span></span></div>
-  <div class="trow rev"><span class="tno" data-edit="t46" data-edit-label="Text — 02">02</span><span class="tbody"><span class="tname"><span class="ar" data-edit="t47" data-edit-label="Text — حمص شامي بزيت الزيتون">حمص شامي بزيت الزيتون</span><span class="tr" data-edit="t48" data-edit-label="Text — Damascene hummus, olive oil">Damascene hummus, olive oil</span></span><span class="tdesc"><span class="ar" data-edit="t49" data-edit-label="Text — حبّة كاملة، نعنع طازة وليمون">حبّة كاملة، نعنع طازة وليمون</span><span class="tr" data-edit="t50" data-edit-label="Text — Whole chickpeas, fresh mint and lemon">Whole chickpeas, fresh mint and lemon</span></span></span></div>
-  <div class="trow rev"><span class="tno" data-edit="t51" data-edit-label="Text — 03">03</span><span class="tbody"><span class="tname"><span class="ar" data-edit="t52" data-edit-label="Text — سلطة دجاج بصلصة كريمية">سلطة دجاج بصلصة كريمية</span><span class="tr" data-edit="t53" data-edit-label="Text — Grilled chicken salad, creamy dressing">Grilled chicken salad, creamy dressing</span></span><span class="tdesc"><span class="ar" data-edit="t54" data-edit-label="Text — دجاج مشوي وجبنة مبروشة فوق">دجاج مشوي وجبنة مبروشة فوق</span><span class="tr" data-edit="t55" data-edit-label="Text — Grilled chicken, shaved cheese on top">Grilled chicken, shaved cheese on top</span></span></span></div>
+  <div class="trow rev"><span class="tno" data-edit="t43" data-edit-label="Text — 01">01</span><span class="tbody"><span class="tname"><span class="ar" data-edit="t44" data-edit-label="Text — فتوش بالسلة المقرمشة">فتوش بالسلة المقرمشة</span><span class="tr" data-edit="t45" data-edit-label="Text — Fattoush in a crispy basket">Fattoush in a crispy basket</span></span><span class="tdesc"><span class="ar" data-edit="t46" data-edit-label="Text — خبز مقلي مقرمش يُلَفّ حول السلطة">خبز مقلي مقرمش يُلَفّ حول السلطة</span><span class="tr" data-edit="t47" data-edit-label="Text — Crisp fried bread wrapped around the s…">Crisp fried bread wrapped around the salad</span></span></span></div>
+  <div class="trow rev"><span class="tno" data-edit="t48" data-edit-label="Text — 02">02</span><span class="tbody"><span class="tname"><span class="ar" data-edit="t49" data-edit-label="Text — حمص شامي بزيت الزيتون">حمص شامي بزيت الزيتون</span><span class="tr" data-edit="t50" data-edit-label="Text — Damascene hummus, olive oil">Damascene hummus, olive oil</span></span><span class="tdesc"><span class="ar" data-edit="t51" data-edit-label="Text — حبّة كاملة، نعنع طازة وليمون">حبّة كاملة، نعنع طازة وليمون</span><span class="tr" data-edit="t52" data-edit-label="Text — Whole chickpeas, fresh mint and lemon">Whole chickpeas, fresh mint and lemon</span></span></span></div>
+  <div class="trow rev"><span class="tno" data-edit="t53" data-edit-label="Text — 03">03</span><span class="tbody"><span class="tname"><span class="ar" data-edit="t54" data-edit-label="Text — سلطة دجاج بصلصة كريمية">سلطة دجاج بصلصة كريمية</span><span class="tr" data-edit="t55" data-edit-label="Text — Grilled chicken salad, creamy dressing">Grilled chicken salad, creamy dressing</span></span><span class="tdesc"><span class="ar" data-edit="t56" data-edit-label="Text — دجاج مشوي وجبنة مبروشة فوق">دجاج مشوي وجبنة مبروشة فوق</span><span class="tr" data-edit="t57" data-edit-label="Text — Grilled chicken, shaved cheese on top">Grilled chicken, shaved cheese on top</span></span></span></div>
  </div>
- <p class="tnote"><b><span class="ar" data-edit="t56" data-edit-label="Text — الأسعار بالمطعم — اسألوا عند الطلب.">الأسعار بالمطعم — اسألوا عند الطلب.</span><span class="tr" data-edit="t57" data-edit-label="Text — Prices at the restaurant — just ask wh…">Prices at the restaurant — just ask when you order.</span></b></p>
+ <p class="tnote"><b><span class="ar" data-edit="t58" data-edit-label="Text — الأسعار بالمطعم — اسألوا عند الطلب.">الأسعار بالمطعم — اسألوا عند الطلب.</span><span class="tr" data-edit="t59" data-edit-label="Text — Prices at the restaurant — just ask wh…">Prices at the restaurant — just ask when you order.</span></b></p>
 </section>
 
 <section class="qsec wrap">
- <span class="k"><span class="ar" data-edit="t58" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t59" data-edit-label="Text — What they say">What they say</span></span>
- <h2 class="disp rev" style="font-size:clamp(34px,5vw,54px);margin-top:10px"><span class="ar" data-edit="t60" data-edit-label="Text — الجمهور قال">الجمهور قال</span><span class="tr" data-edit="t61" data-edit-label="Text — The Crowd Said">The Crowd Said</span></h2>
- <p class="lead"><span class="ar" data-edit="t62" data-edit-label="Text — ثلاثة تقييمات حقيقية من غوغل — بالإنكل…">ثلاثة تقييمات حقيقية من غوغل — بالإنكليزية متل ما كتبوها.</span><span class="tr" data-edit="t63" data-edit-label="Text — Three real Google reviews — kept exact…">Three real Google reviews — kept exactly as written.</span></p>
+ <span class="k"><span class="ar" data-edit="t60" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t61" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev" style="font-size:clamp(34px,5vw,54px);margin-top:10px"><span class="ar" data-edit="t62" data-edit-label="Text — الجمهور قال">الجمهور قال</span><span class="tr" data-edit="t63" data-edit-label="Text — The Crowd Said">The Crowd Said</span></h2>
+ <p class="lead"><span class="ar" data-edit="t64" data-edit-label="Text — ثلاثة تقييمات حقيقية من غوغل — بالإنكل…">ثلاثة تقييمات حقيقية من غوغل — بالإنكليزية متل ما كتبوها.</span><span class="tr" data-edit="t65" data-edit-label="Text — Three real Google reviews — kept exact…">Three real Google reviews — kept exactly as written.</span></p>
  <div class="marq rev">
   <div class="mrow">
-   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t64" data-edit-label="Text — 'Very good restaurant with amazing ser…">"Very good restaurant with amazing service and delicious food, highly recommend!"</span><span class="who" data-edit="t65" data-edit-label="Text — — Sarah H · Google">— Sarah H · Google</span></span>
-   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t66" data-edit-label="Text — 'A special place, a quiet ambience, go…">"A special place, a quiet ambience, good food and a nice staff."</span><span class="who" data-edit="t67" data-edit-label="Text — — Sam Jablawy · Google">— Sam Jablawy · Google</span></span>
-   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t68" data-edit-label="Text — 'Good services and the food is amazing…">"Good services and the food is amazing."</span><span class="who" data-edit="t69" data-edit-label="Text — — Taim D · Google">— Taim D · Google</span></span>
-   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t70" data-edit-label="Text — 'Very good restaurant with amazing ser…">"Very good restaurant with amazing service and delicious food, highly recommend!"</span><span class="who" data-edit="t71" data-edit-label="Text — — Sarah H · Google">— Sarah H · Google</span></span>
-   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t72" data-edit-label="Text — 'A special place, a quiet ambience, go…">"A special place, a quiet ambience, good food and a nice staff."</span><span class="who" data-edit="t73" data-edit-label="Text — — Sam Jablawy · Google">— Sam Jablawy · Google</span></span>
-   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t74" data-edit-label="Text — 'Good services and the food is amazing…">"Good services and the food is amazing."</span><span class="who" data-edit="t75" data-edit-label="Text — — Taim D · Google">— Taim D · Google</span></span>
+   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t66" data-edit-label="Text — 'Very good restaurant with amazing ser…">"Very good restaurant with amazing service and delicious food, highly recommend!"</span><span class="who" data-edit="t67" data-edit-label="Text — — Sarah H · Google">— Sarah H · Google</span></span>
+   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t68" data-edit-label="Text — 'A special place, a quiet ambience, go…">"A special place, a quiet ambience, good food and a nice staff."</span><span class="who" data-edit="t69" data-edit-label="Text — — Sam Jablawy · Google">— Sam Jablawy · Google</span></span>
+   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t70" data-edit-label="Text — 'Good services and the food is amazing…">"Good services and the food is amazing."</span><span class="who" data-edit="t71" data-edit-label="Text — — Taim D · Google">— Taim D · Google</span></span>
+   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t72" data-edit-label="Text — 'Very good restaurant with amazing ser…">"Very good restaurant with amazing service and delicious food, highly recommend!"</span><span class="who" data-edit="t73" data-edit-label="Text — — Sarah H · Google">— Sarah H · Google</span></span>
+   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t74" data-edit-label="Text — 'A special place, a quiet ambience, go…">"A special place, a quiet ambience, good food and a nice staff."</span><span class="who" data-edit="t75" data-edit-label="Text — — Sam Jablawy · Google">— Sam Jablawy · Google</span></span>
+   <span class="qi"><span class="stars">★★★★★</span><span class="qtext" dir="ltr" data-edit="t76" data-edit-label="Text — 'Good services and the food is amazing…">"Good services and the food is amazing."</span><span class="who" data-edit="t77" data-edit-label="Text — — Taim D · Google">— Taim D · Google</span></span>
   </div>
  </div>
- <p class="gbadge"><span class="num" dir="ltr">★ <b data-edit="rating2">4.5 / 5</b></span> — <span data-edit="revcount2">32</span> <span class="ar" data-edit="t76" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t77" data-edit-label="Text — Google reviews">Google reviews</span></p>
+ <p class="gbadge"><span class="num" dir="ltr">★ <b data-edit="rating2">4.5 / 5</b></span> — <span data-edit="revcount2">32</span> <span class="ar" data-edit="t78" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t79" data-edit-label="Text — Google reviews">Google reviews</span></p>
 </section>
 
 <section class="visit wrap">
- <span class="k"><span class="ar" data-edit="t78" data-edit-label="Text — قبل ما تجوا">قبل ما تجوا</span><span class="tr" data-edit="t79" data-edit-label="Text — Before you visit">Before you visit</span></span>
- <h2 class="disp rev" style="font-size:clamp(34px,5vw,54px);margin-top:10px"><span class="ar" data-edit="t80" data-edit-label="Text — لاقونا الليلة">لاقونا الليلة</span><span class="tr" data-edit="t81" data-edit-label="Text — Find Us Tonight">Find Us Tonight</span></h2>
- <p class="lead"><span class="ar" data-edit="t82" data-edit-label="Text — تلفون المحل يجاوب — اتصلوا للتأكد قبل …">تلفون المحل يجاوب — اتصلوا للتأكد قبل ما تطلعوا.</span><span class="tr" data-edit="t83" data-edit-label="Text — The house line answers — call ahead be…">The house line answers — call ahead before you head out.</span></p>
+ <span class="k"><span class="ar" data-edit="t80" data-edit-label="Text — قبل ما تجوا">قبل ما تجوا</span><span class="tr" data-edit="t81" data-edit-label="Text — Before you visit">Before you visit</span></span>
+ <h2 class="disp rev" style="font-size:clamp(34px,5vw,54px);margin-top:10px"><span class="ar" data-edit="t82" data-edit-label="Text — لاقونا الليلة">لاقونا الليلة</span><span class="tr" data-edit="t83" data-edit-label="Text — Find Us Tonight">Find Us Tonight</span></h2>
+ <p class="lead"><span class="ar" data-edit="t84" data-edit-label="Text — تلفون المحل يجاوب — اتصلوا للتأكد قبل …">تلفون المحل يجاوب — اتصلوا للتأكد قبل ما تطلعوا.</span><span class="tr" data-edit="t85" data-edit-label="Text — The house line answers — call ahead be…">The house line answers — call ahead before you head out.</span></p>
  <div class="ticket rev">
   <div class="tmain">
-   <div class="tmark"><i></i><b class="lat" data-edit="t84" data-edit-label="Text — NEUTRON · BAB TOUMA">NEUTRON · BAB TOUMA</b></div>
+   <div class="tmark"><i></i><b class="lat" data-edit="t86" data-edit-label="Text — NEUTRON · BAB TOUMA">NEUTRON · BAB TOUMA</b></div>
    <div class="adr" data-edit="addr2">باب توما — دمشق القديمة</div>
-   <p><span class="ar" data-edit="t85" data-edit-label="Text — ادخلوا من ساحة باب توما وخلّوا النيون …">ادخلوا من ساحة باب توما وخلّوا النيون الأحمر يدلّكم على الباب. دوامنا ما إلو ساعات ثابتة معلنة — اتصلوا قبل ما تجوا للتأكد.</span><span class="tr"><em data-edit="t86" data-edit-label="Text — Come in from Bab Touma square and let …">Come in from Bab Touma square and let the red neon guide you to the door. We don't post fixed hours — call ahead to check before you come.</em></span></p>
+   <p><span class="ar" data-edit="t87" data-edit-label="Text — ادخلوا من ساحة باب توما وخلّوا النيون …">ادخلوا من ساحة باب توما وخلّوا النيون الأحمر يدلّكم على الباب. دوامنا ما إلو ساعات ثابتة معلنة — اتصلوا قبل ما تجوا للتأكد.</span><span class="tr"><em data-edit="t88" data-edit-label="Text — Come in from Bab Touma square and let …">Come in from Bab Touma square and let the red neon guide you to the door. We don't post fixed hours — call ahead to check before you come.</em></span></p>
   </div>
   <div class="tseam tstub">
    <div>
-    <span class="tcall"><span class="ar" data-edit="t87" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t88" data-edit-label="Text — Call us">Call us</span></span>
+    <span class="tcall"><span class="ar" data-edit="t89" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t90" data-edit-label="Text — Call us">Call us</span></span>
     <span class="tel num" data-edit="phone">+963 11 544 5451</span>
    </div>
-   <a class="tbtn" href="tel:+963115445451"><span class="ar" data-edit="t89" data-edit-label="Text — اتصال مباشر">اتصال مباشر</span><span class="tr" data-edit="t90" data-edit-label="Text — Call now">Call now</span></a>
-   <a class="tbtn o" href="https://www.google.com/maps?cid=2314965255936159926" target="_blank" rel="noopener">◈ <span class="ar" data-edit="t91" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t92" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+   <a class="tbtn" href="tel:+963115445451"><span class="ar" data-edit="t91" data-edit-label="Text — اتصال مباشر">اتصال مباشر</span><span class="tr" data-edit="t92" data-edit-label="Text — Call now">Call now</span></a>
+   <a class="tbtn o" href="https://www.google.com/maps?cid=2314965255936159926" target="_blank" rel="noopener">◈ <span class="ar" data-edit="t93" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t94" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
    <div class="barcode" aria-hidden="true"></div>
   </div>
  </div>
 </section>
 
-<footer><span data-edit="footer">نيوترون · باب توما — دمشق القديمة · <span class="num" data-edit="t93" data-edit-label="Text — +963 11 544 5451">+963 11 544 5451</span></span></footer>
+<footer><span data-edit="footer">نيوترون · باب توما — دمشق القديمة · <span class="num" data-edit="t95" data-edit-label="Text — +963 11 544 5451">+963 11 544 5451</span></span></footer>
 
 <div class="bar">
- <a class="call" href="tel:+963115445451">✆ <b><span class="ar" data-edit="t94" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t95" data-edit-label="Text — Call us">Call us</span></b></a>
+ <a class="call" href="tel:+963115445451">✆ <b><span class="ar" data-edit="t96" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t97" data-edit-label="Text — Call us">Call us</span></b></a>
  <span class="e" aria-hidden="true"></span>
- <a href="https://www.google.com/maps?cid=2314965255936159926" target="_blank" rel="noopener">◈ <b><span class="ar" data-edit="t96" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t97" data-edit-label="Text — Map">Map</span></b></a>
+ <a href="https://www.google.com/maps?cid=2314965255936159926" target="_blank" rel="noopener">◈ <b><span class="ar" data-edit="t98" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t99" data-edit-label="Text — Map">Map</span></b></a>
 </div>
 
 <script>

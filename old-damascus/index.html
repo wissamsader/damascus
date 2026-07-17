@@ -35,12 +35,16 @@ html:not(.en) .tr{display:none!important}
 .mast-name .mk{display:block;font-family:'Anton',sans-serif;font-size:11px;letter-spacing:.42em;text-transform:uppercase;opacity:.85;margin-bottom:2px}
 .mast-name h1{font-size:clamp(24px,4.4vw,40px);line-height:1}
 
-/* ===== HERO — capped full-bleed burger, big tabloid headline ===== */
-header{position:relative;min-height:clamp(600px,92svh,820px);max-height:860px;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
-header .ph{position:absolute;inset:0}
-header .ph img{width:100%;height:100%;object-fit:cover;object-position:center 44%}
-header .ph .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,16,16,.22) 0%,rgba(34,16,16,.28) 40%,rgba(34,16,16,.88) 100%)}
-.hero-in{position:relative;z-index:2;padding:120px 5vw 64px;max-width:1100px;margin:0 auto}
+/* ===== HERO — tabloid front page: headline column + CONTAINED press-photo panel ===== */
+header{position:relative;min-height:clamp(600px,92svh,820px);max-height:860px;display:flex;align-items:center;overflow:hidden;background:
+ radial-gradient(rgba(255,250,240,.06) 1px,transparent 1.6px) 0 0/14px 14px,var(--ink)}
+.hero-grid{position:relative;z-index:2;width:100%;max-width:1150px;margin:0 auto;padding:110px 5vw 66px;display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(26px,4.5vw,64px);align-items:center}
+.hphoto{position:relative;transform:rotate(1.6deg)}
+.hphoto .frame{border:9px solid var(--cream);background:var(--cream);box-shadow:0 30px 70px -26px rgba(0,0,0,.7)}
+.hphoto img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.hphoto .pcap{display:flex;justify-content:space-between;gap:10px;background:var(--mus);color:var(--ink);font-size:11.5px;font-weight:800;letter-spacing:.08em;padding:8px 12px}
+.hphoto .stamp{position:absolute;top:-16px;left:-14px;transform:rotate(-8deg);background:var(--tom);color:var(--wh);border:2px solid var(--wh);font-size:11px;font-weight:800;letter-spacing:.14em;padding:8px 13px;border-radius:3px;box-shadow:0 10px 24px -10px rgba(0,0,0,.6)}
+.hero-in{position:relative}
 .hk{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--mus);color:var(--wh);border-radius:4px;padding:7px 16px;font-size:12.5px;letter-spacing:.06em;font-weight:800;margin-bottom:22px;background:rgba(34,16,16,.5)}
 .hh{color:var(--wh);font-size:clamp(46px,9vw,92px);line-height:1.08;text-shadow:0 8px 34px rgba(0,0,0,.55)}
 .hh .tr{font-family:'Anton',sans-serif;text-transform:uppercase;letter-spacing:.005em}
@@ -135,6 +139,9 @@ footer{padding:40px 5vw 130px;text-align:center;color:var(--mut);font-size:12.5p
 
 @media(max-width:860px){
  .mast-side{display:none}
+ .hero-grid{grid-template-columns:1fr;gap:44px;padding-top:96px}
+ header{max-height:none;min-height:0}
+ .hphoto{transform:rotate(1.2deg);max-width:520px;margin:0 auto;width:100%}
  .cols{grid-template-columns:1fr;column-gap:0}
  .cols .lede::after{display:none}
  .board-grid{grid-template-columns:1fr}
@@ -175,39 +182,47 @@ footer{padding:40px 5vw 130px;text-align:center;color:var(--mut);font-size:12.5p
 </div>
 
 <header>
- <div class="ph"><img src="img/06.jpg" alt="برغر دجاج سناك دمشق القديمة" loading="lazy"><div class="scrim"></div></div>
- <div class="hero-in">
-  <span class="hk"><span class="ar" data-edit="t10" data-edit-label="Text — أكل شارع · الشارع المستقيم">أكل شارع · الشارع المستقيم</span><span class="tr" data-edit="t11" data-edit-label="Text — Street food · The Straight Street">Street food · The Straight Street</span></span>
-  <h2 class="hh disp"><span class="ar" data-edit="t12" data-edit-label="Text — أكل شارع، بأصالة">أكل شارع، بأصالة</span><span class="tr" data-edit="t13" data-edit-label="Text — Street food. With authenticity.">Street food. With authenticity.</span></h2>
-  <p class="hsrc"><span class="ar"><em data-edit="t14" data-edit-label="Text — — من تقييم حقيقي على غوغل">— من تقييم حقيقي على غوغل</em></span><span class="tr"><em data-edit="t15" data-edit-label="Text — — from a real Google review">— from a real Google review</em></span></p>
-  <p class="hero-sub"><span class="ar" data-edit="t16" data-edit-label="Text — برغر دجاج محشي عن جد، وبطاطا ذهبية طال…">برغر دجاج محشي عن جد، وبطاطا ذهبية طالعة سخنة من القلاية — على أقدم شارع في المدينة.</span><span class="tr" data-edit="t17" data-edit-label="Text — A properly loaded chicken burger, and …">A properly loaded chicken burger, and golden fries straight from the fryer — on the city's oldest street.</span></p>
-  <div class="hero-meta">
-   <span class="chip"><span class="num" dir="ltr">★ <b data-edit="rating">4.2</b> · <span data-edit="revcount">50</span></span> <span class="ar" data-edit="t18" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t19" data-edit-label="Text — Google reviews">Google reviews</span></span>
-   <span class="chip"><span class="ar" data-edit="t20" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t21" data-edit-label="Text — Daily">Daily</span> <span class="num" dir="ltr" data-edit="t22" data-edit-label="Text — 9:00 – 24:00">9:00 – 24:00</span></span>
+ <div class="hero-grid">
+  <div class="hero-in">
+   <span class="hk"><span class="ar" data-edit="t10" data-edit-label="Text — أكل شارع · الشارع المستقيم">أكل شارع · الشارع المستقيم</span><span class="tr" data-edit="t11" data-edit-label="Text — Street food · The Straight Street">Street food · The Straight Street</span></span>
+   <h2 class="hh disp"><span class="ar" data-edit="t12" data-edit-label="Text — أكل شارع، بأصالة">أكل شارع، بأصالة</span><span class="tr" data-edit="t13" data-edit-label="Text — Street food. With authenticity.">Street food. With authenticity.</span></h2>
+   <p class="hsrc"><span class="ar"><em data-edit="t14" data-edit-label="Text — — من تقييم حقيقي على غوغل">— من تقييم حقيقي على غوغل</em></span><span class="tr"><em data-edit="t15" data-edit-label="Text — — from a real Google review">— from a real Google review</em></span></p>
+   <p class="hero-sub"><span class="ar" data-edit="t16" data-edit-label="Text — برغر دجاج محشي عن جد، وبطاطا ذهبية طال…">برغر دجاج محشي عن جد، وبطاطا ذهبية طالعة سخنة من القلاية — على أقدم شارع في المدينة.</span><span class="tr" data-edit="t17" data-edit-label="Text — A properly loaded chicken burger, and …">A properly loaded chicken burger, and golden fries straight from the fryer — on the city's oldest street.</span></p>
+   <div class="hero-meta">
+    <span class="chip"><span class="num" dir="ltr">★ <b data-edit="rating">4.2</b> · <span data-edit="revcount">50</span></span> <span class="ar" data-edit="t18" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t19" data-edit-label="Text — Google reviews">Google reviews</span></span>
+    <span class="chip"><span class="ar" data-edit="t20" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t21" data-edit-label="Text — Daily">Daily</span> <span class="num" dir="ltr" data-edit="t22" data-edit-label="Text — 9:00 – 24:00">9:00 – 24:00</span></span>
+   </div>
   </div>
+  <figure class="hphoto">
+   <span class="stamp"><span class="ar" data-edit="t23" data-edit-label="Text — طبق البيت">طبق البيت</span><span class="tr" data-edit="t24" data-edit-label="Text — HOUSE SPECIAL">HOUSE SPECIAL</span></span>
+   <div class="frame">
+    <img src="img/08.jpg" alt="برغر دجاج سناك دمشق القديمة مع بطاطا ذهبية">
+    <div class="pcap"><span><span class="ar" data-edit="t25" data-edit-label="Text — برغر دجاج محشي + بطاطا">برغر دجاج محشي + بطاطا</span><span class="tr" data-edit="t26" data-edit-label="Text — Loaded chicken burger + fries">Loaded chicken burger + fries</span></span><span class="num" dir="ltr" data-edit="t27" data-edit-label="Text — № 01">№ 01</span></div>
+   </div>
+  </figure>
  </div>
 </header>
 
 <div class="pmarq-sec">
- <div class="wrap"><span class="k"><span class="ar" data-edit="t23" data-edit-label="Text — من المحل">من المحل</span><span class="tr" data-edit="t24" data-edit-label="Text — From the shop">From the shop</span></span></div>
+ <div class="wrap"><span class="k"><span class="ar" data-edit="t28" data-edit-label="Text — من المحل">من المحل</span><span class="tr" data-edit="t29" data-edit-label="Text — From the shop">From the shop</span></span></div>
  <div class="pmarq">
   <div class="prow">
-   <figure><img src="img/05.jpg" alt="لافتة سناك دمشق القديمة الحمراء" loading="lazy"><figcaption><span class="ar" data-edit="t25" data-edit-label="Text — اللافتة">اللافتة</span><span class="tr" data-edit="t26" data-edit-label="Text — The sign">The sign</span></figcaption></figure>
-   <figure><img src="img/03.jpg" alt="صحن بطاطا ذهبية" loading="lazy"><figcaption><span class="ar" data-edit="t27" data-edit-label="Text — بطاطا ذهبية">بطاطا ذهبية</span><span class="tr" data-edit="t28" data-edit-label="Text — Golden fries">Golden fries</span></figcaption></figure>
-   <figure><img src="img/04.jpg" alt="صينية بطاطا على الطاولة" loading="lazy"><figcaption><span class="ar" data-edit="t29" data-edit-label="Text — بطاطا عالطاولة">بطاطا عالطاولة</span><span class="tr" data-edit="t30" data-edit-label="Text — Fries on the table">Fries on the table</span></figcaption></figure>
-   <figure><img src="img/05.jpg" alt="" loading="lazy"><figcaption><span class="ar" data-edit="t31" data-edit-label="Text — اللافتة">اللافتة</span><span class="tr" data-edit="t32" data-edit-label="Text — The sign">The sign</span></figcaption></figure>
-   <figure><img src="img/03.jpg" alt="" loading="lazy"><figcaption><span class="ar" data-edit="t33" data-edit-label="Text — بطاطا ذهبية">بطاطا ذهبية</span><span class="tr" data-edit="t34" data-edit-label="Text — Golden fries">Golden fries</span></figcaption></figure>
-   <figure><img src="img/04.jpg" alt="" loading="lazy"><figcaption><span class="ar" data-edit="t35" data-edit-label="Text — بطاطا عالطاولة">بطاطا عالطاولة</span><span class="tr" data-edit="t36" data-edit-label="Text — Fries on the table">Fries on the table</span></figcaption></figure>
+   <figure><img src="img/05.jpg" alt="لافتة سناك دمشق القديمة الحمراء" loading="lazy"><figcaption><span class="ar" data-edit="t30" data-edit-label="Text — اللافتة">اللافتة</span><span class="tr" data-edit="t31" data-edit-label="Text — The sign">The sign</span></figcaption></figure>
+   <figure><img src="img/03.jpg" alt="صحن بطاطا ذهبية" loading="lazy"><figcaption><span class="ar" data-edit="t32" data-edit-label="Text — بطاطا ذهبية">بطاطا ذهبية</span><span class="tr" data-edit="t33" data-edit-label="Text — Golden fries">Golden fries</span></figcaption></figure>
+   <figure><img src="img/04.jpg" alt="صينية بطاطا على الطاولة" loading="lazy"><figcaption><span class="ar" data-edit="t34" data-edit-label="Text — بطاطا عالطاولة">بطاطا عالطاولة</span><span class="tr" data-edit="t35" data-edit-label="Text — Fries on the table">Fries on the table</span></figcaption></figure>
+   <figure><img src="img/05.jpg" alt="" loading="lazy"><figcaption><span class="ar" data-edit="t36" data-edit-label="Text — اللافتة">اللافتة</span><span class="tr" data-edit="t37" data-edit-label="Text — The sign">The sign</span></figcaption></figure>
+   <figure><img src="img/03.jpg" alt="" loading="lazy"><figcaption><span class="ar" data-edit="t38" data-edit-label="Text — بطاطا ذهبية">بطاطا ذهبية</span><span class="tr" data-edit="t39" data-edit-label="Text — Golden fries">Golden fries</span></figcaption></figure>
+   <figure><img src="img/04.jpg" alt="" loading="lazy"><figcaption><span class="ar" data-edit="t40" data-edit-label="Text — بطاطا عالطاولة">بطاطا عالطاولة</span><span class="tr" data-edit="t41" data-edit-label="Text — Fries on the table">Fries on the table</span></figcaption></figure>
   </div>
  </div>
 </div>
 
 <section class="story wrap">
- <span class="k"><span class="ar" data-edit="t37" data-edit-label="Text — من ملف الشارع المستقيم">من ملف الشارع المستقيم</span><span class="tr" data-edit="t38" data-edit-label="Text — From the Straight Street file">From the Straight Street file</span></span>
- <h2 class="disp"><span class="ar" data-edit="t39" data-edit-label="Text — سندويشة سريعة… على شارع عمره آلاف السن…">سندويشة سريعة… على شارع عمره آلاف السنين</span><span class="tr lat" data-edit="t40" data-edit-label="Text — Fast food on a street thousands of yea…">Fast food on a street thousands of years old</span></h2>
+ <span class="k"><span class="ar" data-edit="t42" data-edit-label="Text — من ملف الشارع المستقيم">من ملف الشارع المستقيم</span><span class="tr" data-edit="t43" data-edit-label="Text — From the Straight Street file">From the Straight Street file</span></span>
+ <h2 class="disp"><span class="ar" data-edit="t44" data-edit-label="Text — سندويشة سريعة… على شارع عمره آلاف السن…">سندويشة سريعة… على شارع عمره آلاف السنين</span><span class="tr lat" data-edit="t45" data-edit-label="Text — Fast food on a street thousands of yea…">Fast food on a street thousands of years old</span></h2>
  <div class="cols">
-  <p class="lede rev"><span class="ar" data-edit="t41" data-edit-label="Text — على الشارع المستقيم — الشارع الذي عرفت…">على الشارع المستقيم — الشارع الذي عرفته دمشق باسمه منذ آلاف السنين — لافتة صغيرة حمراء مكتوب عليها «دمشق القديمة». من ورا الكاونتر صوت الزيت وهو يغلي، ومن قدامه يمرق كل من يقطع البلدة القديمة بين باب شرقي وسوق مدحت باشا.</span><span class="tr" data-edit="t42" data-edit-label="Text — On the Straight Street — a street Dama…">On the Straight Street — a street Damascus has known by name for thousands of years — hangs a small red sign reading &quot;Old Damascus.&quot; Behind the counter, the hiss of oil at a boil; in front of it, everyone crossing the Old City between Bab Sharqi and Midhat Pasha souq.</span></p>
-  <p class="rev"><span class="ar" data-edit="t43" data-edit-label="Text — الفكرة بسيطة وما تغيّرت من أول يوم: أك…">الفكرة بسيطة وما تغيّرت من أول يوم: أكل شارع طازة وسريع ونظيف — برغر دجاج محشي عن جد، بطاطا ذهبية، وسندويشات تتاكل ماشي أو واقف عند الباب. زبون كتب عنا بجملة وحدة اختصرت كل شي: «أكل شارع بأصالة».</span><span class="tr" data-edit="t44" data-edit-label="Text — The idea is simple and hasn't changed …">The idea is simple and hasn't changed since day one: fresh, fast, honest street food — a properly loaded chicken burger, golden fries, and sandwiches eaten on the walk or standing by the door. One customer summed it up in a single line: &quot;street food with authenticity.&quot;</span></p>
+  <p class="lede rev"><span class="ar" data-edit="t46" data-edit-label="Text — على الشارع المستقيم — الشارع الذي عرفت…">على الشارع المستقيم — الشارع الذي عرفته دمشق باسمه منذ آلاف السنين — لافتة صغيرة حمراء مكتوب عليها «دمشق القديمة». من ورا الكاونتر صوت الزيت وهو يغلي، ومن قدامه يمرق كل من يقطع البلدة القديمة بين باب شرقي وسوق مدحت باشا.</span><span class="tr" data-edit="t47" data-edit-label="Text — On the Straight Street — a street Dama…">On the Straight Street — a street Damascus has known by name for thousands of years — hangs a small red sign reading &quot;Old Damascus.&quot; Behind the counter, the hiss of oil at a boil; in front of it, everyone crossing the Old City between Bab Sharqi and Midhat Pasha souq.</span></p>
+  <p class="rev"><span class="ar" data-edit="t48" data-edit-label="Text — الفكرة بسيطة وما تغيّرت من أول يوم: أك…">الفكرة بسيطة وما تغيّرت من أول يوم: أكل شارع طازة وسريع ونظيف — برغر دجاج محشي عن جد، بطاطا ذهبية، وسندويشات تتاكل ماشي أو واقف عند الباب. زبون كتب عنا بجملة وحدة اختصرت كل شي: «أكل شارع بأصالة».</span><span class="tr" data-edit="t49" data-edit-label="Text — The idea is simple and hasn't changed …">The idea is simple and hasn't changed since day one: fresh, fast, honest street food — a properly loaded chicken burger, golden fries, and sandwiches eaten on the walk or standing by the door. One customer summed it up in a single line: &quot;street food with authenticity.&quot;</span></p>
  </div>
 </section>
 
@@ -215,74 +230,74 @@ footer{padding:40px 5vw 130px;text-align:center;color:var(--mut);font-size:12.5p
  <div class="board-grid">
   <div class="boardframe rev"><img src="img/02.jpg" alt="لوحة المنيو داخل سناك دمشق القديمة" loading="lazy"></div>
   <div class="board-txt rev">
-   <span class="k"><span class="ar" data-edit="t45" data-edit-label="Text — المنيو">المنيو</span><span class="tr" data-edit="t46" data-edit-label="Text — The menu">The menu</span></span>
-   <h2 class="disp"><span class="ar" data-edit="t47" data-edit-label="Text — اللائحة فوق الكاونتر">اللائحة فوق الكاونتر</span><span class="tr lat" data-edit="t48" data-edit-label="Text — The board above the counter">The board above the counter</span></h2>
-   <p><span class="ar" data-edit="t49" data-edit-label="Text — برغر، سندويشات، وبيتزا — كل صنف مرقّم …">برغر، سندويشات، وبيتزا — كل صنف مرقّم ومصوّر على اللوحة المعلّقة فوق الكاونتر، متل ما بتشوفوها لما تدخلوا.</span><span class="tr" data-edit="t50" data-edit-label="Text — Burgers, sandwiches and pizza — every …">Burgers, sandwiches and pizza — every item numbered and pictured on the board hanging over the counter, just as you'll see it when you walk in.</span></p>
-   <p class="mnote"><span class="ar" data-edit="menunote">لائحة الأسعار الكاملة معلّقة داخل المحل — والمنيو في الصور.</span><span class="tr" data-edit="t51" data-edit-label="Text — The full price list hangs inside the s…">The full price list hangs inside the shop — and the menu itself is right there in the photos.</span></p>
+   <span class="k"><span class="ar" data-edit="t50" data-edit-label="Text — المنيو">المنيو</span><span class="tr" data-edit="t51" data-edit-label="Text — The menu">The menu</span></span>
+   <h2 class="disp"><span class="ar" data-edit="t52" data-edit-label="Text — اللائحة فوق الكاونتر">اللائحة فوق الكاونتر</span><span class="tr lat" data-edit="t53" data-edit-label="Text — The board above the counter">The board above the counter</span></h2>
+   <p><span class="ar" data-edit="t54" data-edit-label="Text — برغر، سندويشات، وبيتزا — كل صنف مرقّم …">برغر، سندويشات، وبيتزا — كل صنف مرقّم ومصوّر على اللوحة المعلّقة فوق الكاونتر، متل ما بتشوفوها لما تدخلوا.</span><span class="tr" data-edit="t55" data-edit-label="Text — Burgers, sandwiches and pizza — every …">Burgers, sandwiches and pizza — every item numbered and pictured on the board hanging over the counter, just as you'll see it when you walk in.</span></p>
+   <p class="mnote"><span class="ar" data-edit="menunote">لائحة الأسعار الكاملة معلّقة داخل المحل — والمنيو في الصور.</span><span class="tr" data-edit="t56" data-edit-label="Text — The full price list hangs inside the s…">The full price list hangs inside the shop — and the menu itself is right there in the photos.</span></p>
   </div>
  </div>
 </section>
 
 <div class="wrap">
 <section class="report rev">
- <span class="k rk"><span class="ar" data-edit="t52" data-edit-label="Text — تقرير خاص">تقرير خاص</span><span class="tr" data-edit="t53" data-edit-label="Text — Special report">Special report</span></span>
+ <span class="k rk"><span class="ar" data-edit="t57" data-edit-label="Text — تقرير خاص">تقرير خاص</span><span class="tr" data-edit="t58" data-edit-label="Text — Special report">Special report</span></span>
  <div class="report-grid">
-  <div class="rstat"><b class="lat num" dir="ltr" data-edit="t54" data-edit-label="Text — 2,000+">2,000+</b><small><span class="ar" data-edit="t55" data-edit-label="Text — سنة">سنة</span><span class="tr" data-edit="t56" data-edit-label="Text — years">years</span></small></div>
+  <div class="rstat"><b class="lat num" dir="ltr" data-edit="t59" data-edit-label="Text — 2,000+">2,000+</b><small><span class="ar" data-edit="t60" data-edit-label="Text — سنة">سنة</span><span class="tr" data-edit="t61" data-edit-label="Text — years">years</span></small></div>
   <div>
-   <h3 class="disp"><span class="ar" data-edit="t57" data-edit-label="Text — شارع اسمه التاريخ">شارع اسمه التاريخ</span><span class="tr lat" data-edit="t58" data-edit-label="Text — A Street Called History">A Street Called History</span></h3>
-   <p><span class="ar" data-edit="t59" data-edit-label="Text — الشارع المستقيم معروف بالاسم من العهد …">الشارع المستقيم معروف بالاسم من العهد الروماني، وهو من أقدم الشوارع المأهولة في العالم اللي ما زالت تُستعمل يومياً — يمتد خطاً مستقيماً من باب الجابية لباب شرقي، ما زال واضحاً من فوق. وسناك دمشق القديمة يفتح بابه على هالتاريخ، من غير ما يحكي عنه كتير.</span><span class="tr" data-edit="t60" data-edit-label="Text — The Straight Street has carried that n…">The Straight Street has carried that name since Roman times, and is among the oldest continuously inhabited streets in the world still used every single day — running dead straight from Bab al-Jabiyeh to Bab Sharqi, a line still visible from above. Old Damascus Snack opens its door onto that history, without ever making a fuss about it.</span></p>
+   <h3 class="disp"><span class="ar" data-edit="t62" data-edit-label="Text — شارع اسمه التاريخ">شارع اسمه التاريخ</span><span class="tr lat" data-edit="t63" data-edit-label="Text — A Street Called History">A Street Called History</span></h3>
+   <p><span class="ar" data-edit="t64" data-edit-label="Text — الشارع المستقيم معروف بالاسم من العهد …">الشارع المستقيم معروف بالاسم من العهد الروماني، وهو من أقدم الشوارع المأهولة في العالم اللي ما زالت تُستعمل يومياً — يمتد خطاً مستقيماً من باب الجابية لباب شرقي، ما زال واضحاً من فوق. وسناك دمشق القديمة يفتح بابه على هالتاريخ، من غير ما يحكي عنه كتير.</span><span class="tr" data-edit="t65" data-edit-label="Text — The Straight Street has carried that n…">The Straight Street has carried that name since Roman times, and is among the oldest continuously inhabited streets in the world still used every single day — running dead straight from Bab al-Jabiyeh to Bab Sharqi, a line still visible from above. Old Damascus Snack opens its door onto that history, without ever making a fuss about it.</span></p>
   </div>
  </div>
 </section>
 </div>
 
 <section class="duo wrap">
- <span class="k"><span class="ar" data-edit="t61" data-edit-label="Text — من برّا ومن جوّا">من برّا ومن جوّا</span><span class="tr" data-edit="t62" data-edit-label="Text — Outside and in">Outside and in</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t63" data-edit-label="Text — الوجه الحقيقي للمحل">الوجه الحقيقي للمحل</span><span class="tr lat" data-edit="t64" data-edit-label="Text — The Shop's Real Face">The Shop's Real Face</span></h2>
+ <span class="k"><span class="ar" data-edit="t66" data-edit-label="Text — من برّا ومن جوّا">من برّا ومن جوّا</span><span class="tr" data-edit="t67" data-edit-label="Text — Outside and in">Outside and in</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t68" data-edit-label="Text — الوجه الحقيقي للمحل">الوجه الحقيقي للمحل</span><span class="tr lat" data-edit="t69" data-edit-label="Text — The Shop's Real Face">The Shop's Real Face</span></h2>
  <div class="duo-grid">
-  <figure class="rev"><img src="img/01.jpg" alt="واجهة سناك دمشق القديمة على الشارع المستقيم" loading="lazy"><figcaption><span class="ar" data-edit="t65" data-edit-label="Text — الواجهة على الشارع المستقيم">الواجهة على الشارع المستقيم</span><span class="tr" data-edit="t66" data-edit-label="Text — The storefront, on the Straight Street">The storefront, on the Straight Street</span></figcaption></figure>
-  <figure class="rev"><img src="img/07.jpg" alt="خلف كاونتر سناك دمشق القديمة" loading="lazy"><figcaption><span class="ar" data-edit="t67" data-edit-label="Text — خلف الكاونتر — المطبخ عالمكشوف">خلف الكاونتر — المطبخ عالمكشوف</span><span class="tr" data-edit="t68" data-edit-label="Text — Behind the counter — the kitchen in pl…">Behind the counter — the kitchen in plain sight</span></figcaption></figure>
+  <figure class="rev"><img src="img/01.jpg" alt="واجهة سناك دمشق القديمة على الشارع المستقيم" loading="lazy"><figcaption><span class="ar" data-edit="t70" data-edit-label="Text — الواجهة على الشارع المستقيم">الواجهة على الشارع المستقيم</span><span class="tr" data-edit="t71" data-edit-label="Text — The storefront, on the Straight Street">The storefront, on the Straight Street</span></figcaption></figure>
+  <figure class="rev"><img src="img/07.jpg" alt="خلف كاونتر سناك دمشق القديمة" loading="lazy"><figcaption><span class="ar" data-edit="t72" data-edit-label="Text — خلف الكاونتر — المطبخ عالمكشوف">خلف الكاونتر — المطبخ عالمكشوف</span><span class="tr" data-edit="t73" data-edit-label="Text — Behind the counter — the kitchen in pl…">Behind the counter — the kitchen in plain sight</span></figcaption></figure>
  </div>
 </section>
 
 <section class="clip-sec wrap">
- <span class="k"><span class="ar" data-edit="t69" data-edit-label="Text — رسائل القراء">رسائل القراء</span><span class="tr" data-edit="t70" data-edit-label="Text — Letters to the editor">Letters to the editor</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t71" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t72" data-edit-label="Text — From Google Reviews">From Google Reviews</span></h2>
+ <span class="k"><span class="ar" data-edit="t74" data-edit-label="Text — رسائل القراء">رسائل القراء</span><span class="tr" data-edit="t75" data-edit-label="Text — Letters to the editor">Letters to the editor</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t76" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t77" data-edit-label="Text — From Google Reviews">From Google Reviews</span></h2>
  <div class="clips">
-  <blockquote class="clip rev"><p dir="ltr" data-edit="t73" data-edit-label="Text — 'I'm very satisfied with my experience…">"I'm very satisfied with my experience at Old Damascus restaurant. They serve fresh, tasty and very delicious food and their service is very fast."</p><cite data-edit="t74" data-edit-label="Credit — Eliza John · Google">Eliza John · Google</cite></blockquote>
-  <blockquote class="clip rev"><p dir="ltr" data-edit="t75" data-edit-label="Text — 'One of the best restaurants. Food is …">"One of the best restaurants. Food is very good taste and quality. Good service and a very clean restaurant."</p><cite data-edit="t76" data-edit-label="Credit — Morgan Davis · Google">Morgan Davis · Google</cite></blockquote>
-  <blockquote class="clip rev"><p dir="ltr" data-edit="t77" data-edit-label="Text — 'In brief: street food with authentici…">"In brief: street food with authenticity. Great flavour."</p><cite data-edit="t78" data-edit-label="Credit — Mohamad Arafa · Google">Mohamad Arafa · Google</cite></blockquote>
+  <blockquote class="clip rev"><p dir="ltr" data-edit="t78" data-edit-label="Text — 'I'm very satisfied with my experience…">"I'm very satisfied with my experience at Old Damascus restaurant. They serve fresh, tasty and very delicious food and their service is very fast."</p><cite data-edit="t79" data-edit-label="Credit — Eliza John · Google">Eliza John · Google</cite></blockquote>
+  <blockquote class="clip rev"><p dir="ltr" data-edit="t80" data-edit-label="Text — 'One of the best restaurants. Food is …">"One of the best restaurants. Food is very good taste and quality. Good service and a very clean restaurant."</p><cite data-edit="t81" data-edit-label="Credit — Morgan Davis · Google">Morgan Davis · Google</cite></blockquote>
+  <blockquote class="clip rev"><p dir="ltr" data-edit="t82" data-edit-label="Text — 'In brief: street food with authentici…">"In brief: street food with authenticity. Great flavour."</p><cite data-edit="t83" data-edit-label="Credit — Mohamad Arafa · Google">Mohamad Arafa · Google</cite></blockquote>
  </div>
- <p class="gbadge"><span class="num" dir="ltr">★ <b data-edit="rating2">4.2 / 5</b></span> — <span data-edit="revcount2">50</span> <span class="ar" data-edit="t79" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t80" data-edit-label="Text — Google reviews">Google reviews</span></p>
+ <p class="gbadge"><span class="num" dir="ltr">★ <b data-edit="rating2">4.2 / 5</b></span> — <span data-edit="revcount2">50</span> <span class="ar" data-edit="t84" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t85" data-edit-label="Text — Google reviews">Google reviews</span></p>
 </section>
 
 <section class="receipt-sec wrap">
- <span class="k"><span class="ar" data-edit="t81" data-edit-label="Text — قبل ما تجوا">قبل ما تجوا</span><span class="tr" data-edit="t82" data-edit-label="Text — Before you visit">Before you visit</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t83" data-edit-label="Text — وصل الزيارة">وصل الزيارة</span><span class="tr lat" data-edit="t84" data-edit-label="Text — Visit Receipt">Visit Receipt</span></h2>
+ <span class="k"><span class="ar" data-edit="t86" data-edit-label="Text — قبل ما تجوا">قبل ما تجوا</span><span class="tr" data-edit="t87" data-edit-label="Text — Before you visit">Before you visit</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t88" data-edit-label="Text — وصل الزيارة">وصل الزيارة</span><span class="tr lat" data-edit="t89" data-edit-label="Text — Visit Receipt">Visit Receipt</span></h2>
  <div class="receipt rev">
   <div class="rtop">
-   <b class="disp"><span class="ar" data-edit="t85" data-edit-label="Text — سناك دمشق القديمة">سناك دمشق القديمة</span><span class="tr lat" data-edit="t86" data-edit-label="Text — Old Damascus Snack">Old Damascus Snack</span></b>
-   <span class="lat" data-edit="t87" data-edit-label="Text — OLD DAMASCUS SNACK">OLD DAMASCUS SNACK</span>
+   <b class="disp"><span class="ar" data-edit="t90" data-edit-label="Text — سناك دمشق القديمة">سناك دمشق القديمة</span><span class="tr lat" data-edit="t91" data-edit-label="Text — Old Damascus Snack">Old Damascus Snack</span></b>
+   <span class="lat" data-edit="t92" data-edit-label="Text — OLD DAMASCUS SNACK">OLD DAMASCUS SNACK</span>
   </div>
   <div class="rline"></div>
-  <div class="rrow"><span><span class="ar" data-edit="t88" data-edit-label="Text — العنوان">العنوان</span><span class="tr" data-edit="t89" data-edit-label="Text — Address">Address</span></span><span data-edit="addr2">الشارع المستقيم — مدحت باشا</span></div>
-  <div class="rrow"><span><span class="ar" data-edit="t90" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t91" data-edit-label="Text — Hours">Hours</span></span><span><span class="ar" data-edit="t92" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t93" data-edit-label="Text — Daily">Daily</span> <span class="num" dir="ltr" data-edit="hours2">9:00–24:00</span></span></div>
-  <div class="rrow"><span><span class="ar" data-edit="t94" data-edit-label="Text — الهاتف">الهاتف</span><span class="tr" data-edit="t95" data-edit-label="Text — Phone">Phone</span></span><span class="num" dir="ltr" data-edit="phone">+963 11 544 7524</span></div>
+  <div class="rrow"><span><span class="ar" data-edit="t93" data-edit-label="Text — العنوان">العنوان</span><span class="tr" data-edit="t94" data-edit-label="Text — Address">Address</span></span><span data-edit="addr2">الشارع المستقيم — مدحت باشا</span></div>
+  <div class="rrow"><span><span class="ar" data-edit="t95" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t96" data-edit-label="Text — Hours">Hours</span></span><span><span class="ar" data-edit="t97" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t98" data-edit-label="Text — Daily">Daily</span> <span class="num" dir="ltr" data-edit="hours2">9:00–24:00</span></span></div>
+  <div class="rrow"><span><span class="ar" data-edit="t99" data-edit-label="Text — الهاتف">الهاتف</span><span class="tr" data-edit="t100" data-edit-label="Text — Phone">Phone</span></span><span class="num" dir="ltr" data-edit="phone">+963 11 544 7524</span></div>
   <div class="rline dashed"></div>
-  <div class="rtotal"><span class="ar" data-edit="t96" data-edit-label="Text — يستاهل الوقفة">يستاهل الوقفة</span><span class="tr" data-edit="t97" data-edit-label="Text — Worth the stop">Worth the stop</span></div>
+  <div class="rtotal"><span class="ar" data-edit="t101" data-edit-label="Text — يستاهل الوقفة">يستاهل الوقفة</span><span class="tr" data-edit="t102" data-edit-label="Text — Worth the stop">Worth the stop</span></div>
   <div class="rbtns">
-   <a class="rbtn" href="tel:+963115447524"><span class="ar" data-edit="t98" data-edit-label="Text — اتصلوا">اتصلوا</span><span class="tr" data-edit="t99" data-edit-label="Text — Call">Call</span></a>
-   <a class="rbtn o" href="https://www.google.com/maps?cid=13043024310191935713" target="_blank" rel="noopener">◈ <span class="ar" data-edit="t100" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t101" data-edit-label="Text — Map">Map</span></a>
+   <a class="rbtn" href="tel:+963115447524"><span class="ar" data-edit="t103" data-edit-label="Text — اتصلوا">اتصلوا</span><span class="tr" data-edit="t104" data-edit-label="Text — Call">Call</span></a>
+   <a class="rbtn o" href="https://www.google.com/maps?cid=13043024310191935713" target="_blank" rel="noopener">◈ <span class="ar" data-edit="t105" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t106" data-edit-label="Text — Map">Map</span></a>
    <a class="rbtn fbb" href="https://www.facebook.com/ancientdamascus" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
   </div>
  </div>
 </section>
 
-<footer><span data-edit="footer">سناك دمشق القديمة · الشارع المستقيم — مدحت باشا · <span class="num" data-edit="t102" data-edit-label="Text — +963 11 544 7524">+963 11 544 7524</span></span></footer>
+<footer><span data-edit="footer">سناك دمشق القديمة · الشارع المستقيم — مدحت باشا · <span class="num" data-edit="t107" data-edit-label="Text — +963 11 544 7524">+963 11 544 7524</span></span></footer>
 
 <div class="bar">
- <a class="call" href="tel:+963115447524">✆ <b><span class="ar" data-edit="t103" data-edit-label="Text — اتصلوا">اتصلوا</span><span class="tr" data-edit="t104" data-edit-label="Text — Call">Call</span></b></a>
- <a class="mapb" href="https://www.google.com/maps?cid=13043024310191935713" target="_blank" rel="noopener">◈ <b><span class="ar" data-edit="t105" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t106" data-edit-label="Text — Map">Map</span></b></a>
+ <a class="call" href="tel:+963115447524">✆ <b><span class="ar" data-edit="t108" data-edit-label="Text — اتصلوا">اتصلوا</span><span class="tr" data-edit="t109" data-edit-label="Text — Call">Call</span></b></a>
+ <a class="mapb" href="https://www.google.com/maps?cid=13043024310191935713" target="_blank" rel="noopener">◈ <b><span class="ar" data-edit="t110" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t111" data-edit-label="Text — Map">Map</span></b></a>
  <a class="fb" href="https://www.facebook.com/ancientdamascus" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
 </div>
 
