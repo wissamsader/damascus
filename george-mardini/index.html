@@ -4,102 +4,163 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>صالون جورج مارديني — شارع حلب، القصاع</title>
-<meta name="description" content="صالون جورج مارديني للسيدات على شارع حلب بالقصاع — مصفّف قديم بالمهنة، كرسي ومراية مضوّية وإيد خبيرة.">
+<title>صالون جورج مارديني — شارع حلب، القصاع · صالون سيدات</title>
+<meta name="description" content="صالون جورج مارديني للسيدات على شارع حلب في القصاع — إيد قديمة بالمهنة، قص وصبغة وميش وتسريحات، والحجز بالاتصال على الصالون.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;800;900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{overflow-x:clip}
-:root{--wal:#38271e;--wal2:#2c1e16;--wal3:#4a342a;--cream:#f2e7d4;--bulb:#f5c97b;--glow:#ffdca3;--mut:#c3ac92;--line:#5a4232}
-body{background:var(--wal);color:var(--cream);font:16px/1.85 'Tajawal',sans-serif;background-image:repeating-linear-gradient(90deg,rgba(0,0,0,.09) 0 3px,transparent 3px 12px),linear-gradient(180deg,var(--wal2),var(--wal) 30%)}
+:root{--wal:#2A1C15;--wal2:#231711;--wal3:#3A2A20;--plate:#5A4232;--edge:#4E382B;--cream:#F2E7D4;--mist:#C0AB94;--bulb:#F5C97B;--glow:#FFDCA3}
+body{background:var(--wal);color:var(--cream);font:16px/1.85 'Tajawal',sans-serif;
+ background-image:repeating-linear-gradient(90deg,rgba(0,0,0,.10) 0 3px,transparent 3px 13px),linear-gradient(180deg,#231711,#2A1C15 40%)}
 img{max-width:100%;display:block}
 a{color:inherit}
-.wrap{max-width:1100px;margin:0 auto;padding:0 5vw}
-.disp{font-family:'Tajawal',sans-serif;font-weight:900}
+.wrap{max-width:1120px;margin:0 auto;padding:0 5vw}
+.disp{font-family:'Tajawal',sans-serif;font-weight:900;line-height:1.3}
 .lat{font-family:'Libre Caslon Text',serif}
-.k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--bulb);font-weight:700}
+.k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--bulb);font-weight:700;font-family:'Libre Caslon Text','Tajawal',serif}
 .rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .rev.on{opacity:1;transform:none}
 html.en .ar{display:none!important}
 html:not(.en) .tr{display:none!important}
 .tr{direction:ltr;unicode-bidi:isolate}
-/* hero — backstage mirror, George inset */
-header{min-height:92svh;display:grid;grid-template-columns:1.08fr .92fr;gap:5vw;align-items:center;max-width:1100px;margin:0 auto;padding:110px 5vw 60px}
-.mirror{background:var(--wal2);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
-.bulbs{height:22px;background:radial-gradient(circle 5px at 22px 11px,var(--glow) 52%,rgba(255,220,163,.28) 66%,transparent 72%) 0 0/44px 22px repeat-x;filter:drop-shadow(0 0 7px rgba(245,201,123,.75));animation:glow 3.2s ease-in-out infinite alternate}
-@keyframes glow{from{opacity:.72}to{opacity:1}}
-.mirror img{border-radius:8px;margin:12px 0;aspect-ratio:1/1;object-fit:cover;width:100%}
-.hpin{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--bulb);color:var(--bulb);border-radius:999px;padding:8px 16px;font-size:12.5px;letter-spacing:.08em;font-weight:700;margin-bottom:18px;background:rgba(44,30,22,.7)}
-.hpin i{width:6px;height:6px;border-radius:50%;background:var(--glow);display:inline-block;box-shadow:0 0 8px var(--glow)}
-h1{font-family:'Tajawal',sans-serif;font-weight:900;font-size:clamp(42px,6.8vw,72px);line-height:1.12}
-h1 em{display:block;font-family:'Libre Caslon Text',serif;font-style:italic;font-weight:400;font-size:clamp(19px,2.8vw,30px);color:var(--bulb);margin-top:8px;letter-spacing:.04em}
-.hero-sub{margin-top:14px;font-size:clamp(15px,2vw,18.5px);color:#dccdb6;max-width:52ch}
-.hero-meta{margin-top:22px;display:flex;gap:22px;flex-wrap:wrap;font-size:13.5px;color:var(--mut)}
-.hero-meta b{color:var(--cream)}
+.num{direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+/* HERO — capped backstage-mirror stage */
+header{position:relative;min-height:clamp(600px,92svh,820px);max-height:860px;display:flex;align-items:center;overflow:hidden;
+ background:
+  radial-gradient(1000px 460px at 80% -10%,rgba(245,201,123,.16),transparent 60%),
+  radial-gradient(700px 420px at 8% 108%,rgba(245,201,123,.07),transparent 65%),
+  linear-gradient(180deg,#33231A,#2A1C15 60%,#231711)}
+header::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(0,0,0,.12) 0 3px,transparent 3px 13px)}
+header::after{content:'';position:absolute;left:0;right:0;bottom:0;height:110px;background:linear-gradient(180deg,transparent,var(--wal))}
+.hero-in{position:relative;z-index:2;width:100%;max-width:1120px;margin:0 auto;padding:110px 5vw 90px;display:grid;grid-template-columns:1.08fr .92fr;gap:5vw;align-items:center}
+.hbadge{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--edge);border-radius:4px;padding:8px 16px;font-size:12px;letter-spacing:.12em;font-weight:700;color:var(--glow);background:rgba(35,23,17,.75);margin-bottom:20px}
+.hbadge i{width:9px;height:9px;border-radius:50%;background:radial-gradient(circle,var(--glow),var(--bulb));box-shadow:0 0 8px rgba(245,201,123,.9);display:inline-block}
+h1{font-family:'Tajawal',sans-serif;font-weight:900;font-size:clamp(40px,6.4vw,72px);line-height:1.25}
+h1 em{font-style:normal;color:var(--bulb)}
+.hsub-lat{font-family:'Libre Caslon Text',serif;font-style:italic;font-size:clamp(13px,1.7vw,17px);letter-spacing:.22em;color:var(--mist);margin:8px 0 16px}
+.hero-sub{font-size:clamp(15px,1.9vw,18.5px);color:var(--mist);max-width:52ch}
+.hero-meta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.chip{border:1px solid var(--edge);border-radius:4px;padding:9px 16px;font-size:13px;color:var(--glow);background:rgba(58,42,32,.6)}
+.chip b{color:var(--cream)}
+.hcta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(120deg,#C98F4C,#F5C97B 55%,#D9A45C);color:#2A1C15;font-weight:900;border-radius:5px;padding:15px 28px;text-decoration:none;font-size:15px}
+.btn.o{background:transparent;color:var(--cream);border:1px solid var(--edge)}
+/* vanity mirror frame */
+.vanity{position:relative;justify-self:center;width:min(430px,86vw);padding:30px;border-radius:24px;background:linear-gradient(160deg,#5A4232,#3A2A20);border:1px solid #6E5038;box-shadow:0 44px 90px -40px rgba(0,0,0,.85),inset 0 0 40px rgba(0,0,0,.4)}
+.vanity img{position:relative;z-index:2;border-radius:12px;aspect-ratio:1/1;object-fit:cover;border:5px solid #231711}
+.vanity .bt,.vanity .bb{position:absolute;left:26px;right:26px;height:22px;background:radial-gradient(circle 5px at 22px 11px,var(--glow) 55%,rgba(255,220,163,.25) 68%,transparent 75%) 0 0/44px 22px repeat-x;filter:drop-shadow(0 0 6px rgba(245,201,123,.8));animation:bulbs 3.4s ease-in-out infinite alternate}
+.vanity .bt{top:4px}.vanity .bb{bottom:4px}
+.vanity .bl,.vanity .br{position:absolute;top:26px;bottom:26px;width:22px;background:radial-gradient(circle 5px at 11px 22px,var(--glow) 55%,rgba(255,220,163,.25) 68%,transparent 75%) 0 0/22px 44px repeat-y;filter:drop-shadow(0 0 6px rgba(245,201,123,.8));animation:bulbs 3.4s ease-in-out infinite alternate}
+.vanity .bl{left:4px}.vanity .br{right:4px}
+@keyframes bulbs{from{opacity:.75}to{opacity:1}}
+.vanity .tag{position:absolute;z-index:3;bottom:-14px;right:26px;background:var(--wal2);border:1px solid var(--edge);border-radius:4px;padding:8px 14px;font-size:12.5px;color:var(--glow)}
+/* ticker */
+.tick{background:#1D130E;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);overflow:hidden;padding:14px 0}
+.tick .row{display:flex;width:max-content;animation:mq 28s linear infinite}
+.tick span{font-family:'Libre Caslon Text','Tajawal',serif;font-size:13.5px;letter-spacing:.14em;color:var(--mist);white-space:nowrap;padding:0 26px;border-left:1px solid var(--edge)}
+.tick span.b{color:var(--bulb)}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(50%)}}
 /* story */
-.story{padding:76px 0 60px;max-width:760px}
-.story h2{font-size:clamp(30px,4.4vw,46px);line-height:1.25;margin:12px 0 18px}
-.story p{color:#dccdb6;margin-bottom:14px}
-/* services — station cards */
-.svc{padding:14px 0 20px}
-.svc h2{font-size:clamp(26px,3.8vw,38px);margin:10px 0 28px}
-.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.scard{background:var(--wal2);border:1px solid var(--line);border-radius:14px;padding:0 0 22px;overflow:hidden;transition:transform .35s ease,border-color .35s ease}
-.scard:hover{transform:translateY(-6px);border-color:var(--bulb)}
-.sml{height:14px;background:radial-gradient(circle 3.4px at 15px 7px,var(--glow) 50%,rgba(255,220,163,.22) 68%,transparent 74%) 0 0/30px 14px repeat-x;margin:0 14px}
-.scard .ic{width:58px;height:58px;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--bulb);margin:20px 22px 14px;background:rgba(245,201,123,.06)}
-.scard .ic svg{width:26px;height:26px}
-.scard h3{font-family:'Tajawal',sans-serif;font-weight:800;font-size:20px;margin:0 22px 6px;color:var(--glow)}
-.scard p{font-size:13.6px;color:var(--mut);line-height:1.75;margin:0 22px}
-/* backstage band */
-.band{margin:84px 0 10px;background:var(--wal2);border:1px solid var(--line);border-radius:18px;padding:clamp(26px,4vw,46px);text-align:center;position:relative;overflow:hidden}
-.band::before,.band::after{content:'';position:absolute;left:0;right:0;height:20px;background:radial-gradient(circle 4.4px at 20px 10px,var(--glow) 50%,rgba(255,220,163,.24) 66%,transparent 72%) 0 0/40px 20px repeat-x;animation:glow 3.2s ease-in-out infinite alternate}
-.band::before{top:10px}
-.band::after{bottom:10px}
-.band h2{font-size:clamp(24px,3.6vw,36px);margin:18px 0 8px}
-.band p{color:var(--mut);font-size:14.5px;max-width:58ch;margin:0 auto 14px}
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center;padding-top:100px;padding-bottom:80px}
+.story h2{font-size:clamp(30px,4.4vw,48px);margin:12px 0 18px}
+.story p{color:var(--mist);margin-bottom:15px;font-size:16.5px}
+.pull{border-right:3px solid var(--bulb);padding:6px 22px 6px 0;margin:24px 0 0;font-size:19px;line-height:1.8;color:var(--glow);font-weight:700}
+.spanel{position:relative;border:1px solid var(--edge);border-radius:14px;background:linear-gradient(165deg,#3A2A20,#231711);padding:clamp(26px,4vw,42px);text-align:center;overflow:hidden}
+.spanel::before{content:'';position:absolute;inset:0;background:radial-gradient(circle 4px at 24px 20px,rgba(255,220,163,.5) 55%,transparent 70%) 0 0/48px 40px repeat-x}
+.spanel::after{content:'';position:absolute;inset:0;background:radial-gradient(circle 4px at 24px 20px,rgba(255,220,163,.5) 55%,transparent 70%) 0 100%/48px 40px repeat-x;background-position:24px calc(100% - 0px)}
+.spanel .big{font-family:'Libre Caslon Text',serif;font-size:clamp(64px,9vw,100px);line-height:1;color:var(--glow)}
+.spanel .stars{color:var(--bulb);letter-spacing:6px;font-size:18px;margin:14px 0 8px}
+.spanel .sub{font-size:13.5px;color:var(--mist)}
+.spanel .est{margin-top:18px;font-family:'Libre Caslon Text',serif;font-style:italic;letter-spacing:.26em;font-size:12px;color:var(--mist);text-transform:uppercase}
+/* services */
+.serv{padding-top:20px;padding-bottom:30px}
+.serv h2{font-size:clamp(30px,4.4vw,48px);margin:12px 0 8px}
+.serv .lead{color:var(--mist);max-width:62ch;margin-bottom:34px}
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.scard{background:linear-gradient(170deg,#3A2A20,#2A1C15);border:1px solid var(--edge);border-radius:10px;padding:24px 20px 26px;position:relative;overflow:hidden;transition:transform .3s ease,border-color .3s ease}
+.scard:hover{transform:translateY(-5px);border-color:var(--bulb)}
+.scard .no{font-family:'Libre Caslon Text',serif;font-size:12px;letter-spacing:.3em;color:var(--bulb)}
+.scard h3{font-size:18.5px;margin:10px 0 8px;font-weight:900}
+.scard p{font-size:13.5px;color:var(--mist);line-height:1.75}
+.scard::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:2px;background:linear-gradient(90deg,transparent,var(--bulb),transparent);opacity:0;transition:opacity .3s ease}
+.scard:hover::after{opacity:1}
+/* George's chair panel */
+.chair{margin:90px 0 70px;border:1px solid var(--plate);border-radius:14px;background:
+ radial-gradient(800px 300px at 12% 0%,rgba(245,201,123,.12),transparent 60%),linear-gradient(160deg,#3A2A20,#231711);padding:clamp(28px,5vw,60px);position:relative;overflow:hidden}
+.chair::before{content:'';position:absolute;top:10px;left:26px;right:26px;height:20px;background:radial-gradient(circle 4px at 20px 10px,rgba(255,220,163,.55) 55%,transparent 70%) 0 0/40px 20px repeat-x;filter:drop-shadow(0 0 5px rgba(245,201,123,.6))}
+.chair h2{font-size:clamp(28px,4.2vw,46px);margin:12px 0 12px;position:relative}
+.chair>p{color:var(--mist);max-width:64ch;position:relative;font-size:16.5px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px;position:relative}
+.step{background:rgba(29,19,14,.75);border:1px solid var(--edge);border-radius:10px;padding:22px 18px}
+.step .sn{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--bulb);color:var(--bulb);display:flex;align-items:center;justify-content:center;font-family:'Libre Caslon Text',serif;font-size:14px;margin-bottom:14px}
+.step h4{font-size:16.5px;margin-bottom:6px;font-weight:900}
+.step p{font-size:13px;color:var(--mist);line-height:1.7}
+.chair .src{margin-top:26px;font-size:13px;color:var(--mist);border-top:1px dashed var(--edge);padding-top:16px;position:relative}
+.chair .src b{color:var(--glow)}
+/* why here */
+.why{padding-top:10px;padding-bottom:40px}
+.wgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.wcard{border:1px solid var(--edge);border-radius:10px;padding:26px 22px;background:linear-gradient(170deg,#33231A,#2A1C15);text-align:center}
+.wcard .ic{width:54px;height:54px;margin:0 auto 16px;border-radius:50%;border:1px solid var(--plate);display:flex;align-items:center;justify-content:center;color:var(--bulb);font-size:20px;background:#231711;box-shadow:0 0 14px rgba(245,201,123,.15)}
+.wcard h3{font-size:17.5px;margin-bottom:8px;font-weight:900}
+.wcard p{font-size:13.5px;color:var(--mist);line-height:1.75}
+/* occasions strip */
+.occ{padding-top:40px;padding-bottom:20px}
+.ogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ocard{position:relative;border:1px solid var(--edge);border-radius:10px;padding:26px 22px;background:linear-gradient(170deg,#3A2A20,#2A1C15);overflow:hidden}
+.ocard::before{content:'';position:absolute;top:8px;left:18px;right:18px;height:14px;background:radial-gradient(circle 3px at 14px 7px,rgba(255,220,163,.5) 55%,transparent 70%) 0 0/28px 14px repeat-x}
+.ocard .on{font-family:'Libre Caslon Text',serif;font-style:italic;font-size:12px;letter-spacing:.24em;color:var(--bulb);text-transform:uppercase}
+.ocard h3{font-size:18px;margin:12px 0 8px;font-weight:900}
+.ocard p{font-size:13.5px;color:var(--mist);line-height:1.75}
 /* reviews */
-.revs{padding:76px 0 60px}
-.revs h2{font-size:clamp(26px,3.8vw,38px);margin-bottom:28px}
-.rgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.rcard{background:var(--wal2);border:1px solid var(--line);border-radius:14px;padding:24px}
-.stars-row{color:var(--bulb);letter-spacing:2px;font-size:14px}
-.rcard p{font-size:14.5px;color:#dccdb6;margin:12px 0 14px;font-style:italic}
-.rcard .who{font-size:13px;color:var(--mut)}
-.gbadge{margin-top:24px;text-align:center;color:var(--mut);font-size:14px}
-.gbadge b{color:var(--cream)}
+.revs{padding-top:70px;padding-bottom:60px}
+.revs h2{font-size:clamp(28px,4.2vw,46px);margin-bottom:32px}
+.rgrid{display:grid;grid-template-columns:.7fr 1.15fr 1.15fr;gap:14px}
+.medal{border:1px solid var(--plate);border-radius:10px;background:linear-gradient(165deg,#3A2A20,#231711);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 20px;text-align:center}
+.medal .score{font-family:'Libre Caslon Text',serif;font-size:58px;line-height:1;color:var(--glow)}
+.medal .stars{color:var(--bulb);letter-spacing:4px;font-size:15px;margin:10px 0 6px}
+.medal .sub{font-size:12.5px;color:var(--mist)}
+.rcard{background:#33231A;border:1px solid var(--edge);border-radius:10px;padding:26px;position:relative}
+.rcard::before{content:'❝';position:absolute;top:14px;left:18px;font-size:34px;color:var(--edge)}
+.stars-row{color:var(--bulb);letter-spacing:3px;font-size:13.5px}
+.rcard p{font-size:15.5px;color:var(--cream);margin:14px 0 16px;font-style:italic;line-height:1.9;font-family:'Libre Caslon Text','Tajawal',serif}
+.rcard .who{font-size:12.5px;color:var(--mist)}
 /* visit */
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:10px 0 130px;align-items:start}
-.visit h2{font-size:clamp(26px,3.8vw,38px);margin:8px 0 18px}
-.closed{display:inline-flex;align-items:center;gap:9px;border:1px dashed var(--bulb);color:var(--glow);border-radius:10px;padding:12px 18px;font-size:14.5px;font-weight:700;margin-bottom:14px}
-.vhint{color:#dccdb6;font-size:14.5px;margin-bottom:10px}
-.vinfo p{margin-bottom:14px;color:#dccdb6}
-.vinfo .adr{font-size:20px;font-family:'Tajawal',sans-serif;font-weight:800;color:var(--cream)}
-.btn{display:inline-block;background:linear-gradient(160deg,var(--glow),var(--bulb));color:#33221a;font-weight:700;border-radius:10px;padding:14px 26px;text-decoration:none;margin:6px 0 0 10px;font-size:15px}
-.btn.o{background:transparent;color:var(--cream);border:1px solid var(--line)}
-footer{padding:40px 5vw 150px;text-align:center;color:#8a755f;font-size:12.5px;border-top:1px solid var(--line)}
-@media(max-width:860px){
- header{grid-template-columns:1fr;padding-top:90px;gap:34px}
- .sgrid,.rgrid{grid-template-columns:1fr}
- .visit{grid-template-columns:1fr}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding-top:20px;padding-bottom:140px;align-items:start}
+.visit h2{font-size:clamp(28px,4.2vw,46px);margin:10px 0 20px}
+.vcardl{border:1px solid var(--edge);border-radius:10px;padding:28px;background:#33231A}
+.vrow{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px dashed var(--edge);font-size:14.5px;align-items:baseline}
+.vrow:last-child{border-bottom:0}
+.vrow .vk{color:var(--mist)}
+.vrow .vv{color:var(--cream);font-weight:700;text-align:left}
+.vinfo p{margin-bottom:16px;color:var(--mist)}
+.vinfo .adr{font-size:21px;font-weight:900;color:var(--cream)}
+/* bar — brass switch-plate */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:flex;align-items:center;gap:10px;background:linear-gradient(160deg,#6E5038,#4E382B);border:1px solid #7E5E42;border-radius:14px;box-shadow:0 20px 50px -18px rgba(0,0,0,.9),inset 0 1px 0 rgba(255,220,163,.25);padding:10px 34px;animation:platein .7s cubic-bezier(.2,.9,.3,1.15) both .3s}
+.bar::before,.bar::after{content:'';position:absolute;top:50%;transform:translateY(-50%);width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F2E7D4,#8A6A4C 70%);box-shadow:inset 0 -1px 2px rgba(0,0,0,.6)}
+.bar::before{right:12px}
+.bar::after{left:12px}
+@keyframes platein{from{transform:translateX(-50%) translateY(90px)}to{transform:translateX(-50%) translateY(0)}}
+.bar a{display:flex;align-items:center;gap:9px;padding:10px 18px;font-weight:900;font-size:14px;color:var(--cream);text-decoration:none;background:#231711;border:1px solid #5A4232;border-radius:22px}
+.bar a i{width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--glow),#C98F4C);box-shadow:0 0 8px rgba(245,201,123,.8);display:inline-block}
+.bar a.off i{background:radial-gradient(circle at 35% 30%,#7A6350,#4E382B);box-shadow:none}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:1px solid #6E5038;font-weight:700;font-size:11px;letter-spacing:.14em;padding:10px 14px;border-radius:4px;line-height:1;background:#231711;color:var(--glow);font-family:'Libre Caslon Text','Tajawal',serif}
+footer{padding:40px 5vw 130px;text-align:center;color:#8A7460;font-size:12.5px;border-top:1px solid var(--edge)}
+@media(max-width:920px){
+ .hero-in{grid-template-columns:1fr;padding-top:96px}
+ .vanity{width:min(430px,100%)}
+ .story{grid-template-columns:1fr;gap:36px;padding-top:80px}
+ .sgrid{grid-template-columns:repeat(2,1fr)}
+ .steps{grid-template-columns:repeat(2,1fr)}
+ .wgrid,.rgrid{grid-template-columns:1fr}
+ .visit{grid-template-columns:1fr;gap:40px}
+ .bar{padding:10px 26px}
+ .hsub-lat{letter-spacing:.12em;font-size:12px}
  .wrap{padding-left:5vw!important;padding-right:5vw!important}
 }
-/* switch-plate bar — toggle buttons */
-.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(10px + env(safe-area-inset-bottom));z-index:50;display:flex;gap:10px;align-items:center;background:var(--cream);border-radius:16px;padding:14px 20px;box-shadow:0 18px 44px -14px rgba(0,0,0,.75);animation:plateup .7s cubic-bezier(.2,.9,.3,1.15) both .3s}
-.bar::before,.bar::after{content:'';position:absolute;top:50%;width:7px;height:7px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#a99274 70%);transform:translateY(-50%);box-shadow:inset 0 0 2px rgba(0,0,0,.5)}
-.bar::before{right:7px}
-.bar::after{left:7px}
-@keyframes plateup{from{transform:translateX(-50%) translateY(90px)}to{transform:translateX(-50%) translateY(0)}}
-.bar a{display:flex;align-items:center;gap:9px;padding:12px 18px;border-radius:11px;font-family:'Tajawal',sans-serif;font-weight:800;font-size:13.5px;color:var(--cream);background:var(--wal2);text-decoration:none;border:1px solid var(--wal3)}
-.bar a .tg{width:26px;height:14px;border:1px solid var(--bulb);border-radius:99px;position:relative;flex:none}
-.bar a .tg::after{content:'';position:absolute;top:2px;right:2px;width:8px;height:8px;border-radius:50%;background:var(--bulb);transition:transform .3s ease}
-.bar a:hover .tg::after{transform:translateX(-13px);background:var(--glow);box-shadow:0 0 7px var(--glow)}
-.bar a.call{background:linear-gradient(160deg,var(--glow),var(--bulb));color:#33221a;border-color:var(--glow)}
-.bar a.call .tg{border-color:#33221a}
-.bar a.call .tg::after{background:#33221a}
-/* toggle chip */
-.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));left:12px;z-index:80;cursor:pointer;border:1px solid var(--bulb);font-weight:800;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:10px;line-height:1;background:var(--wal2);color:var(--bulb);font-family:'Tajawal',sans-serif}
+@media(max-width:480px){.sgrid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -108,80 +169,145 @@ footer{padding:40px 5vw 150px;text-align:center;color:#8a755f;font-size:12.5px;b
 <button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
 
 <header>
- <div>
-  <span class="hpin"><i></i> <span class="ar" data-edit="t3" data-edit-label="Text — صالون سيدات — شارع حلب، القصاع">صالون سيدات — شارع حلب، القصاع</span><span class="tr" data-edit="t4" data-edit-label="Text — Ladies' salon — Halab St, Qassaa">Ladies' salon — Halab St, Qassaa</span></span>
-  <h1><span class="ar">صالون<br>جورج مارديني</span><span class="tr">George Mardini<br>Salon</span><em data-edit="t5" data-edit-label="Text — George Mardini · coiffeur">George Mardini · coiffeur</em></h1>
-  <p class="hero-sub"><span class="ar" data-edit="t6" data-edit-label="Text — كرسي، مراية مضوّية، وإيد اشتغلت بالشعر…">كرسي، مراية مضوّية، وإيد اشتغلت بالشعر سنين طويلة — جورج بيعرف شعرك قبل ما تحكي.</span><span class="tr"><em data-edit="t7" data-edit-label="Text — A chair, a lit mirror, and hands that …">A chair, a lit mirror, and hands that have worked with hair for many years — George reads your hair before you say a word.</em></span></p>
-  <div class="hero-meta">
-   <span>★ <b data-edit="rating">4.2</b> <span class="ar" data-edit="t8" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t9" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">10</span> <span class="ar" data-edit="t10" data-edit-label="Text — تقييمات">تقييمات</span><span class="tr" data-edit="t11" data-edit-label="Text — reviews">reviews</span></span>
-   <span data-edit="addr">شارع حلب — القصاع</span>
+ <div class="hero-in">
+  <div class="htxt">
+   <span class="hbadge"><i></i><span class="ar" data-edit="t3" data-edit-label="Text — صالون سيدات · شارع حلب، القصاع">صالون سيدات · شارع حلب، القصاع</span><span class="tr" data-edit="t4" data-edit-label="Text — Ladies' salon · Halab St, Qassaa">Ladies' salon · Halab St, Qassaa</span></span>
+   <h1><span class="ar">صالون<br><em data-edit="t5" data-edit-label="Text — جورج مارديني">جورج مارديني</em></span><span class="tr lat">George Mardini<br><em data-edit="t6" data-edit-label="Text — Salon">Salon</em></span></h1>
+   <p class="hsub-lat lat" data-edit="t7" data-edit-label="Text — HALAB&nbsp;STREET&nbsp;·&nbsp;QASSAA&n…">HALAB&nbsp;STREET&nbsp;·&nbsp;QASSAA&nbsp;·&nbsp;DAMASCUS</p>
+   <p class="hero-sub"><span class="ar" data-edit="herosub">كرسي ومراية مضوّية وإيد قديمة بالمهنة — جورج بيعرف شعر زبوناته متل ما بيعرف حارته، والحجز بتلفون واحد على الصالون.</span><span class="tr" data-edit="t8" data-edit-label="Text — A chair, a lit mirror and hands long i…">A chair, a lit mirror and hands long in the trade — George knows his clients' hair the way he knows his own street, and booking takes one call to the salon.</span></p>
+   <div class="hero-meta">
+    <span class="chip">★ <b data-edit="rating">4.2</b> · <span data-edit="revcount">10</span> <span class="ar" data-edit="t9" data-edit-label="Text — تقييمات على غوغل">تقييمات على غوغل</span><span class="tr" data-edit="t10" data-edit-label="Text — Google reviews">Google reviews</span></span>
+    <span class="chip"><span class="ar" data-edit="t11" data-edit-label="Text — الحجز بالاتصال">الحجز بالاتصال</span><span class="tr" data-edit="t12" data-edit-label="Text — Booking by phone">Booking by phone</span></span>
+    <span class="chip"><span class="ar" data-edit="t13" data-edit-label="Text — الإثنين مغلق">الإثنين مغلق</span><span class="tr" data-edit="t14" data-edit-label="Text — Closed Mondays">Closed Mondays</span></span>
+   </div>
+   <div class="hcta">
+    <a class="btn" href="tel:+963114450440">📞 <span class="ar" data-edit="t15" data-edit-label="Text — اتصلوا عالصالون">اتصلوا عالصالون</span><span class="tr" data-edit="t16" data-edit-label="Text — Call the salon">Call the salon</span></a>
+    <a class="btn o" href="https://www.google.com/maps?cid=13768823197148616924" target="_blank" rel="noopener">◈ <span class="ar" data-edit="t17" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t18" data-edit-label="Text — Map">Map</span></a>
+   </div>
   </div>
- </div>
- <div class="mirror rev">
-  <div class="bulbs" aria-hidden="true"></div>
-  <img src="img/01.jpg" alt="جورج مارديني داخل الصالون قرب رفوف لوريال وشجرة الميلاد">
-  <div class="bulbs" aria-hidden="true"></div>
+  <div class="vanity rev">
+   <span class="bt" aria-hidden="true"></span><span class="bb" aria-hidden="true"></span><span class="bl" aria-hidden="true"></span><span class="br" aria-hidden="true"></span>
+   <img src="img/01.jpg" alt="جورج مارديني في صالونه — جنب رف منتجات لوريال بروفسيونيل وشجرة العيد">
+   <span class="tag"><span class="ar" data-edit="t19" data-edit-label="Text — جورج — بالصالون، جنب رف المنتجات">جورج — بالصالون، جنب رف المنتجات</span><span class="tr" data-edit="t20" data-edit-label="Text — George — in the salon, by the product …">George — in the salon, by the product shelf</span></span>
+  </div>
  </div>
 </header>
 
+<div class="tick" aria-hidden="true">
+ <div class="row">
+  <span class="b" data-edit="t21" data-edit-label="Text — قص">قص</span><span data-edit="t22" data-edit-label="Text — صبغة">صبغة</span><span class="b" data-edit="t23" data-edit-label="Text — ميش">ميش</span><span data-edit="t24" data-edit-label="Text — تسريحات">تسريحات</span><span class="b" data-edit="t25" data-edit-label="Text — سشوار">سشوار</span><span data-edit="t26" data-edit-label="Text — علاجات ترطيب">علاجات ترطيب</span><span class="b" data-edit="t27" data-edit-label="Text — عناية بالأطراف">عناية بالأطراف</span>
+  <span class="b" data-edit="t28" data-edit-label="Text — قص">قص</span><span data-edit="t29" data-edit-label="Text — صبغة">صبغة</span><span class="b" data-edit="t30" data-edit-label="Text — ميش">ميش</span><span data-edit="t31" data-edit-label="Text — تسريحات">تسريحات</span><span class="b" data-edit="t32" data-edit-label="Text — سشوار">سشوار</span><span data-edit="t33" data-edit-label="Text — علاجات ترطيب">علاجات ترطيب</span><span class="b" data-edit="t34" data-edit-label="Text — عناية بالأطراف">عناية بالأطراف</span>
+ </div>
+</div>
+
 <section class="story wrap">
  <div class="rev">
-  <span class="k"><span class="ar" data-edit="t12" data-edit-label="Text — حكايتنا">حكايتنا</span><span class="tr" data-edit="t13" data-edit-label="Text — Our story">Our story</span></span>
-  <h2 class="disp"><span class="ar">مصفّف قديم،<br>وحيّ بيعرفه بالاسم.</span><span class="tr lat">A veteran stylist,<br>in a quarter that knows him by name.</span></h2>
-  <p><span class="ar" data-edit="story1">على شارع حلب بالقصاع، الصالون متل بيوت الحي: رفوف لوريال بروفسيونال مرتّبة عالحيط، كنبة بنفسجية للانتظار، وبآخر السنة شجرة ميلاد بتلمع جنب الكراسي. جورج مارديني مصفّف من المدرسة القديمة — يلي بتقعد عكرسيه بتعرف إنو الشغلة عنده صنعة، مو موضة.</span><span class="tr" data-edit="story1en"><em data-edit="t14" data-edit-label="Text — On Halab Street in Qassaa, the salon f…">On Halab Street in Qassaa, the salon feels like the neighbourhood's homes: L'Oréal Professionnel shelves lined up on the wall, a purple settee for waiting, and at the end of every year a Christmas tree glowing beside the chairs. George Mardini is a stylist of the old school — sit in his chair and you know this is a craft to him, not a trend.</em></span></p>
-  <p><span class="ar" data-edit="story2">التقييمات بتحكي بلغته نفسها: «دقّة بالمواعيد، نظافة، جودة، احتراف». ما في استعراض وما في ضجّة — في مقص بيعرف شغله، ولون بينضبط من أول مرة، وسيدات بيرجعوا لنفس الكرسي من سنين.</span><span class="tr" data-edit="story2en"><em data-edit="t15" data-edit-label="Text — The reviews speak his own language: 'p…">The reviews speak his own language: "punctuality, cleanliness, quality, professionalism." No show, no noise — just scissors that know their work, colour that comes out right the first time, and ladies who have been returning to the same chair for years.</em></span></p>
+  <span class="k"><span class="ar" data-edit="t35" data-edit-label="Text — الحكاية">الحكاية</span><span class="tr" data-edit="t36" data-edit-label="Text — The story">The story</span></span>
+  <h2 class="disp"><span class="ar">إيد قديمة بالمهنة —<br>وهاد سرّ الكرسي.</span><span class="tr lat">Hands long in the trade —<br>that's the chair's secret.</span></h2>
+  <p><span class="ar" data-edit="story1">على شارع حلب بالقصاع، بين البيوت والدكاكين يلي بتعرف بعضها بالاسم، في صالون صغير وإله زبوناته الوفيّات: صالون جورج مارديني. هون ما في موضة بتنطبّق عالعمياني — في عين خبيرة بتشوف شو بيليق، وإيد بتنفّذ على مهل.</span><span class="tr" data-edit="t37" data-edit-label="Text — On Halab Street in Qassaa, among house…">On Halab Street in Qassaa, among houses and shops that know each other by name, there's a small salon with its loyal clientele: George Mardini's. No trend applied blindly here — an experienced eye sees what suits you, and a practised hand takes its time.</span></p>
+  <p><span class="ar" data-edit="story2">جورج معلّم قديم بالمهنة، ورف صالونه معبّى منتجات L'Oréal Professionnel — متل ما بتشوفوا بصورته جنب شجرة العيد. وزبوناته على غوغل بيحكوا عن «الدقة بالمواعيد والنظافة والجودة والمهنية» — كلمات ما بتنكتب إلا عن محل بيحترم وقت الست وشعرها.</span><span class="tr" data-edit="t38" data-edit-label="Text — George is a veteran of the craft, and …">George is a veteran of the craft, and his shelf is stocked with L'Oréal Professionnel — as you can see in his photo beside the Christmas tree. On Google his clients talk about "punctuality, cleanliness, quality, professionalism" — words only written about a place that respects a lady's time and her hair.</span></p>
+  <p><span class="ar" data-edit="story3">بالقصاع، الصالون مش بس محل — هو جارة وصديق وموعد أسبوعي. وهاد الدفء بتحسّيه من أول ما تفوتي.</span><span class="tr" data-edit="t39" data-edit-label="Text — In Qassaa a salon isn't just a shop — …">In Qassaa a salon isn't just a shop — it's a neighbour, a friend, a weekly appointment. You feel that warmth the moment you walk in.</span></p>
+  <div class="pull"><span class="ar" data-edit="t40" data-edit-label="Text — «مصفّف شعر رائع» — هيك كتبت وحدة من زب…">«مصفّف شعر رائع» — هيك كتبت وحدة من زبوناته على غوغل.</span><span class="tr" data-edit="t41" data-edit-label="Text — 'Great hairdresser' — as one of his cl…">"Great hairdresser" — as one of his clients wrote on Google.</span></div>
+ </div>
+ <div class="spanel rev">
+  <div class="big lat" data-edit="t42" data-edit-label="Text — G·M">G·M</div>
+  <div class="stars">★★★★☆</div>
+  <div class="sub"><b data-edit="rating2">4.2</b> <span class="ar" data-edit="t43" data-edit-label="Text — من 5 — على تقييمات غوغل">من 5 — على تقييمات غوغل</span><span class="tr" data-edit="t44" data-edit-label="Text — out of 5 on Google reviews">out of 5 on Google reviews</span></div>
+  <div class="est lat" data-edit="t45" data-edit-label="Text — HALAB&nbsp;ST&nbsp;·&nbsp;QASSAA">HALAB&nbsp;ST&nbsp;·&nbsp;QASSAA</div>
  </div>
 </section>
 
-<section class="svc wrap">
- <span class="k"><span class="ar" data-edit="t16" data-edit-label="Text — على الكرسي">على الكرسي</span><span class="tr" data-edit="t17" data-edit-label="Text — At the station">At the station</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t18" data-edit-label="Text — شو منشتغل">شو منشتغل</span><span class="tr lat" data-edit="t19" data-edit-label="Text — What we do">What we do</span></h2>
+<section class="serv wrap">
+ <span class="k"><span class="ar" data-edit="t46" data-edit-label="Text — الخدمات">الخدمات</span><span class="tr" data-edit="t47" data-edit-label="Text — Services">Services</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t48" data-edit-label="Text — شو منعمل لإلك">شو منعمل لإلك</span><span class="tr lat" data-edit="t49" data-edit-label="Text — What we do for you">What we do for you</span></h2>
+ <p class="lead"><span class="ar" data-edit="t50" data-edit-label="Text — كل خدمة بتاخد وقتها وموعدها — الأسعار …">كل خدمة بتاخد وقتها وموعدها — الأسعار بتنحكى بالصالون أو عالتلفون قبل الموعد.</span><span class="tr" data-edit="t51" data-edit-label="Text — Every service gets its own slot — pric…">Every service gets its own slot — prices at the salon or over the phone before your appointment.</span></p>
  <div class="sgrid">
-  <div class="scard rev"><div class="sml" aria-hidden="true"></div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="2.6"/><circle cx="6" cy="18" r="2.6"/><path d="M8.2 7.6 20 19M8.2 16.4 20 5"/></svg></div><h3><span class="ar" data-edit="t20" data-edit-label="Text — قص وتصفيف">قص وتصفيف</span><span class="tr lat" data-edit="t21" data-edit-label="Text — Cut &amp; blow-dry">Cut &amp; blow-dry</span></h3><p><span class="ar" data-edit="t22" data-edit-label="Text — قصّة مدروسة على شكل الوجه وتصفيف بيثبت…">قصّة مدروسة على شكل الوجه وتصفيف بيثبت — شغل مقص قبل كل شي.</span><span class="tr" data-edit="t23" data-edit-label="Text — A cut measured to the face and a blow-…">A cut measured to the face and a blow-dry that holds — scissor work first and always.</span></p></div>
-  <div class="scard rev"><div class="sml" aria-hidden="true"></div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M7 3h7l3 5v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M7 12h10"/></svg></div><h3><span class="ar" data-edit="t24" data-edit-label="Text — اللون والصبغة">اللون والصبغة</span><span class="tr lat" data-edit="t25" data-edit-label="Text — Colour">Colour</span></h3><p><span class="ar" data-edit="t26" data-edit-label="Text — لون بينضبط من أول جلسة — درجات هادية و…">لون بينضبط من أول جلسة — درجات هادية وطبيعية، مو صرخة.</span><span class="tr" data-edit="t27" data-edit-label="Text — Colour done right in one sitting — cal…">Colour done right in one sitting — calm, natural shades, never a shout.</span></p></div>
-  <div class="scard rev"><div class="sml" aria-hidden="true"></div><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.4"/></svg></div><h3><span class="ar" data-edit="t28" data-edit-label="Text — عناية ولمعان">عناية ولمعان</span><span class="tr lat" data-edit="t29" data-edit-label="Text — Hair care">Hair care</span></h3><p><span class="ar" data-edit="t30" data-edit-label="Text — عناية بالشعر بمنتجات لوريال بروفسيونال…">عناية بالشعر بمنتجات لوريال بروفسيونال — الرف يلي وراك بالصورة هو نفسه رف الشغل.</span><span class="tr" data-edit="t31" data-edit-label="Text — Hair care with L'Oréal Professionnel —…">Hair care with L'Oréal Professionnel — the shelf in the photo is the working shelf.</span></p></div>
+  <div class="scard rev"><span class="no" data-edit="t52" data-edit-label="Text — 01">01</span><h3><span class="ar" data-edit="t53" data-edit-label="Text — قص وتجديد">قص وتجديد</span><span class="tr" data-edit="t54" data-edit-label="Text — Cut &amp; reshape">Cut &amp; reshape</span></h3><p><span class="ar" data-edit="t55" data-edit-label="Text — قصّة بتضبط مع شكل الوجه وطبيعة الشعر —…">قصّة بتضبط مع شكل الوجه وطبيعة الشعر — مش مع الموضة بس.</span><span class="tr" data-edit="t56" data-edit-label="Text — A cut set to your face and hair type —…">A cut set to your face and hair type — not just the trend.</span></p></div>
+  <div class="scard rev"><span class="no" data-edit="t57" data-edit-label="Text — 02">02</span><h3><span class="ar" data-edit="t58" data-edit-label="Text — صبغة">صبغة</span><span class="tr" data-edit="t59" data-edit-label="Text — Colour">Colour</span></h3><p><span class="ar" data-edit="t60" data-edit-label="Text — لون كامل بمواد معروفة — من الرف يلي بت…">لون كامل بمواد معروفة — من الرف يلي بتشوفوه بالصورة.</span><span class="tr" data-edit="t61" data-edit-label="Text — Full colour with known products — from…">Full colour with known products — from the very shelf in the photo.</span></p></div>
+  <div class="scard rev"><span class="no" data-edit="t62" data-edit-label="Text — 03">03</span><h3><span class="ar" data-edit="t63" data-edit-label="Text — ميش وهايلايت">ميش وهايلايت</span><span class="tr" data-edit="t64" data-edit-label="Text — Highlights">Highlights</span></h3><p><span class="ar" data-edit="t65" data-edit-label="Text — خصل مدروسة بتفتح الوجه بلا ما تتعب الش…">خصل مدروسة بتفتح الوجه بلا ما تتعب الشعر.</span><span class="tr" data-edit="t66" data-edit-label="Text — Measured strands that light the face w…">Measured strands that light the face without tiring the hair.</span></p></div>
+  <div class="scard rev"><span class="no" data-edit="t67" data-edit-label="Text — 04">04</span><h3><span class="ar" data-edit="t68" data-edit-label="Text — تسريحات مناسبات">تسريحات مناسبات</span><span class="tr" data-edit="t69" data-edit-label="Text — Occasion styling">Occasion styling</span></h3><p><span class="ar" data-edit="t70" data-edit-label="Text — عرس، خطبة، سهرة — تسريحة بتثبت للصور و…">عرس، خطبة، سهرة — تسريحة بتثبت للصور ولآخر الليل.</span><span class="tr" data-edit="t71" data-edit-label="Text — Wedding, engagement, soirée — a style …">Wedding, engagement, soirée — a style that holds for photos and till late.</span></p></div>
+  <div class="scard rev"><span class="no" data-edit="t72" data-edit-label="Text — 05">05</span><h3><span class="ar" data-edit="t73" data-edit-label="Text — سشوار وتصفيف">سشوار وتصفيف</span><span class="tr" data-edit="t74" data-edit-label="Text — Blow-dry &amp; style">Blow-dry &amp; style</span></h3><p><span class="ar" data-edit="t75" data-edit-label="Text — سشوار يومي أو لمناسبة — بتطلعي من البا…">سشوار يومي أو لمناسبة — بتطلعي من الباب جاهزة.</span><span class="tr" data-edit="t76" data-edit-label="Text — Everyday or event blow-dry — you leave…">Everyday or event blow-dry — you leave ready.</span></p></div>
+  <div class="scard rev"><span class="no" data-edit="t77" data-edit-label="Text — 06">06</span><h3><span class="ar" data-edit="t78" data-edit-label="Text — علاجات ترطيب">علاجات ترطيب</span><span class="tr" data-edit="t79" data-edit-label="Text — Moisture treatments">Moisture treatments</span></h3><p><span class="ar" data-edit="t80" data-edit-label="Text — حمامات كريم وزيت للشعر المتعب من الصبغ…">حمامات كريم وزيت للشعر المتعب من الصبغة والحرارة.</span><span class="tr" data-edit="t81" data-edit-label="Text — Cream and oil baths for hair tired of …">Cream and oil baths for hair tired of colour and heat.</span></p></div>
+  <div class="scard rev"><span class="no" data-edit="t82" data-edit-label="Text — 07">07</span><h3><span class="ar" data-edit="t83" data-edit-label="Text — عناية بالأطراف">عناية بالأطراف</span><span class="tr" data-edit="t84" data-edit-label="Text — Ends care">Ends care</span></h3><p><span class="ar" data-edit="t85" data-edit-label="Text — تقصيف الأطراف بيروح أول بأول — والطول …">تقصيف الأطراف بيروح أول بأول — والطول بيضل محفوظ.</span><span class="tr" data-edit="t86" data-edit-label="Text — Split ends go as they come — and the l…">Split ends go as they come — and the length stays safe.</span></p></div>
+  <div class="scard rev"><span class="no" data-edit="t87" data-edit-label="Text — 08">08</span><h3><span class="ar" data-edit="t88" data-edit-label="Text — استشارة لون">استشارة لون</span><span class="tr" data-edit="t89" data-edit-label="Text — Colour consult">Colour consult</span></h3><p><span class="ar" data-edit="t90" data-edit-label="Text — قبل أي تغيير جريء — جورج بيحكيلك رأيه …">قبل أي تغيير جريء — جورج بيحكيلك رأيه بصراحة.</span><span class="tr" data-edit="t91" data-edit-label="Text — Before any bold change — George gives …">Before any bold change — George gives you his honest opinion.</span></p></div>
  </div>
 </section>
 
-<section class="band wrap rev">
- <h2 class="disp"><span class="ar" data-edit="t32" data-edit-label="Text — مراية مضوّية، وإيد هادية">مراية مضوّية، وإيد هادية</span><span class="tr lat" data-edit="t33" data-edit-label="Text — A lit mirror, a steady hand">A lit mirror, a steady hand</span></h2>
- <p><span class="ar" data-edit="t34" data-edit-label="Text — من غير مواعيد مستعجلة ولا كراسي عم تنط…">من غير مواعيد مستعجلة ولا كراسي عم تنطر بالدور — كل سيدة بتاخد وقتها، والمشوار على شارع حلب بيستاهل.</span><span class="tr"><em data-edit="t35" data-edit-label="Text — No rushed bookings, no queue of waitin…">No rushed bookings, no queue of waiting chairs — every lady gets her time, and the trip to Halab Street is worth it.</em></span></p>
+<div class="wrap">
+<section class="chair rev">
+ <span class="k"><span class="ar" data-edit="t92" data-edit-label="Text — التجربة">التجربة</span><span class="tr" data-edit="t93" data-edit-label="Text — The experience">The experience</span></span>
+ <h2 class="disp"><span class="ar" data-edit="t94" data-edit-label="Text — كرسي جورج — من الباب للمراية">كرسي جورج — من الباب للمراية</span><span class="tr lat" data-edit="t95" data-edit-label="Text — George's chair — door to mirror">George's chair — door to mirror</span></h2>
+ <p><span class="ar" data-edit="t96" data-edit-label="Text — نفس الطريق بكل زيارة، ونفس الاهتمام: ه…">نفس الطريق بكل زيارة، ونفس الاهتمام: هيك بتنبنى ثقة عشرات السنين بين الصالون وزبوناته.</span><span class="tr" data-edit="t97" data-edit-label="Text — The same path every visit, the same at…">The same path every visit, the same attention: that's how decades of trust are built between a salon and its clients.</span></p>
+ <div class="steps">
+  <div class="step rev"><span class="sn" data-edit="t98" data-edit-label="Text — ١">١</span><h4><span class="ar" data-edit="t99" data-edit-label="Text — الاستقبال">الاستقبال</span><span class="tr" data-edit="t100" data-edit-label="Text — The welcome">The welcome</span></h4><p><span class="ar" data-edit="t101" data-edit-label="Text — أهلا وسهلا، قعدة مريحة — وموعدك محفوظ …">أهلا وسهلا، قعدة مريحة — وموعدك محفوظ متل ما اتفقنا.</span><span class="tr" data-edit="t102" data-edit-label="Text — A warm hello, a comfortable seat — and…">A warm hello, a comfortable seat — and your slot kept exactly as agreed.</span></p></div>
+  <div class="step rev"><span class="sn" data-edit="t103" data-edit-label="Text — ٢">٢</span><h4><span class="ar" data-edit="t104" data-edit-label="Text — الاستشارة">الاستشارة</span><span class="tr" data-edit="t105" data-edit-label="Text — The consult">The consult</span></h4><p><span class="ar" data-edit="t106" data-edit-label="Text — شو بدك، وشو بيليق — حكي صريح قدام المر…">شو بدك، وشو بيليق — حكي صريح قدام المراية قبل أول مقصّة.</span><span class="tr" data-edit="t107" data-edit-label="Text — What you want and what suits you — str…">What you want and what suits you — straight talk at the mirror before the first snip.</span></p></div>
+  <div class="step rev"><span class="sn" data-edit="t108" data-edit-label="Text — ٣">٣</span><h4><span class="ar" data-edit="t109" data-edit-label="Text — شغل الإيد">شغل الإيد</span><span class="tr" data-edit="t110" data-edit-label="Text — The handwork">The handwork</span></h4><p><span class="ar" data-edit="t111" data-edit-label="Text — قص أو لون أو تسريحة — بإيد وحدة خبيرة،…">قص أو لون أو تسريحة — بإيد وحدة خبيرة، من أولها لآخرها.</span><span class="tr" data-edit="t112" data-edit-label="Text — Cut, colour or style — one expert hand…">Cut, colour or style — one expert hand from start to finish.</span></p></div>
+  <div class="step rev"><span class="sn" data-edit="t113" data-edit-label="Text — ٤">٤</span><h4><span class="ar" data-edit="t114" data-edit-label="Text — اللمسة الأخيرة">اللمسة الأخيرة</span><span class="tr" data-edit="t115" data-edit-label="Text — The final touch">The final touch</span></h4><p><span class="ar" data-edit="t116" data-edit-label="Text — سشوار وتثبيت ونظرة أخيرة عالمراية — لت…">سشوار وتثبيت ونظرة أخيرة عالمراية — لتطلعي مبسوطة.</span><span class="tr" data-edit="t117" data-edit-label="Text — Blow-dry, set and one last look in the…">Blow-dry, set and one last look in the mirror — so you leave happy.</span></p></div>
+ </div>
+ <p class="src"><span class="ar">من تقييم حقيقي على صفحة الصالون: <b data-edit="t118" data-edit-label="Text — «الدقة بالمواعيد، النظافة، الجودة، الم…">«الدقة بالمواعيد، النظافة، الجودة، المهنية، والقيمة.»</b></span><span class="tr">From a real review on the salon's Google page: <b data-edit="t119" data-edit-label="Text — 'Punctuality, cleanliness, quality, pr…">"Punctuality, cleanliness, quality, professionalism, value."</b></span></p>
+</section>
+</div>
+
+<section class="why wrap">
+ <span class="k"><span class="ar" data-edit="t120" data-edit-label="Text — ليش جورج">ليش جورج</span><span class="tr" data-edit="t121" data-edit-label="Text — Why George">Why George</span></span>
+ <h2 class="disp rev" style="font-size:clamp(28px,4.2vw,46px);margin:12px 0 30px"><span class="ar" data-edit="t122" data-edit-label="Text — تلات أشيا بتلاقيهن عالكرسي">تلات أشيا بتلاقيهن عالكرسي</span><span class="tr lat" data-edit="t123" data-edit-label="Text — Three things you find at this chair">Three things you find at this chair</span></h2>
+ <div class="wgrid">
+  <div class="wcard rev"><div class="ic">✂</div><h3><span class="ar" data-edit="t124" data-edit-label="Text — خبرة سنين طويلة">خبرة سنين طويلة</span><span class="tr" data-edit="t125" data-edit-label="Text — Years of experience">Years of experience</span></h3><p><span class="ar" data-edit="t126" data-edit-label="Text — معلّم قديم بالمهنة — الشعر الصعب عنده …">معلّم قديم بالمهنة — الشعر الصعب عنده قصة محلولة من زمان.</span><span class="tr" data-edit="t127" data-edit-label="Text — A veteran of the craft — difficult hai…">A veteran of the craft — difficult hair is a long-solved story here.</span></p></div>
+  <div class="wcard rev"><div class="ic">✦</div><h3><span class="ar" data-edit="t128" data-edit-label="Text — منتجات معروفة">منتجات معروفة</span><span class="tr" data-edit="t129" data-edit-label="Text — Known products">Known products</span></h3><p><span class="ar" data-edit="t130" data-edit-label="Text — رف الصالون معبّى L'Oréal Professionnel…">رف الصالون معبّى L'Oréal Professionnel — يلي بينحط على شعرك معروف اسمه وأصله.</span><span class="tr" data-edit="t131" data-edit-label="Text — The shelf is stocked with L'Oréal Prof…">The shelf is stocked with L'Oréal Professionnel — what touches your hair has a name and a source.</span></p></div>
+  <div class="wcard rev"><div class="ic">🏠</div><h3><span class="ar" data-edit="t132" data-edit-label="Text — دفء القصاع">دفء القصاع</span><span class="tr" data-edit="t133" data-edit-label="Text — Qassaa warmth">Qassaa warmth</span></h3><p><span class="ar" data-edit="t134" data-edit-label="Text — حي بيعرف بعضه — والصالون جزء من يوم ال…">حي بيعرف بعضه — والصالون جزء من يوم الحارة، مش بس محل.</span><span class="tr" data-edit="t135" data-edit-label="Text — A quarter that knows itself — and the …">A quarter that knows itself — and the salon is part of the street's day, not just a shop.</span></p></div>
+ </div>
+</section>
+
+<section class="occ wrap">
+ <span class="k"><span class="ar" data-edit="t136" data-edit-label="Text — لأي يوم">لأي يوم</span><span class="tr" data-edit="t137" data-edit-label="Text — For which day">For which day</span></span>
+ <h2 class="disp rev" style="font-size:clamp(28px,4.2vw,46px);margin:12px 0 30px"><span class="ar" data-edit="t138" data-edit-label="Text — كرسي واحد — لتلات مشاوير">كرسي واحد — لتلات مشاوير</span><span class="tr lat" data-edit="t139" data-edit-label="Text — One chair — three kinds of visit">One chair — three kinds of visit</span></h2>
+ <div class="ogrid">
+  <div class="ocard rev"><span class="on lat" data-edit="t140" data-edit-label="Text — Everyday">Everyday</span><h3><span class="ar" data-edit="t141" data-edit-label="Text — الإطلالة اليومية">الإطلالة اليومية</span><span class="tr" data-edit="t142" data-edit-label="Text — The everyday look">The everyday look</span></h3><p><span class="ar" data-edit="t143" data-edit-label="Text — قصة مظبوطة وسشوار سريع — لتطلعي عالشغل…">قصة مظبوطة وسشوار سريع — لتطلعي عالشغل أو المشوار وانتي مرتاحة من شعرك.</span><span class="tr" data-edit="t144" data-edit-label="Text — A neat cut and a quick blow-dry — off …">A neat cut and a quick blow-dry — off to work or errands with your hair off your mind.</span></p></div>
+  <div class="ocard rev"><span class="on lat" data-edit="t145" data-edit-label="Text — Occasion">Occasion</span><h3><span class="ar" data-edit="t146" data-edit-label="Text — قبل المناسبة">قبل المناسبة</span><span class="tr" data-edit="t147" data-edit-label="Text — Before the occasion">Before the occasion</span></h3><p><span class="ar" data-edit="t148" data-edit-label="Text — عرس، خطبة، عيد — تسريحة وموعد محسوب لت…">عرس، خطبة، عيد — تسريحة وموعد محسوب لتوصلي عالوقت وبأحلى إطلالة.</span><span class="tr" data-edit="t149" data-edit-label="Text — Wedding, engagement, holiday — a style…">Wedding, engagement, holiday — a styled slot timed so you arrive on time, looking your best.</span></p></div>
+  <div class="ocard rev"><span class="on lat" data-edit="t150" data-edit-label="Text — Change">Change</span><h3><span class="ar" data-edit="t151" data-edit-label="Text — التغيير الجريء">التغيير الجريء</span><span class="tr" data-edit="t152" data-edit-label="Text — The bold change">The bold change</span></h3><p><span class="ar" data-edit="t153" data-edit-label="Text — لون جديد أو قصة مختلفة — برأي صريح من …">لون جديد أو قصة مختلفة — برأي صريح من جورج قبل المقص، مو بعده.</span><span class="tr" data-edit="t154" data-edit-label="Text — A new colour or a different cut — with…">A new colour or a different cut — with George's honest opinion before the scissors, not after.</span></p></div>
+ </div>
 </section>
 
 <section class="revs wrap">
- <span class="k"><span class="ar" data-edit="t36" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t37" data-edit-label="Text — What they say">What they say</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t38" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t39" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
+ <span class="k"><span class="ar" data-edit="t155" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t156" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t157" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t158" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
  <div class="rgrid">
-  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t40" data-edit-label="Text — 'Great hairdresser.'">"Great hairdresser."</p><div class="who" data-edit="t41" data-edit-label="Text — Basma Aljurf · Google">Basma Aljurf · Google</div></div>
-  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t42" data-edit-label="Text — 'Punctuality, cleanliness, quality, pr…">"Punctuality, cleanliness, quality, professionalism, value."</p><div class="who" data-edit="t43" data-edit-label="Text — Jakob Ossi · Google">Jakob Ossi · Google</div></div>
+  <div class="medal rev">
+   <div class="score" data-edit="rating3">4.2</div>
+   <div class="stars">★★★★☆</div>
+   <div class="sub"><span data-edit="revcount2">10</span> <span class="ar" data-edit="t159" data-edit-label="Text — تقييمات على غوغل">تقييمات على غوغل</span><span class="tr" data-edit="t160" data-edit-label="Text — Google reviews">Google reviews</span></div>
+  </div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t161" data-edit-label="Text — 'Great hairdresser.'">"Great hairdresser."</p><div class="who" data-edit="t162" data-edit-label="Text — Basma Aljurf · Google">Basma Aljurf · Google</div></div>
+  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t163" data-edit-label="Text — 'Punctuality, cleanliness, quality, pr…">"Punctuality, cleanliness, quality, professionalism, value."</p><div class="who" data-edit="t164" data-edit-label="Text — Jakob Ossi · Google">Jakob Ossi · Google</div></div>
  </div>
- <p class="gbadge">★ <b data-edit="t44" data-edit-label="Text — 4.2 / 5">4.2 / 5</b> — <span data-edit="revcount2">10</span> <span class="ar" data-edit="t45" data-edit-label="Text — تقييمات على غوغل">تقييمات على غوغل</span><span class="tr" data-edit="t46" data-edit-label="Text — Google reviews">Google reviews</span></p>
 </section>
 
 <section class="visit wrap">
  <div class="rev">
-  <span class="k"><span class="ar" data-edit="t47" data-edit-label="Text — الزيارة">الزيارة</span><span class="tr" data-edit="t48" data-edit-label="Text — Visiting">Visiting</span></span>
-  <h2 class="disp"><span class="ar" data-edit="t49" data-edit-label="Text — قبل ما تجوا">قبل ما تجوا</span><span class="tr lat" data-edit="t50" data-edit-label="Text — Before you come">Before you come</span></h2>
-  <span class="closed">✕ <span class="ar" data-edit="h-note">الإثنين مغلق</span><span class="tr" data-edit="t51" data-edit-label="Text — Closed on Mondays">Closed on Mondays</span></span>
-  <p class="vhint"><span class="ar" data-edit="t52" data-edit-label="Text — اتصلوا قبل الزيارة لتتأكدوا من الدوام …">اتصلوا قبل الزيارة لتتأكدوا من الدوام وتحجزوا كرسيكن.</span><span class="tr" data-edit="t53" data-edit-label="Text — Call before visiting to confirm hours …">Call before visiting to confirm hours and hold your chair.</span></p>
-  <p class="vhint"><span class="ar" data-edit="t54" data-edit-label="Text — اطلبوا رقم الواتساب عند الاتصال.">اطلبوا رقم الواتساب عند الاتصال.</span><span class="tr" data-edit="t55" data-edit-label="Text — Ask for the WhatsApp number when you c…">Ask for the WhatsApp number when you call.</span></p>
+  <span class="k"><span class="ar" data-edit="t165" data-edit-label="Text — المواعيد">المواعيد</span><span class="tr" data-edit="t166" data-edit-label="Text — Appointments">Appointments</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t167" data-edit-label="Text — احجزي كرسيك">احجزي كرسيك</span><span class="tr lat" data-edit="t168" data-edit-label="Text — Book your chair">Book your chair</span></h2>
+  <div class="vcardl">
+   <div class="vrow"><span class="vk"><span class="ar" data-edit="t169" data-edit-label="Text — الحجز">الحجز</span><span class="tr" data-edit="t170" data-edit-label="Text — Booking">Booking</span></span><span class="vv"><span class="ar" data-edit="t171" data-edit-label="Text — بالاتصال على الصالون">بالاتصال على الصالون</span><span class="tr" data-edit="t172" data-edit-label="Text — By calling the salon">By calling the salon</span></span></div>
+   <div class="vrow"><span class="vk"><span class="ar" data-edit="t173" data-edit-label="Text — الهاتف">الهاتف</span><span class="tr" data-edit="t174" data-edit-label="Text — Phone">Phone</span></span><span class="vv num" data-edit="phone2">+963 11 445 0440</span></div>
+   <div class="vrow"><span class="vk"><span class="ar" data-edit="t175" data-edit-label="Text — واتساب">واتساب</span><span class="tr" data-edit="t176" data-edit-label="Text — WhatsApp">WhatsApp</span></span><span class="vv"><span class="ar" data-edit="t177" data-edit-label="Text — اطلبوا رقم الواتساب عند الاتصال">اطلبوا رقم الواتساب عند الاتصال</span><span class="tr" data-edit="t178" data-edit-label="Text — Ask for the WhatsApp number when you c…">Ask for the WhatsApp number when you call</span></span></div>
+   <div class="vrow"><span class="vk"><span class="ar" data-edit="t179" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t180" data-edit-label="Text — Hours">Hours</span></span><span class="vv"><span class="ar" data-edit="h-note">الإثنين مغلق</span><span class="tr" data-edit="t181" data-edit-label="Text — Closed Mondays">Closed Mondays</span></span></div>
+  </div>
  </div>
  <div class="vinfo rev">
-  <span class="k"><span class="ar" data-edit="t56" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t57" data-edit-label="Text — Find us">Find us</span></span>
-  <h2 class="disp"><span class="ar" data-edit="t58" data-edit-label="Text — على شارع حلب">على شارع حلب</span><span class="tr lat" data-edit="t59" data-edit-label="Text — On Halab Street">On Halab Street</span></h2>
-  <p class="adr" data-edit="addr2">شارع حلب — القصاع، دمشق</p>
-  <p><span class="ar" data-edit="t60" data-edit-label="Text — خط أرضي:">خط أرضي:</span><span class="tr" data-edit="t61" data-edit-label="Text — Landline:">Landline:</span> <b dir="ltr" data-edit="phone">+963 11 445 0440</b></p>
-  <a class="btn" href="tel:+963114450440"><span class="ar" data-edit="t62" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t63" data-edit-label="Text — Call us">Call us</span></a>
-  <a class="btn o" href="https://www.google.com/maps?cid=13768823197148616924" target="_blank" rel="noopener"><span class="ar" data-edit="t64" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t65" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+  <span class="k"><span class="ar" data-edit="t182" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t183" data-edit-label="Text — Find us">Find us</span></span>
+  <h2 class="disp"><span class="ar" data-edit="t184" data-edit-label="Text — شارع حلب، القصاع">شارع حلب، القصاع</span><span class="tr lat" data-edit="t185" data-edit-label="Text — Halab St, Qassaa">Halab St, Qassaa</span></h2>
+  <p class="adr" data-edit="addr">شارع حلب — القصاع، دمشق</p>
+  <p><span class="ar" data-edit="t186" data-edit-label="Text — بقلب القصاع — والخريطة بتوصلكن عالباب.">بقلب القصاع — والخريطة بتوصلكن عالباب.</span><span class="tr" data-edit="t187" data-edit-label="Text — In the heart of Qassaa — the map takes…">In the heart of Qassaa — the map takes you to the door.</span></p>
+  <a class="btn" href="tel:+963114450440">📞 <span class="ar" data-edit="t188" data-edit-label="Text — اتصال">اتصال</span><span class="tr" data-edit="t189" data-edit-label="Text — Call">Call</span></a>
+  <a class="btn o" href="https://www.google.com/maps?cid=13768823197148616924" target="_blank" rel="noopener">◈ <span class="ar" data-edit="t190" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t191" data-edit-label="Text — Map">Map</span></a>
  </div>
 </section>
 
-<footer><span data-edit="footer">صالون جورج مارديني · شارع حلب — القصاع، دمشق · <span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t66" data-edit-label="Text — +963 11 445 0440">+963 11 445 0440</span></span></footer>
+<footer><span data-edit="footer">صالون جورج مارديني · شارع حلب، القصاع — دمشق · </span><span class="num" data-edit="t192" data-edit-label="Text — +963 11 445 0440">+963 11 445 0440</span></footer>
 
 <div class="bar">
- <a class="call" href="tel:+963114450440"><span class="tg" aria-hidden="true"></span><b><span class="ar" data-edit="t67" data-edit-label="Text — اتصال">اتصال</span><span class="tr" data-edit="t68" data-edit-label="Text — Call">Call</span></b></a>
- <a href="https://www.google.com/maps?cid=13768823197148616924" target="_blank" rel="noopener"><span class="tg" aria-hidden="true"></span><b><span class="ar" data-edit="t69" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t70" data-edit-label="Text — Map">Map</span></b></a>
- <a href="#svc" onclick="document.querySelector('.svc').scrollIntoView({behavior:'smooth'});return false;"><span class="tg" aria-hidden="true"></span><b><span class="ar" data-edit="t71" data-edit-label="Text — الخدمات">الخدمات</span><span class="tr" data-edit="t72" data-edit-label="Text — Services">Services</span></b></a>
+ <a href="tel:+963114450440"><i aria-hidden="true"></i> <b><span class="ar" data-edit="t193" data-edit-label="Text — اتصال للحجز">اتصال للحجز</span><span class="tr" data-edit="t194" data-edit-label="Text — Call to book">Call to book</span></b></a>
+ <a class="off" href="https://www.google.com/maps?cid=13768823197148616924" target="_blank" rel="noopener"><i aria-hidden="true"></i> <span class="ar" data-edit="t195" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t196" data-edit-label="Text — Map">Map</span></a>
 </div>
 
 <script>
