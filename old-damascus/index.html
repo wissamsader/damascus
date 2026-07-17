@@ -11,12 +11,12 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{overflow-x:clip}
-:root{--tom:#c21f1f;--tom2:#a01717;--mus:#e8a61a;--wh:#fdf8ef;--ink:#221010;--line:#e2d6c2}
-body{background:var(--wh);color:var(--ink);font:16px/1.85 'Almarai',sans-serif}
+:root{--tom:#c21f1f;--tom2:#8f1717;--mus:#e8a61a;--wh:#fffaf0;--paper:#fdf8ef;--ink:#221010;--ink2:#3a2a22;--line:#e2d6c2;--mut:#8a6f57}
+body{background:var(--paper);color:var(--ink);font:16px/1.85 'Almarai',sans-serif}
 img{max-width:100%;display:block}
 a{color:inherit}
 .wrap{max-width:1100px;margin:0 auto;padding:0 5vw}
-.disp{font-family:'Lalezar',cursive}
+.disp{font-family:'Lalezar',cursive;font-weight:400}
 .lat{font-family:'Anton',sans-serif}
 .k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--tom);font-weight:800}
 .rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
@@ -24,81 +24,130 @@ a{color:inherit}
 html.en .ar{display:none!important}
 html:not(.en) .tr{display:none!important}
 .tr{direction:ltr;unicode-bidi:isolate}
-/* hero — split: storefront photo + stacked menu-board tiles */
-header{display:grid;grid-template-columns:1fr 1.05fr;min-height:92svh}
-.hero-type{background:var(--tom) repeating-linear-gradient(0deg,rgba(0,0,0,.08) 0 2px,transparent 2px 26px);display:flex;flex-direction:column;justify-content:center;padding:96px 5vw 64px;color:var(--wh)}
-.tile-stack{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
-.tile-stack b{display:inline-block;background:var(--wh);color:var(--tom);font-family:'Lalezar',cursive;font-weight:400;font-size:clamp(38px,6.4vw,72px);line-height:1.28;padding:2px 20px 0;border-radius:4px;box-shadow:0 6px 0 rgba(0,0,0,.22);animation:tiledrop .6s cubic-bezier(.2,.9,.3,1.2) both}
-.tile-stack b:nth-child(2){background:var(--mus);color:var(--ink);animation-delay:.12s}
-.tile-stack b:nth-child(3){animation-delay:.24s}
-.tile-stack b .lat{font-size:clamp(30px,5vw,56px);letter-spacing:.02em}
-@keyframes tiledrop{from{opacity:0;transform:translateY(-26px)}to{opacity:1;transform:none}}
-.hero-tag{margin-top:22px;font-size:clamp(14.5px,1.8vw,17.5px);max-width:44ch;color:#ffe9d2}
-.hero-meta{margin-top:20px;display:flex;gap:20px;flex-wrap:wrap;font-size:13px;color:#f5cfa0}
-.hero-meta b{color:var(--wh)}
-.hero-ph{position:relative;min-height:46svh;background:url('img/01.jpg') center/cover no-repeat}
-.hero-ph::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(162,23,23,.28),transparent 40%)}
-/* story */
-.story{display:grid;grid-template-columns:1.1fr .9fr;gap:6vw;align-items:center;padding:96px 0 70px}
-.story img{border-radius:8px;aspect-ratio:4/5;object-fit:cover;border:4px solid var(--tom);box-shadow:10px 10px 0 var(--mus)}
-.story h2{font-size:clamp(30px,4.6vw,48px);line-height:1.3;margin:12px 0 18px;color:var(--tom)}
-.story p{color:#5c4436;margin-bottom:14px}
-/* highlights */
-.high{padding:30px 0 10px}
-.high h2{font-size:clamp(28px,4vw,42px);margin:10px 0 30px;color:var(--tom)}
-.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.hcard{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease}
-.hcard:hover{transform:translateY(-6px);box-shadow:0 18px 36px -18px rgba(194,31,31,.4)}
-.hcard img{height:215px;width:100%;object-fit:cover}
-.hcard .hb{padding:16px 18px 20px;border-top:4px solid var(--mus)}
-.hcard h3{font-family:'Lalezar',cursive;font-weight:400;font-size:22px;margin-bottom:6px;color:var(--tom)}
-.hcard p{font-size:13.8px;color:#7a6152}
-/* menu — their real board, as a photo */
-.menu{margin:90px 0 70px;background:var(--ink);border-radius:14px;padding:clamp(24px,5vw,56px);display:grid;grid-template-columns:.85fr 1.15fr;gap:5vw;align-items:center;color:var(--wh);background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.04) 0 2px,transparent 2px 28px)}
-.menu img{border-radius:8px;border:3px solid var(--mus);max-height:520px;object-fit:cover;width:100%}
-.menu h2{font-family:'Lalezar',cursive;font-weight:400;font-size:clamp(34px,5vw,54px);color:var(--mus);margin-bottom:10px}
-.menu p{color:#e8d9c5;margin-bottom:14px;font-size:15.5px}
-.menu .note{display:inline-block;background:var(--tom);color:var(--wh);border-radius:6px;padding:10px 18px;font-weight:800;font-size:14px}
-/* gallery */
-.gal{padding:20px 0 60px}
-.gal h2{font-size:clamp(28px,4vw,42px);margin:10px 0 26px;color:var(--tom)}
-.ggrid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:185px;gap:12px}
-.ggrid img{width:100%;height:100%;object-fit:cover;border-radius:8px}
-/* reviews */
-.revs{padding:40px 0 70px}
-.revs h2{font-size:clamp(28px,4vw,42px);margin-bottom:30px;color:var(--tom)}
-.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.rcard{background:#fff;border:1px solid var(--line);border-top:5px solid var(--tom);border-radius:10px;padding:22px}
-.stars-row{color:var(--mus);letter-spacing:2px;font-size:14px}
-.rcard p{font-size:14.5px;color:#5c4436;margin:12px 0 14px;font-style:italic}
-.rcard .who{font-size:13px;color:#a08265}
-.gbadge{margin-top:26px;text-align:center;color:#7a6152;font-size:14px}
+.num{direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+
+/* ===== MASTHEAD — thin newspaper nameplate bar ===== */
+.mast{background:var(--tom);color:var(--wh);padding:14px 0;border-bottom:3px solid var(--ink)}
+.mast-in{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.mast-side{font-size:10.5px;line-height:1.5;letter-spacing:.06em;font-weight:800;opacity:.92;max-width:24ch}
+.mast-side.r{text-align:left}
+.mast-name{text-align:center;flex:0 0 auto}
+.mast-name .mk{display:block;font-family:'Anton',sans-serif;font-size:11px;letter-spacing:.42em;text-transform:uppercase;opacity:.85;margin-bottom:2px}
+.mast-name h1{font-size:clamp(24px,4.4vw,40px);line-height:1}
+
+/* ===== HERO — capped full-bleed burger, big tabloid headline ===== */
+header{position:relative;min-height:clamp(600px,92svh,820px);max-height:860px;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
+header .ph{position:absolute;inset:0}
+header .ph img{width:100%;height:100%;object-fit:cover;object-position:center 44%}
+header .ph .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,16,16,.22) 0%,rgba(34,16,16,.28) 40%,rgba(34,16,16,.88) 100%)}
+.hero-in{position:relative;z-index:2;padding:120px 5vw 64px;max-width:1100px;margin:0 auto}
+.hk{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--mus);color:var(--wh);border-radius:4px;padding:7px 16px;font-size:12.5px;letter-spacing:.06em;font-weight:800;margin-bottom:22px;background:rgba(34,16,16,.5)}
+.hh{color:var(--wh);font-size:clamp(46px,9vw,92px);line-height:1.08;text-shadow:0 8px 34px rgba(0,0,0,.55)}
+.hh .tr{font-family:'Anton',sans-serif;text-transform:uppercase;letter-spacing:.005em}
+.hsrc{margin-top:12px;font-size:13.5px;color:#f2ddc4;opacity:.9}
+.hero-sub{margin-top:14px;font-size:clamp(15px,1.9vw,18.5px);color:#f5ead9;max-width:52ch}
+.hero-meta{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+.chip{border:1.5px solid rgba(255,250,240,.35);border-radius:4px;padding:8px 16px;font-size:13px;color:var(--wh);background:rgba(34,16,16,.5)}
+.chip b{color:var(--mus)}
+
+/* ===== PHOTO MARQUEE STRIP ===== */
+.pmarq-sec{background:var(--ink);padding:32px 0}
+.pmarq-sec .k{color:var(--mus);margin-bottom:4px}
+.pmarq{overflow:hidden}
+.prow{display:flex;width:max-content;gap:16px;padding:0 5vw;animation:pmscroll 32s linear infinite}
+.pmarq:hover .prow{animation-play-state:paused}
+@keyframes pmscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.prow figure{flex:0 0 auto}
+.prow img{height:210px;width:auto;border-radius:4px;border:3px solid var(--mus);display:block}
+.prow figcaption{margin-top:9px;text-align:center;font-size:12px;color:var(--wh);opacity:.85;letter-spacing:.03em}
+
+/* ===== STORY — 2-column newsprint ===== */
+.story{padding:96px 0 78px}
+.story h2{font-size:clamp(30px,4.6vw,50px);line-height:1.3;margin:12px 0 32px;color:var(--tom);max-width:24ch}
+.cols{display:grid;grid-template-columns:1fr 1fr;column-gap:6vw}
+.cols p{color:var(--ink2);font-size:16px;line-height:1.9}
+.cols .lede{position:relative}
+.cols .lede::after{content:'';position:absolute;top:0;bottom:0;inset-inline-end:-3vw;width:2px;background:var(--line)}
+.lede::first-line{font-weight:800;color:var(--tom)}
+
+/* ===== MENU BOARD PANEL ===== */
+.board-sec{padding:20px 0 90px}
+.board-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:6vw;align-items:center}
+.boardframe{border:10px solid var(--ink);border-radius:4px;box-shadow:0 26px 54px -26px rgba(34,16,16,.55)}
+.boardframe img{aspect-ratio:9/16;object-fit:cover;display:block;border-radius:1px}
+.board-txt h2{font-size:clamp(28px,4.2vw,44px);margin:10px 0 16px;color:var(--tom)}
+.board-txt p{color:var(--ink2);font-size:16px;margin-bottom:16px}
+.mnote{display:inline-block;background:var(--tom);color:var(--wh);padding:12px 20px;border-radius:6px;font-weight:800;font-size:14px;box-shadow:0 5px 0 var(--tom2)}
+
+/* ===== SPECIAL REPORT — boxed newsprint feature, no photo ===== */
+.report{margin:10px 0 90px;border:3px solid var(--ink);border-radius:4px;padding:clamp(26px,4vw,50px);background:var(--wh);position:relative}
+.report::before{content:'';position:absolute;inset:12px;border:1px solid var(--tom);border-radius:2px;pointer-events:none}
+.report .k.rk{position:relative}
+.report-grid{display:grid;grid-template-columns:auto 1fr;gap:5vw;align-items:center;margin-top:18px;position:relative}
+.rstat{text-align:center}
+.rstat b{display:block;font-family:'Anton',sans-serif;font-size:clamp(48px,7vw,84px);color:var(--tom);line-height:1}
+.rstat small{display:block;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);margin-top:6px;font-weight:800}
+.report-grid h3{font-size:clamp(24px,3.4vw,36px);margin-bottom:12px;color:var(--ink)}
+.report-grid p{color:var(--ink2);font-size:15.5px;max-width:62ch}
+
+/* ===== DUO — photo-essay pair ===== */
+.duo{padding:10px 0 90px}
+.duo h2{font-size:clamp(28px,4.2vw,44px);margin:10px 0 8px;color:var(--tom)}
+.duo-grid{display:grid;grid-template-columns:1fr 1fr;gap:5vw;margin-top:30px}
+.duo-grid img{aspect-ratio:4/3;object-fit:cover;border-radius:4px;border:1px solid var(--line)}
+.duo-grid figcaption{margin-top:12px;font-size:13.5px;color:var(--mut);text-align:center}
+
+/* ===== REVIEWS — scattered newspaper clippings ===== */
+.clip-sec{padding:10px 0 90px}
+.clip-sec h2{font-size:clamp(28px,4.2vw,44px);margin:10px 0 8px;color:var(--tom)}
+.clips{display:flex;flex-wrap:wrap;gap:26px;margin-top:38px}
+.clip{flex:1 1 280px;background:var(--wh);border:1px solid var(--line);padding:24px 24px 20px;position:relative;box-shadow:2px 6px 14px rgba(34,16,16,.1)}
+.clip::before{content:'"';position:absolute;top:-10px;left:16px;font-family:'Anton',sans-serif;font-size:60px;line-height:1;color:var(--line)}
+.clip:nth-child(1){transform:rotate(-1.3deg)}
+.clip:nth-child(2){transform:rotate(1deg);margin-top:16px}
+.clip:nth-child(3){transform:rotate(-.7deg)}
+.clip p{font-size:15px;color:var(--ink2);font-style:italic;line-height:1.75;position:relative}
+.clip cite{display:block;margin-top:14px;font-size:12.5px;color:var(--mut);font-style:normal}
+.gbadge{margin-top:32px;text-align:center;color:var(--mut);font-size:14px}
 .gbadge b{color:var(--tom)}
-/* visit */
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;padding:20px 0 120px;align-items:start}
-.visit h2{font-size:clamp(28px,4vw,42px);margin:8px 0 20px;color:var(--tom)}
-.hours{width:100%;border-collapse:collapse;font-size:14.5px}
-.hours td{padding:9px 0;border-bottom:1px dashed var(--line);color:#5c4436}
-.hours td:last-child{text-align:left;color:var(--ink);font-weight:800}
-.vinfo p{margin-bottom:14px;color:#5c4436}
-.vinfo .adr{font-size:21px;font-family:'Lalezar',cursive;font-weight:400;color:var(--ink)}
-.vinfo .tel{font-size:16.5px;font-weight:800;color:var(--ink)}
-.btn{display:inline-block;background:var(--tom);color:var(--wh);font-weight:800;border-radius:8px;padding:14px 26px;text-decoration:none;margin:6px 0 0 10px;font-size:15px;box-shadow:0 5px 0 var(--tom2)}
-.btn.o{background:var(--mus);color:var(--ink);box-shadow:0 5px 0 #b8820f}
-footer{padding:40px 5vw 130px;text-align:center;color:#a08265;font-size:12.5px;border-top:1px solid var(--line)}
+
+/* ===== VISIT — receipt panel ===== */
+.receipt-sec{padding:10px 0 130px}
+.receipt-sec h2{font-size:clamp(28px,4.2vw,44px);margin:10px 0 8px;color:var(--tom)}
+.receipt{max-width:440px;margin-top:32px;background:var(--wh);border:1px solid var(--line);padding:34px 30px 46px;position:relative;box-shadow:0 34px 70px -34px rgba(34,16,16,.4);
+ clip-path:polygon(0 0,100% 0,100% 95%,87.5% 100%,75% 95%,62.5% 100%,50% 95%,37.5% 100%,25% 95%,12.5% 100%,0 95%)}
+.rtop{text-align:center}
+.rtop b{display:block;font-size:clamp(22px,3vw,28px);color:var(--tom)}
+.rtop .lat{display:block;font-size:10.5px;letter-spacing:.3em;color:var(--mut);margin-top:4px}
+.rline{height:2px;margin:20px 0;background:repeating-linear-gradient(90deg,var(--ink) 0 6px,transparent 6px 11px)}
+.rline.dashed{background:repeating-linear-gradient(90deg,var(--line) 0 5px,transparent 5px 9px);opacity:.9}
+.rrow{display:flex;justify-content:space-between;gap:14px;padding:8px 0;font-size:14.5px}
+.rrow>span:first-child{color:var(--mut);font-weight:700}
+.rrow>span:last-child{color:var(--ink);font-weight:800;text-align:left}
+.rtotal{text-align:center;margin:6px 0 22px;font-family:'Lalezar',cursive;font-size:20px;color:var(--tom)}
+.rtotal .tr{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:15px}
+.rbtns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.rbtn{display:inline-flex;align-items:center;gap:7px;background:var(--tom);color:var(--wh);font-weight:800;border-radius:6px;padding:13px 20px;text-decoration:none;font-size:14px;box-shadow:0 4px 0 var(--tom2)}
+.rbtn.o{background:var(--mus);color:var(--ink);box-shadow:0 4px 0 #b8820f}
+.rbtn.fbb{background:var(--ink);color:var(--wh);box-shadow:0 4px 0 #120808;padding:13px 16px}
+.rbtn.fbb svg{width:17px;height:17px;display:block}
+footer{padding:40px 5vw 130px;text-align:center;color:var(--mut);font-size:12.5px;border-top:1px solid var(--line)}
+
 @media(max-width:860px){
- header{grid-template-columns:1fr}
- .hero-ph{order:-1;min-height:44svh}
- .hero-type{padding:44px 5vw 52px}
- .story{grid-template-columns:1fr;gap:26px;padding-top:60px}
- .hgrid,.rgrid{grid-template-columns:1fr}
- .menu{grid-template-columns:1fr}
- .ggrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
- .visit{grid-template-columns:1fr}
+ .mast-side{display:none}
+ .cols{grid-template-columns:1fr;column-gap:0}
+ .cols .lede::after{display:none}
+ .board-grid{grid-template-columns:1fr}
+ .boardframe{max-width:320px;margin:0 auto}
+ .report-grid{grid-template-columns:1fr;text-align:center}
+ .duo-grid{grid-template-columns:1fr;gap:28px}
  .wrap{padding-left:5vw!important;padding-right:5vw!important}
 }
+@media(max-width:480px){.clips{flex-direction:column}.clip{transform:none!important;margin-top:0!important}}
+
 /* menu-board tile strip — unique bar: letter tiles on a ridged board */
 .bar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(10px + env(safe-area-inset-bottom));z-index:50;display:flex;gap:3px;background:var(--ink) repeating-linear-gradient(0deg,rgba(255,255,255,.06) 0 2px,transparent 2px 9px);border-radius:10px;padding:7px;box-shadow:0 18px 44px -14px rgba(34,16,16,.55);animation:boardup .7s cubic-bezier(.2,.9,.3,1.15) both .3s}
+.bar::before{content:'';position:absolute;top:-3px;left:10px;right:10px;height:3px;background:var(--mus);border-radius:2px}
 @keyframes boardup{from{transform:translateX(-50%) translateY(100px)}to{transform:translateX(-50%) translateY(0)}}
 .bar a{display:flex;align-items:center;gap:8px;padding:13px 18px;font-family:'Lalezar','Almarai',cursive;font-weight:400;font-size:16px;letter-spacing:.02em;color:var(--wh);text-decoration:none;background:#3a1d13;border-radius:5px;border-bottom:3px solid rgba(0,0,0,.45)}
 .bar a.call{background:var(--tom)}
@@ -114,103 +163,126 @@ footer{padding:40px 5vw 130px;text-align:center;color:#a08265;font-size:12.5px;b
 
 <button class="lgx" onclick="document.documentElement.classList.toggle('en')" aria-label="English / العربية"><span class="ar" data-edit="t1" data-edit-label="Text — EN">EN</span><span class="tr" data-edit="t2" data-edit-label="Text — ع">ع</span></button>
 
-<header>
- <div class="hero-type">
-  <span class="k" style="color:var(--mus);margin-bottom:14px"><span class="ar" data-edit="t3" data-edit-label="Text — على الشارع المستقيم — مدحت باشا">على الشارع المستقيم — مدحت باشا</span><span class="tr" data-edit="t4" data-edit-label="Text — On the Straight Street — Midhat Pasha">On the Straight Street — Midhat Pasha</span></span>
-  <div class="tile-stack disp">
-   <b><span class="ar" data-edit="t5" data-edit-label="Text — سناك">سناك</span><span class="tr lat" data-edit="t6" data-edit-label="Text — OLD">OLD</span></b>
-   <b><span class="ar" data-edit="t7" data-edit-label="Text — دمشق">دمشق</span><span class="tr lat" data-edit="t8" data-edit-label="Text — DAMASCUS">DAMASCUS</span></b>
-   <b><span class="ar" data-edit="t9" data-edit-label="Text — القديمة">القديمة</span><span class="tr lat" data-edit="t10" data-edit-label="Text — SNACK">SNACK</span></b>
+<div class="mast">
+ <div class="mast-in wrap">
+  <span class="mast-side"><span class="ar" data-edit="t3" data-edit-label="Text — الشارع المستقيم — مدحت باشا">الشارع المستقيم — مدحت باشا</span><span class="tr" data-edit="t4" data-edit-label="Text — The Straight Street — Midhat Pasha">The Straight Street — Midhat Pasha</span></span>
+  <div class="mast-name">
+   <span class="mk lat" data-edit="t5" data-edit-label="Text — OLD DAMASCUS SNACK">OLD DAMASCUS SNACK</span>
+   <h1 class="disp"><span class="ar" data-edit="t6" data-edit-label="Text — سناك دمشق القديمة">سناك دمشق القديمة</span><span class="tr lat" data-edit="t7" data-edit-label="Text — Old Damascus Snack">Old Damascus Snack</span></h1>
   </div>
-  <p class="hero-tag"><span class="ar" data-edit="t11" data-edit-label="Text — أكل شارع على الأصول: سندويشات وبرغر وب…">أكل شارع على الأصول: سندويشات وبرغر وبطاطا تطلع سخنة من المطبخ، على أقدم شارع في المدينة.</span><span class="tr lat" data-edit="t12" data-edit-label="Text — Street food done properly — sandwiches…">Street food done properly — sandwiches, burgers and fries straight off the counter, on the city's oldest street.</span></p>
+  <span class="mast-side r"><span class="ar" data-edit="t8" data-edit-label="Text — الطبعة اليومية">الطبعة اليومية</span><span class="tr" data-edit="t9" data-edit-label="Text — Daily Edition">Daily Edition</span></span>
+ </div>
+</div>
+
+<header>
+ <div class="ph"><img src="img/06.jpg" alt="برغر دجاج سناك دمشق القديمة" loading="lazy"><div class="scrim"></div></div>
+ <div class="hero-in">
+  <span class="hk"><span class="ar" data-edit="t10" data-edit-label="Text — أكل شارع · الشارع المستقيم">أكل شارع · الشارع المستقيم</span><span class="tr" data-edit="t11" data-edit-label="Text — Street food · The Straight Street">Street food · The Straight Street</span></span>
+  <h2 class="hh disp"><span class="ar" data-edit="t12" data-edit-label="Text — أكل شارع، بأصالة">أكل شارع، بأصالة</span><span class="tr" data-edit="t13" data-edit-label="Text — Street food. With authenticity.">Street food. With authenticity.</span></h2>
+  <p class="hsrc"><span class="ar"><em data-edit="t14" data-edit-label="Text — — من تقييم حقيقي على غوغل">— من تقييم حقيقي على غوغل</em></span><span class="tr"><em data-edit="t15" data-edit-label="Text — — from a real Google review">— from a real Google review</em></span></p>
+  <p class="hero-sub"><span class="ar" data-edit="t16" data-edit-label="Text — برغر دجاج محشي عن جد، وبطاطا ذهبية طال…">برغر دجاج محشي عن جد، وبطاطا ذهبية طالعة سخنة من القلاية — على أقدم شارع في المدينة.</span><span class="tr" data-edit="t17" data-edit-label="Text — A properly loaded chicken burger, and …">A properly loaded chicken burger, and golden fries straight from the fryer — on the city's oldest street.</span></p>
   <div class="hero-meta">
-   <span>★ <b data-edit="rating">4.2</b> <span class="ar" data-edit="t13" data-edit-label="Text — على غوغل ·">على غوغل ·</span><span class="tr" data-edit="t14" data-edit-label="Text — on Google ·">on Google ·</span> <span data-edit="revcount">50</span> <span class="ar" data-edit="t15" data-edit-label="Text — تقييم">تقييم</span><span class="tr" data-edit="t16" data-edit-label="Text — reviews">reviews</span></span>
-   <span data-edit="addr">الشارع المستقيم — مدحت باشا</span>
+   <span class="chip"><span class="num" dir="ltr">★ <b data-edit="rating">4.2</b> · <span data-edit="revcount">50</span></span> <span class="ar" data-edit="t18" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t19" data-edit-label="Text — Google reviews">Google reviews</span></span>
+   <span class="chip"><span class="ar" data-edit="t20" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t21" data-edit-label="Text — Daily">Daily</span> <span class="num" dir="ltr" data-edit="t22" data-edit-label="Text — 9:00 – 24:00">9:00 – 24:00</span></span>
   </div>
  </div>
- <div class="hero-ph" role="img" aria-label="واجهة سناك دمشق القديمة"></div>
 </header>
 
-<section class="story wrap">
- <div class="rev">
-  <span class="k"><span class="ar" data-edit="t17" data-edit-label="Text — حكايتنا">حكايتنا</span><span class="tr" data-edit="t18" data-edit-label="Text — Our story">Our story</span></span>
-  <h2 class="disp"><span class="ar">سندويشة سريعة<br>على شارع عمره ألفا سنة.</span><span class="tr lat">Fast food<br>on a two-thousand-year-old street.</span></h2>
-  <p><span class="ar" data-edit="story1">على الشارع المستقيم — الشارع الذي ذُكر بالاسم منذ آلاف السنين — لافتة حمراء صغيرة مكتوب عليها «دمشق القديمة». من ورا الكاونتر يطلع صوت الزيت والمناقل، ومن قدامه يمرق كل من يقطع المدينة القديمة من باب شرقي لسوق مدحت باشا.</span><span class="tr" data-edit="story1en"><em data-edit="t19" data-edit-label="Text — On the Straight Street — a street know…">On the Straight Street — a street known by name for thousands of years — hangs a small red sign reading "Old Damascus". Behind the counter, the sizzle of the grill; in front of it, everyone crossing the old city between Bab Sharqi and Midhat Pasha souq.</em></span></p>
-  <p><span class="ar" data-edit="story2">الفكرة بسيطة وما تغيّرت: أكل شارع طازج وسريع ونظيف — برغر دجاج محشي عن جد، بطاطا ذهبية، وسندويشات تتاكل ماشي أو على الكراسي جنب الباب الحجري. زبائننا كتبوا عنا: «أكل شارع بأصالة».</span><span class="tr" data-edit="story2en"><em data-edit="t20" data-edit-label="Text — The idea is simple and hasn't changed:…">The idea is simple and hasn't changed: fresh, fast, honest street food — a properly loaded chicken burger, golden fries, and sandwiches eaten on the walk or on the chairs by the stone doorway. As one review puts it: "street food with authenticity."</em></span></p>
+<div class="pmarq-sec">
+ <div class="wrap"><span class="k"><span class="ar" data-edit="t23" data-edit-label="Text — من المحل">من المحل</span><span class="tr" data-edit="t24" data-edit-label="Text — From the shop">From the shop</span></span></div>
+ <div class="pmarq">
+  <div class="prow">
+   <figure><img src="img/05.jpg" alt="لافتة سناك دمشق القديمة الحمراء" loading="lazy"><figcaption><span class="ar" data-edit="t25" data-edit-label="Text — اللافتة">اللافتة</span><span class="tr" data-edit="t26" data-edit-label="Text — The sign">The sign</span></figcaption></figure>
+   <figure><img src="img/03.jpg" alt="صحن بطاطا ذهبية" loading="lazy"><figcaption><span class="ar" data-edit="t27" data-edit-label="Text — بطاطا ذهبية">بطاطا ذهبية</span><span class="tr" data-edit="t28" data-edit-label="Text — Golden fries">Golden fries</span></figcaption></figure>
+   <figure><img src="img/04.jpg" alt="صينية بطاطا على الطاولة" loading="lazy"><figcaption><span class="ar" data-edit="t29" data-edit-label="Text — بطاطا عالطاولة">بطاطا عالطاولة</span><span class="tr" data-edit="t30" data-edit-label="Text — Fries on the table">Fries on the table</span></figcaption></figure>
+   <figure><img src="img/05.jpg" alt="" loading="lazy"><figcaption><span class="ar" data-edit="t31" data-edit-label="Text — اللافتة">اللافتة</span><span class="tr" data-edit="t32" data-edit-label="Text — The sign">The sign</span></figcaption></figure>
+   <figure><img src="img/03.jpg" alt="" loading="lazy"><figcaption><span class="ar" data-edit="t33" data-edit-label="Text — بطاطا ذهبية">بطاطا ذهبية</span><span class="tr" data-edit="t34" data-edit-label="Text — Golden fries">Golden fries</span></figcaption></figure>
+   <figure><img src="img/04.jpg" alt="" loading="lazy"><figcaption><span class="ar" data-edit="t35" data-edit-label="Text — بطاطا عالطاولة">بطاطا عالطاولة</span><span class="tr" data-edit="t36" data-edit-label="Text — Fries on the table">Fries on the table</span></figcaption></figure>
+  </div>
  </div>
- <img class="rev" src="img/05.jpg" alt="لافتة سناك دمشق القديمة الحمراء">
+</div>
+
+<section class="story wrap">
+ <span class="k"><span class="ar" data-edit="t37" data-edit-label="Text — من ملف الشارع المستقيم">من ملف الشارع المستقيم</span><span class="tr" data-edit="t38" data-edit-label="Text — From the Straight Street file">From the Straight Street file</span></span>
+ <h2 class="disp"><span class="ar" data-edit="t39" data-edit-label="Text — سندويشة سريعة… على شارع عمره آلاف السن…">سندويشة سريعة… على شارع عمره آلاف السنين</span><span class="tr lat" data-edit="t40" data-edit-label="Text — Fast food on a street thousands of yea…">Fast food on a street thousands of years old</span></h2>
+ <div class="cols">
+  <p class="lede rev"><span class="ar" data-edit="t41" data-edit-label="Text — على الشارع المستقيم — الشارع الذي عرفت…">على الشارع المستقيم — الشارع الذي عرفته دمشق باسمه منذ آلاف السنين — لافتة صغيرة حمراء مكتوب عليها «دمشق القديمة». من ورا الكاونتر صوت الزيت وهو يغلي، ومن قدامه يمرق كل من يقطع البلدة القديمة بين باب شرقي وسوق مدحت باشا.</span><span class="tr" data-edit="t42" data-edit-label="Text — On the Straight Street — a street Dama…">On the Straight Street — a street Damascus has known by name for thousands of years — hangs a small red sign reading &quot;Old Damascus.&quot; Behind the counter, the hiss of oil at a boil; in front of it, everyone crossing the Old City between Bab Sharqi and Midhat Pasha souq.</span></p>
+  <p class="rev"><span class="ar" data-edit="t43" data-edit-label="Text — الفكرة بسيطة وما تغيّرت من أول يوم: أك…">الفكرة بسيطة وما تغيّرت من أول يوم: أكل شارع طازة وسريع ونظيف — برغر دجاج محشي عن جد، بطاطا ذهبية، وسندويشات تتاكل ماشي أو واقف عند الباب. زبون كتب عنا بجملة وحدة اختصرت كل شي: «أكل شارع بأصالة».</span><span class="tr" data-edit="t44" data-edit-label="Text — The idea is simple and hasn't changed …">The idea is simple and hasn't changed since day one: fresh, fast, honest street food — a properly loaded chicken burger, golden fries, and sandwiches eaten on the walk or standing by the door. One customer summed it up in a single line: &quot;street food with authenticity.&quot;</span></p>
+ </div>
 </section>
 
-<section class="high wrap">
- <span class="k"><span class="ar" data-edit="t21" data-edit-label="Text — من الكاونتر">من الكاونتر</span><span class="tr" data-edit="t22" data-edit-label="Text — From the counter">From the counter</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t23" data-edit-label="Text — ثلاثة ما بتنفوّت">ثلاثة ما بتنفوّت</span><span class="tr lat" data-edit="t24" data-edit-label="Text — Three not to miss">Three not to miss</span></h2>
- <div class="hgrid">
-  <div class="hcard rev"><img src="img/06.jpg" alt="برغر الدجاج"><div class="hb"><h3><span class="ar" data-edit="t25" data-edit-label="Text — برغر الدجاج الكبير">برغر الدجاج الكبير</span><span class="tr lat" data-edit="t26" data-edit-label="Text — The big chicken burger">The big chicken burger</span></h3><p><span class="ar" data-edit="t27" data-edit-label="Text — قطعة دجاج مقرمشة وخبز طري وحشوة على ال…">قطعة دجاج مقرمشة وخبز طري وحشوة على القد — الساندويشة اللي مشهورين فيها.</span><span class="tr" data-edit="t28" data-edit-label="Text — Crispy chicken, soft bun, stacked fill…">Crispy chicken, soft bun, stacked filling — the sandwich the name is built on.</span></p></div></div>
-  <div class="hcard rev"><img src="img/03.jpg" alt="صحن بطاطا"><div class="hb"><h3><span class="ar" data-edit="t29" data-edit-label="Text — بطاطا ذهبية">بطاطا ذهبية</span><span class="tr lat" data-edit="t30" data-edit-label="Text — Golden fries">Golden fries</span></h3><p><span class="ar" data-edit="t31" data-edit-label="Text — مقلية على الطلب وما بتوصل عالطاولة إلا…">مقلية على الطلب وما بتوصل عالطاولة إلا سخنة — سرّها إنها ما بتستنى حدا.</span><span class="tr" data-edit="t32" data-edit-label="Text — Fried to order and served hot — their …">Fried to order and served hot — their secret is that they never sit waiting.</span></p></div></div>
-  <div class="hcard rev"><img src="img/07.jpg" alt="المطبخ والكاونتر"><div class="hb"><h3><span class="ar" data-edit="t33" data-edit-label="Text — مطبخ على عينك">مطبخ على عينك</span><span class="tr lat" data-edit="t34" data-edit-label="Text — A kitchen in plain sight">A kitchen in plain sight</span></h3><p><span class="ar" data-edit="t35" data-edit-label="Text — كل شي ينعمل قدامك على الكاونتر — سرعة …">كل شي ينعمل قدامك على الكاونتر — سرعة بالخدمة ونظافة كتبوا عنها الزبائن بتقييماتهم.</span><span class="tr" data-edit="t36" data-edit-label="Text — Everything is made in front of you at …">Everything is made in front of you at the counter — the speed and cleanliness guests praise in their reviews.</span></p></div></div>
+<section class="board-sec wrap">
+ <div class="board-grid">
+  <div class="boardframe rev"><img src="img/02.jpg" alt="لوحة المنيو داخل سناك دمشق القديمة" loading="lazy"></div>
+  <div class="board-txt rev">
+   <span class="k"><span class="ar" data-edit="t45" data-edit-label="Text — المنيو">المنيو</span><span class="tr" data-edit="t46" data-edit-label="Text — The menu">The menu</span></span>
+   <h2 class="disp"><span class="ar" data-edit="t47" data-edit-label="Text — اللائحة فوق الكاونتر">اللائحة فوق الكاونتر</span><span class="tr lat" data-edit="t48" data-edit-label="Text — The board above the counter">The board above the counter</span></h2>
+   <p><span class="ar" data-edit="t49" data-edit-label="Text — برغر، سندويشات، وبيتزا — كل صنف مرقّم …">برغر، سندويشات، وبيتزا — كل صنف مرقّم ومصوّر على اللوحة المعلّقة فوق الكاونتر، متل ما بتشوفوها لما تدخلوا.</span><span class="tr" data-edit="t50" data-edit-label="Text — Burgers, sandwiches and pizza — every …">Burgers, sandwiches and pizza — every item numbered and pictured on the board hanging over the counter, just as you'll see it when you walk in.</span></p>
+   <p class="mnote"><span class="ar" data-edit="menunote">لائحة الأسعار الكاملة معلّقة داخل المحل — والمنيو في الصور.</span><span class="tr" data-edit="t51" data-edit-label="Text — The full price list hangs inside the s…">The full price list hangs inside the shop — and the menu itself is right there in the photos.</span></p>
+  </div>
  </div>
 </section>
 
 <div class="wrap">
-<section class="menu rev">
- <img src="img/02.jpg" alt="لوحة المنيو داخل المحل">
- <div>
-  <span class="k" style="color:var(--mus)"><span class="ar" data-edit="t37" data-edit-label="Text — المنيو">المنيو</span><span class="tr" data-edit="t38" data-edit-label="Text — The menu">The menu</span></span>
-  <h2><span class="ar" data-edit="t39" data-edit-label="Text — اللائحة على الحيط">اللائحة على الحيط</span><span class="tr lat" data-edit="t40" data-edit-label="Text — The board on the wall">The board on the wall</span></h2>
-  <p><span class="ar" data-edit="t41" data-edit-label="Text — منيو المحل معلّق فوق الكاونتر بالأحمر …">منيو المحل معلّق فوق الكاونتر بالأحمر والأصفر — سندويشات، وجبات، وبطاطا. صوّرناه لكم مثل ما هو.</span><span class="tr"><em data-edit="t42" data-edit-label="Text — The house menu hangs over the counter …">The house menu hangs over the counter in red and yellow — sandwiches, meals and fries. Here it is, exactly as it hangs.</em></span></p>
-  <p><span class="ar" data-edit="t43" data-edit-label="Text — اسألوا عن وجبة اليوم — والأسعار على ال…">اسألوا عن وجبة اليوم — والأسعار على اللوحة.</span><span class="tr"><em data-edit="t44" data-edit-label="Text — Ask about the meal of the day — prices…">Ask about the meal of the day — prices are on the board.</em></span></p>
-  <span class="note"><span class="ar" data-edit="t45" data-edit-label="Text — لائحة الأسعار الكاملة داخل المحل">لائحة الأسعار الكاملة داخل المحل</span><span class="tr" data-edit="t46" data-edit-label="Text — The full price list is inside the shop">The full price list is inside the shop</span></span>
+<section class="report rev">
+ <span class="k rk"><span class="ar" data-edit="t52" data-edit-label="Text — تقرير خاص">تقرير خاص</span><span class="tr" data-edit="t53" data-edit-label="Text — Special report">Special report</span></span>
+ <div class="report-grid">
+  <div class="rstat"><b class="lat num" dir="ltr" data-edit="t54" data-edit-label="Text — 2,000+">2,000+</b><small><span class="ar" data-edit="t55" data-edit-label="Text — سنة">سنة</span><span class="tr" data-edit="t56" data-edit-label="Text — years">years</span></small></div>
+  <div>
+   <h3 class="disp"><span class="ar" data-edit="t57" data-edit-label="Text — شارع اسمه التاريخ">شارع اسمه التاريخ</span><span class="tr lat" data-edit="t58" data-edit-label="Text — A Street Called History">A Street Called History</span></h3>
+   <p><span class="ar" data-edit="t59" data-edit-label="Text — الشارع المستقيم معروف بالاسم من العهد …">الشارع المستقيم معروف بالاسم من العهد الروماني، وهو من أقدم الشوارع المأهولة في العالم اللي ما زالت تُستعمل يومياً — يمتد خطاً مستقيماً من باب الجابية لباب شرقي، ما زال واضحاً من فوق. وسناك دمشق القديمة يفتح بابه على هالتاريخ، من غير ما يحكي عنه كتير.</span><span class="tr" data-edit="t60" data-edit-label="Text — The Straight Street has carried that n…">The Straight Street has carried that name since Roman times, and is among the oldest continuously inhabited streets in the world still used every single day — running dead straight from Bab al-Jabiyeh to Bab Sharqi, a line still visible from above. Old Damascus Snack opens its door onto that history, without ever making a fuss about it.</span></p>
+  </div>
  </div>
 </section>
 </div>
 
-<section class="gal wrap">
- <span class="k"><span class="ar" data-edit="t47" data-edit-label="Text — من المحل">من المحل</span><span class="tr" data-edit="t48" data-edit-label="Text — From the shop">From the shop</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t49" data-edit-label="Text — على الشارع المستقيم">على الشارع المستقيم</span><span class="tr lat" data-edit="t50" data-edit-label="Text — On the Straight Street">On the Straight Street</span></h2>
- <div class="ggrid rev">
-  <img src="img/04.jpg" alt="صينية بطاطا">
-  <img src="img/08.jpg" alt="البوابة الحجرية">
-  <img src="img/06.jpg" alt="برغر الدجاج">
-  <img src="img/07.jpg" alt="الكاونتر والمطبخ">
+<section class="duo wrap">
+ <span class="k"><span class="ar" data-edit="t61" data-edit-label="Text — من برّا ومن جوّا">من برّا ومن جوّا</span><span class="tr" data-edit="t62" data-edit-label="Text — Outside and in">Outside and in</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t63" data-edit-label="Text — الوجه الحقيقي للمحل">الوجه الحقيقي للمحل</span><span class="tr lat" data-edit="t64" data-edit-label="Text — The Shop's Real Face">The Shop's Real Face</span></h2>
+ <div class="duo-grid">
+  <figure class="rev"><img src="img/01.jpg" alt="واجهة سناك دمشق القديمة على الشارع المستقيم" loading="lazy"><figcaption><span class="ar" data-edit="t65" data-edit-label="Text — الواجهة على الشارع المستقيم">الواجهة على الشارع المستقيم</span><span class="tr" data-edit="t66" data-edit-label="Text — The storefront, on the Straight Street">The storefront, on the Straight Street</span></figcaption></figure>
+  <figure class="rev"><img src="img/07.jpg" alt="خلف كاونتر سناك دمشق القديمة" loading="lazy"><figcaption><span class="ar" data-edit="t67" data-edit-label="Text — خلف الكاونتر — المطبخ عالمكشوف">خلف الكاونتر — المطبخ عالمكشوف</span><span class="tr" data-edit="t68" data-edit-label="Text — Behind the counter — the kitchen in pl…">Behind the counter — the kitchen in plain sight</span></figcaption></figure>
  </div>
 </section>
 
-<section class="revs wrap">
- <span class="k"><span class="ar" data-edit="t51" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t52" data-edit-label="Text — What they say">What they say</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t53" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t54" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
- <div class="rgrid">
-  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t55" data-edit-label="Text — 'I'm very satisfied with my experience…">"I'm very satisfied with my experience at Old Damascus restaurant. They serve fresh, tasty and very delicious food and their service is very fast."</p><div class="who" data-edit="t56" data-edit-label="Text — Eliza John · Google">Eliza John · Google</div></div>
-  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t57" data-edit-label="Text — 'One of the best restaurants. Food is …">"One of the best restaurants. Food is very good taste and quality. Good service and a very clean restaurant."</p><div class="who" data-edit="t58" data-edit-label="Text — Morgan Davis · Google">Morgan Davis · Google</div></div>
-  <div class="rcard rev"><div class="stars-row">★★★★★</div><p data-edit="t59" data-edit-label="Text — 'In brief: street food with authentici…">"In brief: street food with authenticity. Great flavour."</p><div class="who" data-edit="t60" data-edit-label="Text — Mohamad Arafa · Google">Mohamad Arafa · Google</div></div>
+<section class="clip-sec wrap">
+ <span class="k"><span class="ar" data-edit="t69" data-edit-label="Text — رسائل القراء">رسائل القراء</span><span class="tr" data-edit="t70" data-edit-label="Text — Letters to the editor">Letters to the editor</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t71" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t72" data-edit-label="Text — From Google Reviews">From Google Reviews</span></h2>
+ <div class="clips">
+  <blockquote class="clip rev"><p dir="ltr" data-edit="t73" data-edit-label="Text — 'I'm very satisfied with my experience…">"I'm very satisfied with my experience at Old Damascus restaurant. They serve fresh, tasty and very delicious food and their service is very fast."</p><cite data-edit="t74" data-edit-label="Credit — Eliza John · Google">Eliza John · Google</cite></blockquote>
+  <blockquote class="clip rev"><p dir="ltr" data-edit="t75" data-edit-label="Text — 'One of the best restaurants. Food is …">"One of the best restaurants. Food is very good taste and quality. Good service and a very clean restaurant."</p><cite data-edit="t76" data-edit-label="Credit — Morgan Davis · Google">Morgan Davis · Google</cite></blockquote>
+  <blockquote class="clip rev"><p dir="ltr" data-edit="t77" data-edit-label="Text — 'In brief: street food with authentici…">"In brief: street food with authenticity. Great flavour."</p><cite data-edit="t78" data-edit-label="Credit — Mohamad Arafa · Google">Mohamad Arafa · Google</cite></blockquote>
  </div>
- <p class="gbadge">★ <b data-edit="t61" data-edit-label="Text — 4.2 / 5">4.2 / 5</b> — <span data-edit="revcount2">50</span> <span class="ar" data-edit="t62" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t63" data-edit-label="Text — Google reviews">Google reviews</span></p>
+ <p class="gbadge"><span class="num" dir="ltr">★ <b data-edit="rating2">4.2 / 5</b></span> — <span data-edit="revcount2">50</span> <span class="ar" data-edit="t79" data-edit-label="Text — تقييم على غوغل">تقييم على غوغل</span><span class="tr" data-edit="t80" data-edit-label="Text — Google reviews">Google reviews</span></p>
 </section>
 
-<section class="visit wrap">
- <div class="rev">
-  <span class="k"><span class="ar" data-edit="t64" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t65" data-edit-label="Text — Hours">Hours</span></span>
-  <h2 class="disp"><span class="ar" data-edit="t66" data-edit-label="Text — متى تلاقونا">متى تلاقونا</span><span class="tr lat" data-edit="t67" data-edit-label="Text — When to find us">When to find us</span></h2>
-  <table class="hours">
-   <tr><td><span class="ar" data-edit="t68" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t69" data-edit-label="Text — Daily">Daily</span></td><td data-edit="h-all">9:00 — 24:00</td></tr>
-  </table>
-  <p style="margin-top:16px;color:#a08265;font-size:13.5px"><span class="ar" data-edit="h-note">مفتوح كل أيام الأسبوع من الصبح لآخر الليل.</span><span class="tr" data-edit="t70" data-edit-label="Text — Open every day, morning till midnight.">Open every day, morning till midnight.</span></p>
- </div>
- <div class="vinfo rev">
-  <span class="k"><span class="ar" data-edit="t71" data-edit-label="Text — الموقع">الموقع</span><span class="tr" data-edit="t72" data-edit-label="Text — Find us">Find us</span></span>
-  <h2 class="disp"><span class="ar" data-edit="t73" data-edit-label="Text — مدحت باشا — دمشق القديمة">مدحت باشا — دمشق القديمة</span><span class="tr lat" data-edit="t74" data-edit-label="Text — Midhat Pasha, Old Damascus">Midhat Pasha, Old Damascus</span></h2>
-  <p class="adr" data-edit="addr2">الشارع المستقيم — مدحت باشا، دمشق القديمة</p>
-  <p class="tel" data-edit="phone"><span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t75" data-edit-label="Text — +963 11 544 7524">+963 11 544 7524</span></p>
-  <a class="btn" href="tel:+963115447524"><span class="ar" data-edit="t76" data-edit-label="Text — اتصلوا فينا">اتصلوا فينا</span><span class="tr" data-edit="t77" data-edit-label="Text — Call us">Call us</span></a>
-  <a class="btn o" href="https://www.google.com/maps?cid=13043024310191935713" target="_blank" rel="noopener"><span class="ar" data-edit="t78" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t79" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
-  <a class="btn o" href="https://www.facebook.com/ancientdamascus" target="_blank" rel="noopener"><span class="ar" data-edit="t80" data-edit-label="Text — فيسبوك">فيسبوك</span><span class="tr" data-edit="t81" data-edit-label="Text — Facebook">Facebook</span></a>
+<section class="receipt-sec wrap">
+ <span class="k"><span class="ar" data-edit="t81" data-edit-label="Text — قبل ما تجوا">قبل ما تجوا</span><span class="tr" data-edit="t82" data-edit-label="Text — Before you visit">Before you visit</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t83" data-edit-label="Text — وصل الزيارة">وصل الزيارة</span><span class="tr lat" data-edit="t84" data-edit-label="Text — Visit Receipt">Visit Receipt</span></h2>
+ <div class="receipt rev">
+  <div class="rtop">
+   <b class="disp"><span class="ar" data-edit="t85" data-edit-label="Text — سناك دمشق القديمة">سناك دمشق القديمة</span><span class="tr lat" data-edit="t86" data-edit-label="Text — Old Damascus Snack">Old Damascus Snack</span></b>
+   <span class="lat" data-edit="t87" data-edit-label="Text — OLD DAMASCUS SNACK">OLD DAMASCUS SNACK</span>
+  </div>
+  <div class="rline"></div>
+  <div class="rrow"><span><span class="ar" data-edit="t88" data-edit-label="Text — العنوان">العنوان</span><span class="tr" data-edit="t89" data-edit-label="Text — Address">Address</span></span><span data-edit="addr2">الشارع المستقيم — مدحت باشا</span></div>
+  <div class="rrow"><span><span class="ar" data-edit="t90" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t91" data-edit-label="Text — Hours">Hours</span></span><span><span class="ar" data-edit="t92" data-edit-label="Text — يومياً">يومياً</span><span class="tr" data-edit="t93" data-edit-label="Text — Daily">Daily</span> <span class="num" dir="ltr" data-edit="hours2">9:00–24:00</span></span></div>
+  <div class="rrow"><span><span class="ar" data-edit="t94" data-edit-label="Text — الهاتف">الهاتف</span><span class="tr" data-edit="t95" data-edit-label="Text — Phone">Phone</span></span><span class="num" dir="ltr" data-edit="phone">+963 11 544 7524</span></div>
+  <div class="rline dashed"></div>
+  <div class="rtotal"><span class="ar" data-edit="t96" data-edit-label="Text — يستاهل الوقفة">يستاهل الوقفة</span><span class="tr" data-edit="t97" data-edit-label="Text — Worth the stop">Worth the stop</span></div>
+  <div class="rbtns">
+   <a class="rbtn" href="tel:+963115447524"><span class="ar" data-edit="t98" data-edit-label="Text — اتصلوا">اتصلوا</span><span class="tr" data-edit="t99" data-edit-label="Text — Call">Call</span></a>
+   <a class="rbtn o" href="https://www.google.com/maps?cid=13043024310191935713" target="_blank" rel="noopener">◈ <span class="ar" data-edit="t100" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t101" data-edit-label="Text — Map">Map</span></a>
+   <a class="rbtn fbb" href="https://www.facebook.com/ancientdamascus" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+  </div>
  </div>
 </section>
 
-<footer><span data-edit="footer">سناك دمشق القديمة · الشارع المستقيم — مدحت باشا · <span dir="ltr" style="unicode-bidi:isolate;white-space:nowrap" data-edit="t82" data-edit-label="Text — +963 11 544 7524">+963 11 544 7524</span></span></footer>
+<footer><span data-edit="footer">سناك دمشق القديمة · الشارع المستقيم — مدحت باشا · <span class="num" data-edit="t102" data-edit-label="Text — +963 11 544 7524">+963 11 544 7524</span></span></footer>
 
 <div class="bar">
- <a class="call" href="tel:+963115447524">✆ <b><span class="ar" data-edit="t83" data-edit-label="Text — اتصلوا">اتصلوا</span><span class="tr" data-edit="t84" data-edit-label="Text — Call">Call</span></b></a>
- <a class="mapb" href="https://www.google.com/maps?cid=13043024310191935713" target="_blank" rel="noopener">◈ <b><span class="ar" data-edit="t85" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t86" data-edit-label="Text — Map">Map</span></b></a>
+ <a class="call" href="tel:+963115447524">✆ <b><span class="ar" data-edit="t103" data-edit-label="Text — اتصلوا">اتصلوا</span><span class="tr" data-edit="t104" data-edit-label="Text — Call">Call</span></b></a>
+ <a class="mapb" href="https://www.google.com/maps?cid=13043024310191935713" target="_blank" rel="noopener">◈ <b><span class="ar" data-edit="t105" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t106" data-edit-label="Text — Map">Map</span></b></a>
  <a class="fb" href="https://www.facebook.com/ancientdamascus" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
 </div>
 
