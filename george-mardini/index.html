@@ -53,11 +53,24 @@ h1 .tr{color:var(--brass2)}
 .est{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--esp2)}
 .est .in{display:flex;justify-content:center;align-items:center;gap:clamp(14px,4vw,34px);padding:15px 5vw;color:var(--mut);font-size:12.5px;letter-spacing:.16em;flex-wrap:wrap;text-align:center}
 .est .sc{color:var(--brass);font-size:15px}
-/* ============ opening prose ============ */
+/* ============ opening prose + George cameo ============ */
 .craft{padding:100px 0 90px}
+.craft .cgrid{display:grid;grid-template-columns:.62fr 1.38fr;gap:clamp(26px,5vw,64px);align-items:center}
+.gcameo{position:relative;max-width:330px;justify-self:center;width:100%}
+.gcameo .in{padding:10px;border:1px solid var(--line);background:var(--esp2)}
+.gcameo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:22% 20%;display:block}
+.gcameo figcaption{margin-top:10px;text-align:center;font-size:12px;color:var(--mut)}
+.gcameo::after{content:'';position:absolute;inset:-8px;border:1px solid rgba(201,160,80,.25);pointer-events:none}
 .craft .k{display:block;margin-bottom:14px}
 .craft h2{font-size:clamp(30px,4.4vw,50px);line-height:1.3;margin-bottom:22px;color:var(--brass2)}
 .craft .cols{max-width:760px}
+/* ============ tools band — brass-framed still life ============ */
+.toolsband{padding:8px 0 96px}
+.toolsband .tb{position:relative;max-width:900px;margin:0 auto;padding:15px;border:1px solid var(--line)}
+.toolsband .tb::after{content:'';position:absolute;inset:7px;border:1px solid rgba(201,160,80,.16);pointer-events:none}
+.toolsband img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.toolsband .tcap{display:flex;justify-content:space-between;gap:12px;margin-top:12px;font-size:12px;color:var(--mut);letter-spacing:.1em}
+.toolsband .tcap b{color:var(--brass)}
 .craft p{color:var(--smoke);margin-bottom:14px;font-size:16.2px}
 .craft p .lead{color:var(--brass2);font-weight:700}
 .craft p+p{color:var(--mut)}
@@ -124,6 +137,7 @@ html.en .craft .cols p:first-of-type::first-letter{font-family:'Cormorant Garamo
 footer{padding:44px 5vw 130px;text-align:center;color:#8A755C;font-size:12.5px;border-top:1px solid var(--line)}
 @media(max-width:920px){
  .hero-grid{grid-template-columns:1fr;min-height:0}
+ .cgrid{grid-template-columns:1fr;gap:34px}
  header{max-height:none;min-height:0}
  .h-tx{padding-top:96px}
  .h-pf{min-height:64vw;max-height:520px}
@@ -168,9 +182,9 @@ footer{padding:44px 5vw 130px;text-align:center;color:#8A755C;font-size:12.5px;b
    </div>
   </div>
   <div class="h-pf">
-   <img src="img/03.jpg" alt="جورج مارديني في صالونه">
+   <img src="img/04.jpg" alt="كرسي حلاقة كلاسيكي بجلد وذهب نحاسي تحت ضوء دافئ" style="object-position:center 55%">
    <span class="fr"></span>
-   <span class="cap"><span class="ar" data-edit="t16" data-edit-label="Text — جورج — بالصالون">جورج — بالصالون</span><span class="tr" data-edit="t17" data-edit-label="Text — George, in the salon">George, in the salon</span></span>
+   <span class="cap"><span class="ar" data-edit="t16" data-edit-label="Text — حرفة على الطراز القديم">حرفة على الطراز القديم</span><span class="tr" data-edit="t17" data-edit-label="Text — Craft, the old way">Craft, the old way</span></span>
   </div>
  </div>
 </header>
@@ -186,21 +200,36 @@ footer{padding:44px 5vw 130px;text-align:center;color:#8A755C;font-size:12.5px;b
 </section>
 
 <section class="craft wrap">
- <span class="k rev"><span class="ar" data-edit="t24" data-edit-label="Text — الافتتاحية">الافتتاحية</span><span class="tr" data-edit="t25" data-edit-label="Text — Opening entry">Opening entry</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t26" data-edit-label="Text — كل يوم، نفس الطقس.">كل يوم، نفس الطقس.</span><span class="tr lat" data-edit="t27" data-edit-label="Text — Every day, the same ritual.">Every day, the same ritual.</span></h2>
- <div class="cols rev">
-  <p><span class="ar"><span class="lead" data-edit="t28" data-edit-label="Text — بين شارع حلب والقصاع،">بين شارع حلب والقصاع،</span> صالون جورج مارديني بيفتح بابه على نفس الطقس كل يوم: كرسي مرتّب، وأدوات معقّمة، ورفوف مصفوفة بعناية. جورج نفسه بيستقبل الزباين — يد بتعرف شغلها، وابتسامة بتخلّي الكرسي يحس أهلي.</span><span class="tr" data-edit="t29" data-edit-label="Text — Between Halab Street and Qassaa, Georg…">Between Halab Street and Qassaa, George Mardini Salon opens its doors to the same ritual every day: a tidy chair, sterilised tools, shelves arranged with care. George receives clients himself — a hand that knows its craft, and a welcome that makes the chair feel like home.</span></p>
-  <p><span class="ar" data-edit="t30" data-edit-label="Text — مش محل حلاقة بس — دفتر يوميات صغير لكل…">مش محل حلاقة بس — دفتر يوميات صغير لكل زبون بيرجع لنفس الكرسي، ونفس العناية.</span><span class="tr" data-edit="t31" data-edit-label="Text — Not just a hair salon — a small daily …">Not just a hair salon — a small daily journal for every client who keeps returning to the same chair, the same care.</span></p>
+ <div class="cgrid">
+  <figure class="gcameo rev">
+   <div class="in"><img src="img/03.jpg" alt="جورج مارديني في صالونه"></div>
+   <figcaption><span class="ar" data-edit="t24" data-edit-label="Text — جورج — بالصالون">جورج — بالصالون</span><span class="tr" data-edit="t25" data-edit-label="Text — George, in the salon">George, in the salon</span></figcaption>
+  </figure>
+  <div class="rev">
+   <span class="k"><span class="ar" data-edit="t26" data-edit-label="Text — الافتتاحية">الافتتاحية</span><span class="tr" data-edit="t27" data-edit-label="Text — Opening entry">Opening entry</span></span>
+   <h2 class="disp"><span class="ar" data-edit="t28" data-edit-label="Text — كل يوم، نفس الطقس.">كل يوم، نفس الطقس.</span><span class="tr lat" data-edit="t29" data-edit-label="Text — Every day, the same ritual.">Every day, the same ritual.</span></h2>
+   <div class="cols">
+    <p><span class="ar"><span class="lead" data-edit="t30" data-edit-label="Text — بين شارع حلب والقصاع،">بين شارع حلب والقصاع،</span> صالون جورج مارديني بيفتح بابه على نفس الطقس كل يوم: كرسي مرتّب، وأدوات معقّمة، ورفوف مصفوفة بعناية. جورج نفسه بيستقبل الزباين — يد بتعرف شغلها، وابتسامة بتخلّي الكرسي يحس أهلي.</span><span class="tr" data-edit="t31" data-edit-label="Text — Between Halab Street and Qassaa, Georg…">Between Halab Street and Qassaa, George Mardini Salon opens its doors to the same ritual every day: a tidy chair, sterilised tools, shelves arranged with care. George receives clients himself — a hand that knows its craft, and a welcome that makes the chair feel like home.</span></p>
+    <p><span class="ar" data-edit="t32" data-edit-label="Text — مش محل حلاقة بس — دفتر يوميات صغير لكل…">مش محل حلاقة بس — دفتر يوميات صغير لكل زبون بيرجع لنفس الكرسي، ونفس العناية.</span><span class="tr" data-edit="t33" data-edit-label="Text — Not just a hair salon — a small daily …">Not just a hair salon — a small daily journal for every client who keeps returning to the same chair, the same care.</span></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="toolsband wrap">
+ <div class="tb rev">
+  <img src="img/05.jpg" alt="موس وفرشاة حلاقة ومقص على جلد داكن بإضاءة نحاسية" loading="lazy">
+  <div class="tcap"><span><b>✂</b> <span class="ar" data-edit="t34" data-edit-label="Text — عدّة الحلاقة — موس، مقص، فرشاة">عدّة الحلاقة — موس، مقص، فرشاة</span><span class="tr" data-edit="t35" data-edit-label="Text — The kit — razor, scissors, brush">The kit — razor, scissors, brush</span></span><span class="num" dir="ltr" data-edit="t36" data-edit-label="Text — EST. QASSAA">EST. QASSAA</span></div>
  </div>
 </section>
 
 <section class="chapters wrap">
- <span class="k rev" style="display:block;text-align:center"><span class="ar" data-edit="t32" data-edit-label="Text — جدول اليوم">جدول اليوم</span><span class="tr" data-edit="t33" data-edit-label="Text — The day's schedule">The day's schedule</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t34" data-edit-label="Text — فصول اليوم">فصول اليوم</span><span class="tr lat" data-edit="t35" data-edit-label="Text — Chapters of the day">Chapters of the day</span></h2>
+ <span class="k rev" style="display:block;text-align:center"><span class="ar" data-edit="t37" data-edit-label="Text — جدول اليوم">جدول اليوم</span><span class="tr" data-edit="t38" data-edit-label="Text — The day's schedule">The day's schedule</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t39" data-edit-label="Text — فصول اليوم">فصول اليوم</span><span class="tr lat" data-edit="t40" data-edit-label="Text — Chapters of the day">Chapters of the day</span></h2>
  <div class="tl rev">
-  <div class="tlrow"><span class="time"><span class="ar" data-edit="t36" data-edit-label="Text — الصباح">الصباح</span><span class="tr" data-edit="t37" data-edit-label="Text — Morning">Morning</span></span><h3><span class="ar" data-edit="t38" data-edit-label="Text — التحضير والتعقيم">التحضير والتعقيم</span><span class="tr" data-edit="t39" data-edit-label="Text — Prep &amp; sterilisation">Prep &amp; sterilisation</span></h3><p><span class="ar" data-edit="t40" data-edit-label="Text — كل أداة بتتعقّم قبل ما يبلّش اليوم، وا…">كل أداة بتتعقّم قبل ما يبلّش اليوم، والكرسي بيترتّب من جديد لكل زبون.</span><span class="tr" data-edit="t41" data-edit-label="Text — Every tool is sterilised before the da…">Every tool is sterilised before the day begins, and the chair is reset for each client.</span></p></div>
-  <div class="tlrow"><span class="time"><span class="ar" data-edit="t42" data-edit-label="Text — الظهر">الظهر</span><span class="tr" data-edit="t43" data-edit-label="Text — Noon">Noon</span></span><h3><span class="ar" data-edit="t44" data-edit-label="Text — الصبغات واللمعان">الصبغات واللمعان</span><span class="tr" data-edit="t45" data-edit-label="Text — Colour &amp; shine">Colour &amp; shine</span></h3><p><span class="ar" data-edit="t46" data-edit-label="Text — وقت الصبغات والميش — تركيبة بتتحدّد حس…">وقت الصبغات والميش — تركيبة بتتحدّد حسب لون شعرك مش حسب موضة عابرة.</span><span class="tr" data-edit="t47" data-edit-label="Text — Colour and highlight hours — a formula…">Colour and highlight hours — a formula chosen for your hair, not a passing trend.</span></p></div>
-  <div class="tlrow"><span class="time"><span class="ar" data-edit="t48" data-edit-label="Text — المساء">المساء</span><span class="tr" data-edit="t49" data-edit-label="Text — Evening">Evening</span></span><h3><span class="ar" data-edit="t50" data-edit-label="Text — تسريحات المناسبات">تسريحات المناسبات</span><span class="tr" data-edit="t51" data-edit-label="Text — Event styling">Event styling</span></h3><p><span class="ar" data-edit="t52" data-edit-label="Text — آخر النهار لتسريحات السهرات والمناسبات…">آخر النهار لتسريحات السهرات والمناسبات — تفاصيل أخيرة قبل ما تطلعوا.</span><span class="tr" data-edit="t53" data-edit-label="Text — The end of the day is for evening and …">The end of the day is for evening and event styling — final touches before you head out.</span></p></div>
+  <div class="tlrow"><span class="time"><span class="ar" data-edit="t41" data-edit-label="Text — الصباح">الصباح</span><span class="tr" data-edit="t42" data-edit-label="Text — Morning">Morning</span></span><h3><span class="ar" data-edit="t43" data-edit-label="Text — التحضير والتعقيم">التحضير والتعقيم</span><span class="tr" data-edit="t44" data-edit-label="Text — Prep &amp; sterilisation">Prep &amp; sterilisation</span></h3><p><span class="ar" data-edit="t45" data-edit-label="Text — كل أداة بتتعقّم قبل ما يبلّش اليوم، وا…">كل أداة بتتعقّم قبل ما يبلّش اليوم، والكرسي بيترتّب من جديد لكل زبون.</span><span class="tr" data-edit="t46" data-edit-label="Text — Every tool is sterilised before the da…">Every tool is sterilised before the day begins, and the chair is reset for each client.</span></p></div>
+  <div class="tlrow"><span class="time"><span class="ar" data-edit="t47" data-edit-label="Text — الظهر">الظهر</span><span class="tr" data-edit="t48" data-edit-label="Text — Noon">Noon</span></span><h3><span class="ar" data-edit="t49" data-edit-label="Text — الصبغات واللمعان">الصبغات واللمعان</span><span class="tr" data-edit="t50" data-edit-label="Text — Colour &amp; shine">Colour &amp; shine</span></h3><p><span class="ar" data-edit="t51" data-edit-label="Text — وقت الصبغات والميش — تركيبة بتتحدّد حس…">وقت الصبغات والميش — تركيبة بتتحدّد حسب لون شعرك مش حسب موضة عابرة.</span><span class="tr" data-edit="t52" data-edit-label="Text — Colour and highlight hours — a formula…">Colour and highlight hours — a formula chosen for your hair, not a passing trend.</span></p></div>
+  <div class="tlrow"><span class="time"><span class="ar" data-edit="t53" data-edit-label="Text — المساء">المساء</span><span class="tr" data-edit="t54" data-edit-label="Text — Evening">Evening</span></span><h3><span class="ar" data-edit="t55" data-edit-label="Text — تسريحات المناسبات">تسريحات المناسبات</span><span class="tr" data-edit="t56" data-edit-label="Text — Event styling">Event styling</span></h3><p><span class="ar" data-edit="t57" data-edit-label="Text — آخر النهار لتسريحات السهرات والمناسبات…">آخر النهار لتسريحات السهرات والمناسبات — تفاصيل أخيرة قبل ما تطلعوا.</span><span class="tr" data-edit="t58" data-edit-label="Text — The end of the day is for evening and …">The end of the day is for evening and event styling — final touches before you head out.</span></p></div>
  </div>
 </section>
 
@@ -208,63 +237,63 @@ footer{padding:44px 5vw 130px;text-align:center;color:#8A755C;font-size:12.5px;b
  <div class="sh-grid">
   <div class="rev">
    <div class="sh-ph"><img src="img/02.jpg" alt="رفوف منتجات لوريال بروفيشنال في صالون جورج مارديني"></div>
-   <p class="sh-cap"><span class="ar" data-edit="t54" data-edit-label="Text — من رفوف الصالون">من رفوف الصالون</span><span class="tr" data-edit="t55" data-edit-label="Text — From the salon's own shelves">From the salon's own shelves</span></p>
+   <p class="sh-cap"><span class="ar" data-edit="t59" data-edit-label="Text — من رفوف الصالون">من رفوف الصالون</span><span class="tr" data-edit="t60" data-edit-label="Text — From the salon's own shelves">From the salon's own shelves</span></p>
   </div>
   <div class="tx rev">
-   <span class="k"><span class="ar" data-edit="t56" data-edit-label="Text — خلف الكرسي">خلف الكرسي</span><span class="tr" data-edit="t57" data-edit-label="Text — Behind the chair">Behind the chair</span></span>
-   <h2 class="disp"><span class="ar" data-edit="t58" data-edit-label="Text — منتجات لوريال بروفيشنال">منتجات لوريال بروفيشنال</span><span class="tr lat" data-edit="t59" data-edit-label="Text — L'Oréal Professionnel, on the shelf">L'Oréal Professionnel, on the shelf</span></h2>
-   <p><span class="ar" data-edit="t60" data-edit-label="Text — الرفوف مصفوفة بمنتجات لوريال بروفيشنال…">الرفوف مصفوفة بمنتجات لوريال بروفيشنال — نفس الماركة يلي بتشوفوها بيد جورج وهو بيحضّر لكل جلسة.</span><span class="tr" data-edit="t61" data-edit-label="Text — The shelves are lined with L'Oréal Pro…">The shelves are lined with L'Oréal Professionnel products — the same brand you'll see in George's hands as he prepares for every session.</span></p>
-   <p><span class="ar" data-edit="t62" data-edit-label="Text — مش رفوف للعرض — كل قنينة إلها دور بجلس…">مش رفوف للعرض — كل قنينة إلها دور بجلسة الصبغة أو العناية يلي جايين لأجلها.</span><span class="tr" data-edit="t63" data-edit-label="Text — Not shelves for show — every bottle ha…">Not shelves for show — every bottle has a job in the colour or care session you came in for.</span></p>
-   <div class="brandline"><span class="dot">◆</span><span><span class="ar" data-edit="t64" data-edit-label="Text — صبغة، ميش، حمامات كريم — بمنتجات محترف…">صبغة، ميش، حمامات كريم — بمنتجات محترفين فقط.</span><span class="tr" data-edit="t65" data-edit-label="Text — Colour, highlights, deep conditioning …">Colour, highlights, deep conditioning — professional products only.</span></span></div>
+   <span class="k"><span class="ar" data-edit="t61" data-edit-label="Text — خلف الكرسي">خلف الكرسي</span><span class="tr" data-edit="t62" data-edit-label="Text — Behind the chair">Behind the chair</span></span>
+   <h2 class="disp"><span class="ar" data-edit="t63" data-edit-label="Text — منتجات لوريال بروفيشنال">منتجات لوريال بروفيشنال</span><span class="tr lat" data-edit="t64" data-edit-label="Text — L'Oréal Professionnel, on the shelf">L'Oréal Professionnel, on the shelf</span></h2>
+   <p><span class="ar" data-edit="t65" data-edit-label="Text — الرفوف مصفوفة بمنتجات لوريال بروفيشنال…">الرفوف مصفوفة بمنتجات لوريال بروفيشنال — نفس الماركة يلي بتشوفوها بيد جورج وهو بيحضّر لكل جلسة.</span><span class="tr" data-edit="t66" data-edit-label="Text — The shelves are lined with L'Oréal Pro…">The shelves are lined with L'Oréal Professionnel products — the same brand you'll see in George's hands as he prepares for every session.</span></p>
+   <p><span class="ar" data-edit="t67" data-edit-label="Text — مش رفوف للعرض — كل قنينة إلها دور بجلس…">مش رفوف للعرض — كل قنينة إلها دور بجلسة الصبغة أو العناية يلي جايين لأجلها.</span><span class="tr" data-edit="t68" data-edit-label="Text — Not shelves for show — every bottle ha…">Not shelves for show — every bottle has a job in the colour or care session you came in for.</span></p>
+   <div class="brandline"><span class="dot">◆</span><span><span class="ar" data-edit="t69" data-edit-label="Text — صبغة، ميش، حمامات كريم — بمنتجات محترف…">صبغة، ميش، حمامات كريم — بمنتجات محترفين فقط.</span><span class="tr" data-edit="t70" data-edit-label="Text — Colour, highlights, deep conditioning …">Colour, highlights, deep conditioning — professional products only.</span></span></div>
   </div>
  </div>
 </section>
 
 <section class="ledger wrap">
- <span class="k rev" style="display:block;text-align:center"><span class="ar" data-edit="t66" data-edit-label="Text — دفتر الخدمات">دفتر الخدمات</span><span class="tr" data-edit="t67" data-edit-label="Text — The service ledger">The service ledger</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t68" data-edit-label="Text — شو منقدّم">شو منقدّم</span><span class="tr lat" data-edit="t69" data-edit-label="Text — What's on offer">What's on offer</span></h2>
- <p class="lead rev"><span class="ar" data-edit="t70" data-edit-label="Text — مسجّلة هون متل ما بتنكتب بدفتر الصالون…">مسجّلة هون متل ما بتنكتب بدفتر الصالون كل يوم — الأسعار بتنحكى بالمحل.</span><span class="tr" data-edit="t71" data-edit-label="Text — Written down here the way they're logg…">Written down here the way they're logged in the salon's own book each day — prices confirmed in person.</span></p>
+ <span class="k rev" style="display:block;text-align:center"><span class="ar" data-edit="t71" data-edit-label="Text — دفتر الخدمات">دفتر الخدمات</span><span class="tr" data-edit="t72" data-edit-label="Text — The service ledger">The service ledger</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t73" data-edit-label="Text — شو منقدّم">شو منقدّم</span><span class="tr lat" data-edit="t74" data-edit-label="Text — What's on offer">What's on offer</span></h2>
+ <p class="lead rev"><span class="ar" data-edit="t75" data-edit-label="Text — مسجّلة هون متل ما بتنكتب بدفتر الصالون…">مسجّلة هون متل ما بتنكتب بدفتر الصالون كل يوم — الأسعار بتنحكى بالمحل.</span><span class="tr" data-edit="t76" data-edit-label="Text — Written down here the way they're logg…">Written down here the way they're logged in the salon's own book each day — prices confirmed in person.</span></p>
  <div class="lwrap rev">
-  <div class="lline"><span class="nm"><span class="ar" data-edit="t72" data-edit-label="Text — قص وتصفيف">قص وتصفيف</span><span class="tr" data-edit="t73" data-edit-label="Text — Cut &amp; style">Cut &amp; style</span></span><span class="dash">—</span></div>
-  <div class="lline"><span class="nm"><span class="ar" data-edit="t74" data-edit-label="Text — صبغة وميش">صبغة وميش</span><span class="tr" data-edit="t75" data-edit-label="Text — Colour &amp; highlights">Colour &amp; highlights</span></span><span class="dash">—</span></div>
-  <div class="lline"><span class="nm"><span class="ar" data-edit="t76" data-edit-label="Text — عناية وحمام كريم">عناية وحمام كريم</span><span class="tr" data-edit="t77" data-edit-label="Text — Deep conditioning">Deep conditioning</span></span><span class="dash">—</span></div>
-  <div class="lline"><span class="nm"><span class="ar" data-edit="t78" data-edit-label="Text — تسريح سهرات ومناسبات">تسريح سهرات ومناسبات</span><span class="tr" data-edit="t79" data-edit-label="Text — Evening &amp; event styling">Evening &amp; event styling</span></span><span class="dash">—</span></div>
-  <div class="lline"><span class="nm"><span class="ar" data-edit="t80" data-edit-label="Text — تصفيف عرائس">تصفيف عرائس</span><span class="tr" data-edit="t81" data-edit-label="Text — Bridal styling">Bridal styling</span></span><span class="dash">—</span></div>
-  <div class="lline"><span class="nm"><span class="ar" data-edit="t82" data-edit-label="Text — حلاقة رجالية">حلاقة رجالية</span><span class="tr" data-edit="t83" data-edit-label="Text — Men's cut">Men's cut</span></span><span class="dash">—</span></div>
+  <div class="lline"><span class="nm"><span class="ar" data-edit="t77" data-edit-label="Text — قص وتصفيف">قص وتصفيف</span><span class="tr" data-edit="t78" data-edit-label="Text — Cut &amp; style">Cut &amp; style</span></span><span class="dash">—</span></div>
+  <div class="lline"><span class="nm"><span class="ar" data-edit="t79" data-edit-label="Text — صبغة وميش">صبغة وميش</span><span class="tr" data-edit="t80" data-edit-label="Text — Colour &amp; highlights">Colour &amp; highlights</span></span><span class="dash">—</span></div>
+  <div class="lline"><span class="nm"><span class="ar" data-edit="t81" data-edit-label="Text — عناية وحمام كريم">عناية وحمام كريم</span><span class="tr" data-edit="t82" data-edit-label="Text — Deep conditioning">Deep conditioning</span></span><span class="dash">—</span></div>
+  <div class="lline"><span class="nm"><span class="ar" data-edit="t83" data-edit-label="Text — تسريح سهرات ومناسبات">تسريح سهرات ومناسبات</span><span class="tr" data-edit="t84" data-edit-label="Text — Evening &amp; event styling">Evening &amp; event styling</span></span><span class="dash">—</span></div>
+  <div class="lline"><span class="nm"><span class="ar" data-edit="t85" data-edit-label="Text — تصفيف عرائس">تصفيف عرائس</span><span class="tr" data-edit="t86" data-edit-label="Text — Bridal styling">Bridal styling</span></span><span class="dash">—</span></div>
+  <div class="lline"><span class="nm"><span class="ar" data-edit="t87" data-edit-label="Text — حلاقة رجالية">حلاقة رجالية</span><span class="tr" data-edit="t88" data-edit-label="Text — Men's cut">Men's cut</span></span><span class="dash">—</span></div>
  </div>
 </section>
 
 <section class="revs wrap">
- <span class="k rev" style="display:block;text-align:center"><span class="ar" data-edit="t84" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t85" data-edit-label="Text — What they say">What they say</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t86" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t87" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
+ <span class="k rev" style="display:block;text-align:center"><span class="ar" data-edit="t89" data-edit-label="Text — قالوا عنا">قالوا عنا</span><span class="tr" data-edit="t90" data-edit-label="Text — What they say">What they say</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t91" data-edit-label="Text — من تقييمات غوغل">من تقييمات غوغل</span><span class="tr lat" data-edit="t92" data-edit-label="Text — From Google reviews">From Google reviews</span></h2>
  <div class="rq-grid rev">
-  <div class="rq"><span class="stars">★★★★☆</span><p dir="ltr" data-edit="t88" data-edit-label="Text — 'Great hairdresser.'">"Great hairdresser."</p><span class="who" dir="ltr">Basma Aljurf · Google · 3 <span class="ar" data-edit="t89" data-edit-label="Text — سنوات">سنوات</span><span class="tr" data-edit="t90" data-edit-label="Text — years ago">years ago</span></span></div>
-  <div class="rq"><span class="stars">★★★★★</span><p dir="ltr" data-edit="t91" data-edit-label="Text — 'Punctuality, cleanliness, quality, pr…">"Punctuality, cleanliness, quality, professionalism, value."</p><span class="who" dir="ltr">Jakob Ossi · Google · 5 <span class="ar" data-edit="t92" data-edit-label="Text — سنوات">سنوات</span><span class="tr" data-edit="t93" data-edit-label="Text — years ago">years ago</span></span></div>
+  <div class="rq"><span class="stars">★★★★☆</span><p dir="ltr" data-edit="t93" data-edit-label="Text — 'Great hairdresser.'">"Great hairdresser."</p><span class="who" dir="ltr">Basma Aljurf · Google · 3 <span class="ar" data-edit="t94" data-edit-label="Text — سنوات">سنوات</span><span class="tr" data-edit="t95" data-edit-label="Text — years ago">years ago</span></span></div>
+  <div class="rq"><span class="stars">★★★★★</span><p dir="ltr" data-edit="t96" data-edit-label="Text — 'Punctuality, cleanliness, quality, pr…">"Punctuality, cleanliness, quality, professionalism, value."</p><span class="who" dir="ltr">Jakob Ossi · Google · 5 <span class="ar" data-edit="t97" data-edit-label="Text — سنوات">سنوات</span><span class="tr" data-edit="t98" data-edit-label="Text — years ago">years ago</span></span></div>
  </div>
- <p class="gbadge" dir="ltr"><b data-edit="rating2">4.2</b> / 5 — <span data-edit="revcount2">10</span> <span class="ar" data-edit="t94" data-edit-label="Text — تقييمات على غوغل">تقييمات على غوغل</span><span class="tr" data-edit="t95" data-edit-label="Text — Google reviews">Google reviews</span></p>
+ <p class="gbadge" dir="ltr"><b data-edit="rating2">4.2</b> / 5 — <span data-edit="revcount2">10</span> <span class="ar" data-edit="t99" data-edit-label="Text — تقييمات على غوغل">تقييمات على غوغل</span><span class="tr" data-edit="t100" data-edit-label="Text — Google reviews">Google reviews</span></p>
 </section>
 
 <section class="visit wrap">
- <span class="k rev" style="display:block;text-align:center"><span class="ar" data-edit="t96" data-edit-label="Text — الزيارة">الزيارة</span><span class="tr" data-edit="t97" data-edit-label="Text — Visiting">Visiting</span></span>
- <h2 class="disp rev"><span class="ar" data-edit="t98" data-edit-label="Text — قصاصة الموعد">قصاصة الموعد</span><span class="tr lat" data-edit="t99" data-edit-label="Text — The appointment slip">The appointment slip</span></h2>
+ <span class="k rev" style="display:block;text-align:center"><span class="ar" data-edit="t101" data-edit-label="Text — الزيارة">الزيارة</span><span class="tr" data-edit="t102" data-edit-label="Text — Visiting">Visiting</span></span>
+ <h2 class="disp rev"><span class="ar" data-edit="t103" data-edit-label="Text — قصاصة الموعد">قصاصة الموعد</span><span class="tr lat" data-edit="t104" data-edit-label="Text — The appointment slip">The appointment slip</span></h2>
  <div class="slip rev">
-  <div class="srow"><span class="sk"><span class="ar" data-edit="t100" data-edit-label="Text — الهاتف">الهاتف</span><span class="tr" data-edit="t101" data-edit-label="Text — Phone">Phone</span></span><span class="sv num" data-edit="phone2">011 445 0440</span></div>
-  <div class="srow"><span class="sk"><span class="ar" data-edit="t102" data-edit-label="Text — العنوان">العنوان</span><span class="tr" data-edit="t103" data-edit-label="Text — Address">Address</span></span><span class="sv" data-edit="addr">شارع حلب — القصاع</span></div>
-  <div class="srow"><span class="sk"><span class="ar" data-edit="t104" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t105" data-edit-label="Text — Hours">Hours</span></span><span class="sv"><span class="ar" data-edit="h-note">الإثنين مغلق</span><span class="tr" data-edit="t106" data-edit-label="Text — Closed Mondays">Closed Mondays</span></span></div>
-  <div class="srow"><span class="sk"><span class="ar" data-edit="t107" data-edit-label="Text — الحجز">الحجز</span><span class="tr" data-edit="t108" data-edit-label="Text — Booking">Booking</span></span><span class="sv"><span class="ar" data-edit="t109" data-edit-label="Text — اتصال مباشر">اتصال مباشر</span><span class="tr" data-edit="t110" data-edit-label="Text — Direct call">Direct call</span></span></div>
-  <p class="slipnote"><span class="ar" data-edit="t111" data-edit-label="Text — اطلبوا واتساب عند الاتصال إذا بتفضّلوه…">اطلبوا واتساب عند الاتصال إذا بتفضّلوه.</span><span class="tr" data-edit="t112" data-edit-label="Text — Ask for our WhatsApp number when you c…">Ask for our WhatsApp number when you call, if you'd prefer it.</span></p>
+  <div class="srow"><span class="sk"><span class="ar" data-edit="t105" data-edit-label="Text — الهاتف">الهاتف</span><span class="tr" data-edit="t106" data-edit-label="Text — Phone">Phone</span></span><span class="sv num" data-edit="phone2">011 445 0440</span></div>
+  <div class="srow"><span class="sk"><span class="ar" data-edit="t107" data-edit-label="Text — العنوان">العنوان</span><span class="tr" data-edit="t108" data-edit-label="Text — Address">Address</span></span><span class="sv" data-edit="addr">شارع حلب — القصاع</span></div>
+  <div class="srow"><span class="sk"><span class="ar" data-edit="t109" data-edit-label="Text — الدوام">الدوام</span><span class="tr" data-edit="t110" data-edit-label="Text — Hours">Hours</span></span><span class="sv"><span class="ar" data-edit="h-note">الإثنين مغلق</span><span class="tr" data-edit="t111" data-edit-label="Text — Closed Mondays">Closed Mondays</span></span></div>
+  <div class="srow"><span class="sk"><span class="ar" data-edit="t112" data-edit-label="Text — الحجز">الحجز</span><span class="tr" data-edit="t113" data-edit-label="Text — Booking">Booking</span></span><span class="sv"><span class="ar" data-edit="t114" data-edit-label="Text — اتصال مباشر">اتصال مباشر</span><span class="tr" data-edit="t115" data-edit-label="Text — Direct call">Direct call</span></span></div>
+  <p class="slipnote"><span class="ar" data-edit="t116" data-edit-label="Text — اطلبوا واتساب عند الاتصال إذا بتفضّلوه…">اطلبوا واتساب عند الاتصال إذا بتفضّلوه.</span><span class="tr" data-edit="t117" data-edit-label="Text — Ask for our WhatsApp number when you c…">Ask for our WhatsApp number when you call, if you'd prefer it.</span></p>
   <div class="scta">
-   <a class="btn" href="tel:+963114450440">☎ <span class="ar" data-edit="t113" data-edit-label="Text — اتصال">اتصال</span><span class="tr" data-edit="t114" data-edit-label="Text — Call now">Call now</span></a>
-   <a class="btn o" href="https://www.google.com/maps?cid=13768823197148616924" target="_blank" rel="noopener"><span class="ar" data-edit="t115" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t116" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
+   <a class="btn" href="tel:+963114450440">☎ <span class="ar" data-edit="t118" data-edit-label="Text — اتصال">اتصال</span><span class="tr" data-edit="t119" data-edit-label="Text — Call now">Call now</span></a>
+   <a class="btn o" href="https://www.google.com/maps?cid=13768823197148616924" target="_blank" rel="noopener"><span class="ar" data-edit="t120" data-edit-label="Text — افتحوا الخريطة">افتحوا الخريطة</span><span class="tr" data-edit="t121" data-edit-label="Text — Open in Maps">Open in Maps</span></a>
   </div>
  </div>
 </section>
 
-<footer><span data-edit="footer">صالون جورج مارديني · شارع حلب، القصاع، دمشق · </span><span class="num" data-edit="t117" data-edit-label="Text — 011 445 0440">011 445 0440</span></footer>
+<footer><span data-edit="footer">صالون جورج مارديني · شارع حلب، القصاع، دمشق · </span><span class="num" data-edit="t122" data-edit-label="Text — 011 445 0440">011 445 0440</span></footer>
 
 <div class="bar">
- <a class="call" href="tel:+963114450440">☎ <b><span class="ar" data-edit="t118" data-edit-label="Text — اتصال">اتصال</span><span class="tr" data-edit="t119" data-edit-label="Text — Call">Call</span></b></a>
- <a href="https://www.google.com/maps?cid=13768823197148616924" target="_blank" rel="noopener">◈ <span class="ar" data-edit="t120" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t121" data-edit-label="Text — Map">Map</span></a>
+ <a class="call" href="tel:+963114450440">☎ <b><span class="ar" data-edit="t123" data-edit-label="Text — اتصال">اتصال</span><span class="tr" data-edit="t124" data-edit-label="Text — Call">Call</span></b></a>
+ <a href="https://www.google.com/maps?cid=13768823197148616924" target="_blank" rel="noopener">◈ <span class="ar" data-edit="t125" data-edit-label="Text — الخريطة">الخريطة</span><span class="tr" data-edit="t126" data-edit-label="Text — Map">Map</span></a>
 </div>
 
 <script>
