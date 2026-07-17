@@ -27,7 +27,7 @@ html:not(.en) .tr{display:none!important}
 /* ablaq stone course — the site's signature band */
 .ablaq{height:18px;background:repeating-linear-gradient(90deg,var(--lime) 0 44px,var(--bas2) 44px 88px)}
 /* hero — courtyard framed by ablaq bands */
-header{position:relative;min-height:92svh;display:flex;align-items:flex-end}
+header{position:relative;min-height:clamp(600px,92svh,820px);max-height:860px;overflow:hidden;display:flex;align-items:flex-end}
 header::before{content:'';position:absolute;top:0;left:0;right:0;height:16px;background:repeating-linear-gradient(90deg,var(--lime) 0 44px,rgba(25,21,18,.92) 44px 88px);z-index:3}
 header .bg{position:absolute;inset:0;background:url('img/01.jpg') center 58%/cover no-repeat}
 header .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,21,18,.28),rgba(25,21,18,.52) 58%,var(--bas))}
